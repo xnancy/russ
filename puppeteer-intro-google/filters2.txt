@@ -1,0 +1,22 @@
+condition: ConditionRenewedNewUsedCollectible
+
+
+primeRefinements: Amazon Prime
+
+
+deliveryRefinements: Eligible for Free ShippingFree Shipping by AmazonAll customers get FREE Shipping on orders over $25 shipped by Amazon
+
+
+: All customers get FREE Shipping on orders over $25 shipped by Amazon
+
+
+departments: DepartmentComputers & AccessoriesTraditional Laptop ComputersLaptop Replacement ScreensLaptop ComputersComputer Keyboard SkinsElectronicsHome & Business ServicesCell Phones & Accessories
+
+
+reviewsRefinements: Avg. Customer Review
+
+
+brandsRefinements: BrandAppleMacBookTOP CASEIBENZERMOSISOLitopKB CoversMasinoHRHKuzyCosmosBingoBuy
+
+
+filters: Laptop Display Size17 Inches & Above15 to 15.9 Inches13 to 13.9 Inches12 to 12.9 Inches11 to 11.9 InchesComputer Operating SystemMacintosh OSChrome OSComputer Processor TypeIntel Core i5Intel Core i7Intel Core MIntel Core 2 DuoIntel XeonHard Disk Size4 TB & Above2 TB1 TB501 to 999 GB321 to 500 GB121 to 320 GBUp to 80 GBComputer Graphics Card TypeIntegratedDedicatedLaptop DisplayBacklitLCDLEDMulti-TouchTouchscreen EnabledComputer RAM Capacity64 GB & Above16 GB8 GB6 GB4 GB2 GBNumber of CPU CoresSingle CoreDual CoreQuad CoreInternational ShippingInternational Shipping Eligible

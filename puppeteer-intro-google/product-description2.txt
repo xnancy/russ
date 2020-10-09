@@ -1,0 +1,87 @@
+Name: Apple MacBook Air 
+Description: 13-inch, 8GB RAM, 256GB SSD Storage) - Space Gray 
+Price: 1,699.
+
+Name: New Apple MacBook Pro 
+Description: 13-inch, 8GB RAM, 256GB SSD Storage, Magic Keyboard) - Silver
+Price: 2,599.
+
+Name: Apple MacBook Air 
+Description: 13-inch, 8GB RAM, 256GB SSD Storage) - Space Gray 
+Price: 1,064.
+
+Name: New Apple MacBook Pro 
+Description: 16-inch, 16GB RAM, 512GB Storage, 2.6GHz Intel Core i7) - Space Gray
+Price: 4,899.
+
+Name: New Apple MacBook Pro 
+Description: 13-inch, 8GB RAM, 256GB SSD Storage, Magic Keyboard) - Space Gray
+Price: 949.
+
+Name: Apple MacBook Air MJVM2LL/A 11.6 Inch Laptop 
+Description: Intel Core i5 Dual-Core 1.6GHz up to 2.7GHz, 4GB RAM, 128GB SSD, Wi-Fi, Bluetooth 4.0, Integrated Intel HD Graphics 6000, Mac OS) 
+Price: 1,249.
+
+Name: Apple MacBook Air MD760LL/A 13.3-Inch Laptop 
+Description: Intel Core i5 Dual-Core 1.3GHz up to 2.6GHz, 4GB RAM, 128GB SSD, Wi-Fi, Bluetooth 4.0) 
+Price: 949.
+
+Name: Apple MacBook Air MD711LL/A 11.6-inch Laptop - Intel Core i5 1.3GHz - 4GB RAM - 128GB SSD 
+Description: Renewed)
+Price: 2,099.
+
+Name: Apple MacBook Pro MD101LL/A 13.3-inch Laptop 
+Description: 2.5Ghz, 4GB RAM, 500GB HD) 
+Price: 1,249.
+
+Name: Apple MacBook Pro MD313LL/A 13.3-Inch Laptop Intel i5 2.4GHz 4GB Ram - 500GB HDD 
+Description: Renewed)
+Price: 505.
+
+Name: Apple MNYF2LL/A 12" MacBook Laptop - Space Gray 
+Description: Retina Display, 1.2GHz Intel Core m3 Dual Core Processor, 8GB RAM, 256GB, Intel HD Graphics, Mac OS 
+Price: 569.
+
+Name: Apple Macbook Air MD231ll/A 13.3-inch Laptop Intel core I5 1.8GHz 4GB Ram, 128GB SSD 
+Description: Renewed)
+Price: 425.
+
+Name: Apple MacBook Air MJVM2LL/A 11.6-Inch laptop
+Description: 1.6 GHz Intel i5, 128 GB SSD, Integrated Intel HD Graphics 6000, Mac OS X Yosemite 
+Price: 425.
+
+Name: Apple MacBook Air 
+Description: 13-inch, 8GB RAM, 256GB SSD Storage) - Space Gray 
+Price: 536.
+
+Name: Apple MacBook Air MC965LL/A 13.3-Inch Laptop 
+Description: Renewed)
+Price: 679.
+
+Name: Apple 13.3" MacBook Pro with Touch Bar, Intel Core i5 Quad-Core, 8GB RAM, 128GB SSD - Mid 2019, Space Gray, MUHN2LL/A 
+Description: Renewed)
+Price: 488.
+
+Name: Apple MacBook Pro MD213LL/A 13.3-Inch Laptop with Retina Display 
+Description: Renewed)
+Price: 498.
+
+Name: Apple 13.3 inches MacBook Air Retina Display,1.6 GHz 8th Gen Intel Core i5 Dual-Core, 8GB RAM, 128GB - Space Gray 
+Description: Renewed)
+Price: 887.
+
+Name: Microsoft Surface Laptop 3 – 13.5" Touch-Screen – Intel Core i5 - 8GB Memory - 128GB Solid State Drive 
+Description: Latest Model) – Platinum with Alcantara
+Price: 499.
+
+Name: Apple MacBook 
+Description: MMGL2LL/A) 256GB 12-inch Retina Display 
+Price: 1,029.
+
+Name: Microsoft Surface Pro 7 – 12.3" Touch-Screen - 10th Gen Intel Core i5 - 8GB Memory - 256GB SSD 
+Description: Latest Model) – Matte Black with Black Type Cover, Model:QWV-00007
+Price: 649.
+
+Name: Apple 13in MacBook Air, 2.2GHz Intel Core i7 Dual Core Processor, 8GB RAM, 512GB SSD, Mac OS, Silver 
+Description: Renewed)
+Price: 849.
