@@ -49,10 +49,10 @@ function selectResponse(searchResults, numResults) {
     choice = 0;
   } else if(numResults == 2){
     console.log(`The top search results are: \n1. ${searchResults[0][0]}, \n2. ${searchResults[1][0]}`);
-    choice = prompt("Which would you like more information on (1 or 2)? ")
+    choice = prompt("Which would you like more information on (1 or 2), or 0 for ask a new question? ")
   } else{
     console.log(`The top 3 search results are: \n1. ${searchResults[0][0]}, \n2. ${searchResults[1][0]}, \n3. ${searchResults[2][0]}`);
-    choice = prompt("Which would you like more information on (1, 2, 3)? ")
+    choice = prompt("Which would you like more information on (1, 2, 3), or 0 for ask a new question? ")
   }
   return choice - 1
 }
@@ -78,8 +78,10 @@ async function search(query) {
     let searchAgain = "y";
     while (searchAgain == "y"){
       choice = selectResponse(searchResults, searchResults.length);
-      await expandSearch(searchResults[choice][1]);
-      searchAgain = prompt("\nWould you like to revisit the search results (y/n)? ")
+      if (choice >= 0) {
+        await expandSearch(searchResults[choice][1]);
+        searchAgain = prompt("\nWould you like to revisit the search results (y/n)? ")
+      }
     }
     browser.close();
 }
