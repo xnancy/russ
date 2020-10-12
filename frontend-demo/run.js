@@ -5,6 +5,10 @@ const readline = require('readline').createInterface({
 });
 const prompt = require('prompt-sync')();
 
+CHROME_EXEC_PATH = '/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'; 
+HEADLESS = false; 
+
+
 console.log("Hey there, I'm Alex, and I'm here to help you with Amazon Customer Support!\n\
   Type QUIT to quit, otherwise feel free to ask any questions!");
 
@@ -21,7 +25,7 @@ function askQuestion() {
 }
 
 async function expandSearch(searchUri) {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({headless: HEADLESS, executablePath: CHROME_EXEC_PATH});
   const page = await browser.newPage();
   await page.goto(searchUri);
   let searchResults = await page.evaluate(() => {
@@ -29,7 +33,7 @@ async function expandSearch(searchUri) {
     let data = [];
 
     for (var element of elements) {
-      data.push([element.textContent.trim(), element.href])
+      data.push([element.innerText.trim(), element.href])
     }
     return data;
   });
@@ -54,7 +58,7 @@ function selectResponse(searchResults, numResults) {
 }
 
 async function search(query) {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({headless: HEADLESS, executablePath: CHROME_EXEC_PATH});
     const page = await browser.newPage();
 
     let formattedQuery = query.replace(/\s+/g, '+');
@@ -81,4 +85,3 @@ async function search(query) {
 }
 
 askQuestion();
-
