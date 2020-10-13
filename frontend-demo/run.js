@@ -29,30 +29,74 @@ async function expandSearch(searchUri) {
   const page = await browser.newPage();
   await page.goto(searchUri);
   let searchResults = await page.evaluate(() => {
-    let elements = document.getElementsByClassName('help-content');
     let data = [];
-
-    for (var element of elements) {
-      data.push([element.innerText.trim(), element.href])
+    let elements;
+    if (document.getElementsByClassName('a-row cs-help-landing-section help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser').length > 0){
+      elements = document.getElementsByClassName('a-column a-span4');
+      let links = document.getElementsByClassName('a-list-item');
+      for (var link of links) {
+        let recurseLink; 
+        if (link.innerHTML.toString().match(/href="([^"]*)/)) {
+          recurseLink = link.innerHTML.toString().match(/href="([^"]*)/)[1];
+        } else {
+          recurseLink = null;
+        }
+        if (recurseLink && recurseLink.toString().substr(0, 4) != "http"){
+          recurseLink = "https://www.amazon.com" + recurseLink;
+        }
+        data.push([link.textContent, recurseLink]);
+      }
+    } else {
+      elements = document.getElementsByClassName('help-content');
+      for (var element of elements) {
+        data.push([element.textContent.trim(), element.href]);
+      }
     }
     return data;
   });
-  console.log(searchResults[0].toString().replace(/\n\s*\n/g, '\n'));
+
+  let recurseSearch = []
+  for (var i = 0; i < searchResults.length; i++){
+    if (searchResults[i][1]){
+      recurseSearch.push([searchResults[i][0], searchResults[i][1]]);
+    } else{
+      console.log(searchResults[i][0].toString().replace(/\n\s*\n/g, '\n'));
+    }
+  }
+  
+  if (recurseSearch && recurseSearch.length > 0){
+    console.log("\nFind out more about: ");
+    for (var i = 0; i < recurseSearch.length; i++){
+      console.log(`${i+1}. ` + recurseSearch[i][0].toString().replace(/\n\s*\n/g, '\n'));
+    }
+    let choice = selectResponse(recurseSearch, recurseSearch.length, true);
+
+    if (choice == "QUIT") {
+      browser.close(); 
+      return;
+    }
+    await expandSearch(recurseSearch[choice][1]);
+  } 
   browser.close();
 }
 
-function selectResponse(searchResults, numResults) {
+function selectResponse(searchResults, numResults, viewAll = false) {
   let choice = -1;
-  if (numResults == 0){
-    console.log("Sorry, we couldn't find what you were looking for!");
-  } else if(numResults == 1){
-    choice = 0;
-  } else if(numResults == 2){
-    console.log(`The top search results are: \n1. ${searchResults[0][0]}, \n2. ${searchResults[1][0]}`);
-    choice = prompt("Which would you like more information on (1 or 2), or 0 for ask a new question? ")
-  } else{
-    console.log(`The top 3 search results are: \n1. ${searchResults[0][0]}, \n2. ${searchResults[1][0]}, \n3. ${searchResults[2][0]}`);
-    choice = prompt("Which would you like more information on (1, 2, 3), or 0 for ask a new question? ")
+  if (viewAll){
+    choice = prompt("Which would you like to learn more about (QUIT to quit)? ");
+    if (choice === "QUIT") return choice;
+  } else {
+    if (numResults == 0){
+      console.log("Sorry, we couldn't find what you were looking for!");
+    } else if(numResults == 1){
+      choice = 0;
+    } else if(numResults == 2){
+      console.log(`The top search results are: \n1. ${searchResults[0][0]}, \n2. ${searchResults[1][0]}`);
+      choice = prompt("Which would you like more information on (1 or 2)? ")
+    } else{
+      console.log(`The top 3 search results are: \n1. ${searchResults[0][0]}, \n2. ${searchResults[1][0]}, \n3. ${searchResults[2][0]}`);
+      choice = prompt("Which would you like more information on (1, 2, 3)? ")
+    }
   }
   return choice - 1
 }
