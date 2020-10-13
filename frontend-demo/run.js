@@ -6,7 +6,7 @@ const readline = require('readline').createInterface({
 const prompt = require('prompt-sync')();
 
 CHROME_EXEC_PATH = '/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'; 
-HEADLESS = false; 
+HEADLESS = true; 
 
 
 console.log("Hey there, I'm Alex, and I'm here to help you with Amazon Customer Support!\n\
