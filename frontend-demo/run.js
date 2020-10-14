@@ -46,6 +46,11 @@ async function expandSearch(searchUri) {
         }
         data.push([link.textContent, recurseLink]);
       }
+    } else if (document.getElementsByClassName('a-section a-spacing-large ss-landing-container-wide').length > 0) {
+      elements = document.getElementsByClassName('a-link-normal a-text-normal a-color-base')
+      for (var element of elements) {
+        data.push([element.textContent.trim(), element.href]);
+      }
     } else {
       elements = document.getElementsByClassName('help-content');
       for (var element of elements) {
@@ -70,8 +75,7 @@ async function expandSearch(searchUri) {
       console.log(`${i+1}. ` + recurseSearch[i][0].toString().replace(/\n\s*\n/g, '\n'));
     }
     let choice = selectResponse(recurseSearch, recurseSearch.length, true);
-
-    if (choice == "QUIT") {
+    if (choice === "QUIT" || choice === '') {
       browser.close(); 
       return;
     }
@@ -84,7 +88,6 @@ function selectResponse(searchResults, numResults, viewAll = false) {
   let choice = -1;
   if (viewAll){
     choice = prompt("Which would you like to learn more about (QUIT to quit)? ");
-    if (choice === "QUIT") return choice;
   } else {
     if (numResults == 0){
       console.log("Sorry, we couldn't find what you were looking for!");
@@ -98,7 +101,11 @@ function selectResponse(searchResults, numResults, viewAll = false) {
       choice = prompt("Which would you like more information on (1, 2, 3)? ")
     }
   }
-  return choice - 1
+  if (choice === "QUIT") {
+    return choice;
+  } else{
+    return choice - 1
+  } 
 }
 
 async function search(query) {
