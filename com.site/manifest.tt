@@ -1,0 +1,39 @@
+class @com.site
+#_[thingpedia_name="Website"]
+#_[thingpedia_description="Search elements on Website"]
+#_[canonical="website"]
+#[license="BSD-3-Clause"]
+#[license_gplcompatible=true]
+#[subcategory="service"]
+{
+  import loader from @org.thingpedia.v2();
+  import config from @org.thingpedia.config.none(api_key=$?);
+
+  entity element #_[description="Elements on website"];
+  entity website #_[description="Website"];
+
+#TODO: NEED DICT SUPPORT 
+  list query element(out id: Entity(com.site:element)
+                        #[unique=true]
+                        #[string_values="com.site:text"]
+                        #_[canonical={
+                          default="base",
+                          base=["name"],
+                          property=[]
+                        }],
+                        out location: Enum(topleft, bottomleft, topright, bottomright, middle),
+                        out hidden : bool 
+                        #[filterable=false], 
+                        out area: Number,
+                        out tag : Enum(a, abbr, address, area, article, aside, audio, b, base, bdi, bdo, blockquote, body, br, button, canvas, caption, cite, code, col, colgroup, data, datalist, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, head, header, hr, html, i, ifram, img, input, ins, kbd, label, legend, li, link, main, map, mark, meta, meter, nav, noscript, object, ol, optgroup, option, output, p param, picture, pre, progress, q, rp, rt, ruby, s, samp, script, section, select, small, source, span, strong, style, sub, summary, sup, svg, table, tbody, td, template, textarea, tfoot, th, thead, time, title, tr, track, u, ul, var, video, wbr)
+                        out attributes: Dict,
+                        out styles: Dict,
+                        out toplevel: bool, 
+                        out id_website: Entity(com.site:website))
+  
+  #_[canonical="element"]
+  #_[confirmation="elements on webpage"]
+  #[minimal_projection=["id"]]
+  #[doc="search for elements on webpage"]
+  #[confirm=false];
+}
