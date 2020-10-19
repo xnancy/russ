@@ -2,15 +2,21 @@ from os import listdir
 from os.path import isfile, join
 import gzip
 import shutil
+import json
+from create_synthetic_data_local import extract_elements
+from synth_generator import run_create_template
+from tqdm import tqdm
 
-
-onlyfiles = [f for f in listdir("/content/drive/My Drive/SiteBotCS294W/phrasenode/data/phrase-node-dataset/infos/v6/")]
-# print(onlyfiles)
-for name in onlyfiles:
-  if name != 'info-salesforce.com.gz':
-    print(name)
-    unz = "/content/drive/My Drive/SiteBotCS294W/phrasenode/data/phrase-node-dataset/infos/v6/" + name
-    pathToSave = "/content/drive/My Drive/SiteBotCS294W/phrasenode/data/phrase-node-dataset/infos/unzipped/" + name.split(".gz")[0] + ".json"
+def get_jsons():
+  onlyfiles = [f for f in listdir("../../v6/")]
+  print(len(onlyfiles))
+  for name in tqdm(onlyfiles):
+    unz = "../../v6/" + name
+    pathToSave = "../../" + name.split(".gz")[0] + ".json"
     f = gzip.open(unz, 'rb')
-    with open(pathToSave, 'wb') as f_out:
-        shutil.copyfileobj(f, f_out)
+    a = json.load(f)
+    commands = extract_elements(a)
+    del a
+    run_create_template(name.split(".gz")[0], commands)
+
+get_jsons()

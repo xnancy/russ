@@ -7,23 +7,23 @@ from template import Templates
 class Element:
     def __init__(self, row):
         self.website= ''
-        self.styles = row['styles']
-        self.xid = row['xid']
-        self.height = row['height']
-        self.width = row['width']
-        self.topcoord = row['topcoord']
-        self.hidden = row['hidden']
-        self.children = row['children']
-        self.ref = row['ref']
-        self.toplevel = row['toplevel']
-        self.classes = row['classes']
-        self.tag = row['tag']
-        self.html_id = row['html_id']
-        self.innertext = row['innertext']
-        self.leftcoord = row['leftcoord']
-        self.attributes = row['attributes']
-        self.id_website = row['id_website']
-        self.image_text = row['image_text']
+        self.styles = row[0]
+        self.xid = row[1]
+        self.height = row[2]
+        self.width = row[3]
+        self.topcoord = row[4]
+        self.hidden = row[5]
+        self.children = row[6]
+        self.ref = row[7]
+        self.toplevel = row[8]
+        self.classes = row[9]
+        self.tag = row[10]
+        self.html_id = row[11]
+        self.innertext = row[12]
+        self.leftcoord = row[13]
+        self.attributes = row[14]
+        self.id_website = row[15]
+        # self.image_text = row['image_text']
 
 
 def get_db_rows(query: str):
@@ -51,10 +51,9 @@ def get_db_rows(query: str):
             print("PostgreSQL connection is closed")
 
 
-def run_create_template(name, web):
-  query = "select * from " + name + "  where hidden = FALSE"
-  records = get_db_rows(query)
+def run_create_template(web, records):
   for i in range(len(records)):
-      element = Element(records.iloc[i])
-      element.name = web
-      Templates.generate_text_match(element)
+      element = Element(records[i])
+      element.website = web
+      path = "../../synthetic_elements/" + web + "_synth.text"
+      Templates.generate_text_match(element, path)
