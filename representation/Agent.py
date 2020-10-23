@@ -5,9 +5,12 @@ import operator
 import json
 import numpy as np 
 
+import WebDriver
+
 class Element: 
 # get the data and compute the additional representations here 
     def __init__(self, attrs, embedding_model): 
+        print (attrs)
         self.attributes = ''
         self.selector = 'TEST'
         self.text = ''
@@ -22,8 +25,10 @@ class Element:
         self.height = 0
         self.children = []
         self.text_emb = np.zeros(768)
-
-        self.ref = attrs['ref']
+        if 'ref' in attrs.keys() and attrs['ref'] is not None: 
+            self.ref = attrs['ref']
+        if 'xid' in attrs.keys() and attrs['xid'] is not None: 
+            self.xid = attrs['xid']
         if 'selector' in attrs.keys(): 
             self.selector = attrs['selector']
         if 'text' in attrs.keys(): 
@@ -34,8 +39,8 @@ class Element:
             self.class_id  += attrs['classes'].replace('-', ' ').replace('.', ' ').replace('/', ' ').replace(',', ' ').replace('_', ' ')
         if 'id' in attrs.keys() and attrs['id'] is not None: 
             self.class_id  += attrs['id'].replace('-', ' ').replace('.', ' ').replace('/', ' ').replace(',', ' ').replace('_', ' ')
-
-        self.tag = attrs['tag']
+        if 'tag' in attrs.keys() and attrs['tag'] is not None: 
+            self.tag = attrs['tag']
 
         if 'attributes' in attrs.keys() and attrs['attributes'] is not None: 
             for key, value in attrs['attributes'].items():
@@ -72,7 +77,7 @@ class Agent:
         self.embedding_model = SentenceTransformer('bert-base-nli-mean-tokens')
 
     # filters is a dict of the form {filter: value} ex {'location': 'upperleft'} 
-    def pass_filters(self, el, filters): 
+    def passFilters(self, el, filters): 
         if('location' in filters.keys() and el.location != filters['location']): 
             return False 
         if('size' in filters.keys() and el.size != filters['size']): 
@@ -81,70 +86,74 @@ class Agent:
             return False 
         return True  
 
-    def run_parsed_instruction(action, arg1, arg2, arg3): 
-        switch(action) {
-            case 'CLICK': self.click(arg1, arg2);
-            case 'RESOLVE': self.resolve(arg1);
-            case 'RESOLVE_LIST': self.resolve_list(arg1, arg2);
-            case 'OUTPUT': self.output(arg1);
-            case 'ACT': self.act(arg1);
-            case 'ENTER': self.enter(arg1, arg2, arg3);
-            case 'READ': self.read(arg1, arg2);
-            case 'READ_LIST': self.read_list(arg1, arg2);
-            case 'NO_ACTION': return 
-        }
+    async def getDOM(self): 
+        result = await self.webdriver.getDOMInfo()
+        return result['info'] 
+
+    async def runParsedInstruction(self, action, arg1, arg2, arg3): 
+        if action == "CLICK": await self.click(arg1, arg2)
+        elif action == "RESOLVE" : await self.resolve(arg1)
+        elif action == 'resolveList': await self.resolveList(arg1, arg2)
+        elif action == 'OUTPUT': self.output(arg1)
+        elif action == 'ACT': await self.act(arg1)
+        elif action == 'ENTER': await self.enter(arg1, arg2, arg3)
+        elif action == 'READ': await self.read(arg1, arg2)
+        elif action == 'readList': await self.readList(arg1, arg2)
+        elif action == 'NO_ACTION': return 
 
     # TODO: define the remaining functions 
-    def click(self, descr, filters, dom): 
-        selector = self.match_element(descr, filters, dom)
-        self.webdriver.click(selector)
+    async def click(self, descr, filters): 
+        dom = await self.getDOM()
+        selector = self.matchElement(descr, filters, dom)
+        # await self.webdriver.click(selector)
 
     # returns a string of var value 
-    def resolve(self, var, filters): 
+    async def resolve(self, var):
+        val = input("(Alex): What is the " + var +" ? \n") 
+        self.all_vars[var] = val  
         return 
 
 
     # returns a selector of item in list for var 
-    def resolve_list(self, var, filters): 
+    async def resolveList(self, var, filters): 
         return 
 
     def output(self, text): 
         return 
 
-    def act(self, action_id): 
+    async def act(self, action_id): 
         return 
 
-    def enter(self, descr, filters, str_var_to_enter): 
+    # can enter from var of if string_val = True just use the val
+    async def enter(self, descr, filters, var_to_enter, str_val = False ): 
+        dom = await self.getDOM() 
+        selector = self.matchElement(descr, filters, dom)
+        if str_val: text_to_enter = var_to_enter
+        else : text_to_enter = self.all_vars[var_to_enter]
+        await self.webdriver.enter_text(selector, text_to_enter)
+
+    async def read(self, descr, filters): 
         return 
 
-    def read(self, descr, filters): 
-        return 
-
-    def read_list(self, descr, filters): 
+    async def readList(self, descr, filters): 
         return 
 
     # find the element that best matches the descr and satisfies filters in the DOM 
-    # TODO: remove dom arg to get from webdriveer 
-    def match_element(self, descr, filters, dom): 
+    # TODO: RUN AND MAKE SURE THE SELECTOR WORKS
+    def matchElement(self, descr, filters, dom): 
         # dom = self.webdriver.get_elements_db() 
         dom = dom
         descr_embedding = self.embedding_model.encode([descr])[0]
         scores = {} 
         for el_row in dom: 
             element = Element(el_row, self.embedding_model)
-            if element.hidden == True or not self.pass_filters(element, filters): 
+            if element.hidden == True or not self.passFilters(element, filters): 
                 continue 
             score = cs([descr_embedding], [element.text_emb])[0][0]
             scores[element.ref] = score
-        best_selector = max(scores.items(), key=operator.itemgetter(1))[0]
-        print(best_selector)
+        print(scores)
+        best_xid = max(scores.items(), key=operator.itemgetter(1))[0]
+        best_selector = '[xid='+str(best_xid)+']'        
         return best_selector
-           
-f = open("AmazonSample.json")
-data = json.load(f)
-dom = data['info']
 
-agent = Agent('webdriver')
-agent.click('go to customer service', {}, dom)
-agent.click('show me my orders', {}, dom)
 

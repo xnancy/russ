@@ -42,9 +42,9 @@ class WebDriver:
 					answer.attributes[x.name] = x.value
 				);
 
-				if (answer.attributes['data-xid'] !== undefined) {
-					answer.xid = +answer.attributes['data-xid'];
-				}
+				// if (answer.attributes['data-xid'] !== undefined) {
+					// answer.xid = +answer.attributes['data-xid'];
+				// }
 
 				// Record styles
 				let computedStyle = window.getComputedStyle(element);
@@ -156,18 +156,4 @@ class WebDriver:
 
 		# dictionary with 2 keys: 'common_styles' and 'infos'
 		return dominfo
-
-url = 'https://www.amazon.com/gp/help/customer/display.html/ref=help_search_1-1?ie=UTF8&nodeId=201936940&qid=1603260667&sr=1-1'
-
-webdriver = WebDriver()
-
-loop = asyncio.get_event_loop()
-loop.run_until_complete(webdriver.openDriver())
-loop.run_until_complete(webdriver.goToPage(url))
-result = loop.run_until_complete( webdriver.get_elements_db('sample-rep2'))
-loop.run_until_complete( webdriver.closeDriver())
-
-loop.close()
-
-
 

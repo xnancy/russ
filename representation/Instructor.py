@@ -1,11 +1,15 @@
 import re 
 import asyncio 
 from pyppeteer import launch
+
+from Agent import Agent
+from WebDriver import WebDriver
+
 # Instructor interacts with the user and parses the instruction templates
 
 #TODO: build the semantic parser, and use in parse.py
 class SemanticParser: 
-    def __init__(): 
+    def __init__(self): 
         return 
 
     # isntr_tuple of the form  (text, link, bold text)
@@ -14,29 +18,24 @@ class SemanticParser:
         KEYWORDS = ['click', 'enter', 'go to', 'select']
         for keyword in KEYWORDS: 
             if 'click' in command: 
-                return [('CLICK', command, '', '')]
+                return [('CLICK', command, {}, '')]
             if 'go to' in command: 
-                return [('CLICK', command, '', '')]
+                return [('CLICK', command, {}, '')]
             if 'select' in command: 
-                return [('CLICK', command, '', '')]
+                return [('CLICK', command, {}, '')]
             if 'enter' in command: 
-                return [('RESOLVE', command, '', ''), ('ENTER', command, '', command)]
+                return [('RESOLVE', command, '', ''), ('ENTER', command, {}, command)]
         return [('OUTPUT', command, '', '')]
 
 class Instructor: 
-    def __init__(self, agent, semanticparser):
+    def __init__(self, webdriver, agent, semanticparser):
         self.agent = agent 
+        self.webdriver = webdriver
         self.instructions = [] 
         self.var_sel = {} 
         self.var_text = {} 
 
         print("Hi I'm Alex! How can I help you today?")
-        
-
-    def run_instr(self): 
-         instr = self.instructions.pop(0)
-         action, arg1, arg2, arg3 = semanticparser(instr)
-         agent.run_parsed_instruction(action, arg1, arg2, arg3)
 
     async def askQuestion(self): 
         inp = input("(Alex): How can I help you today?\n")
@@ -184,10 +183,10 @@ class Instructor:
 
         await browser.close()
 
-    def run_instructions(self): 
+    async def runInstructions(self): 
         for i in range(len(self.instructions)): 
             action, arg1, arg2, arg3  = self.instructions.pop(0)
-            agent.run_parsed_instruction(action, arg1, arg2, arg3)
+            await agent.runParsedInstruction(action, arg1, arg2, arg3)
 
 
     # each step is list of form ['text', 'link or None', 'bold text']
@@ -199,7 +198,12 @@ class Instructor:
         for action in actions: 
             self.instructions.extend(semanticparser.parse(action))
 
-        self.run_instructions()
+        # after vising a help content page set driver to that URL before running instructions 
+        print(page.url) 
+        url = page.url
+        await self.webdriver.goToPage(url)
+
+        await self.runInstructions()
 
     async def parseHelpContent(self, step) : 
         KEYWORDS = ["select", "go to", "enter", "click"]
@@ -221,15 +225,16 @@ class Instructor:
         
         return res
     
-    
-
-# driver = PuppeteerAgent()
-agent = Agent('')
-# instructor = Instructor(agent)
-semanticparser = SemanticParser()
-instructor = Instructor(agent, semanticparser)
 loop = asyncio.get_event_loop()
+
+driver = WebDriver()
+loop.run_until_complete(driver.openDriver()) 
+
+agent = Agent(driver)
+semanticparser = SemanticParser()
+instructor = Instructor(driver, agent, semanticparser)
 loop.run_until_complete(instructor.askQuestion()) 
 loop.close() 
+
 
 
