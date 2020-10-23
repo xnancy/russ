@@ -1,24 +1,24 @@
 from pyppeteer import launch
 import asyncio
-import json 
+import json
 
 class WebDriver:
-	def __init__(self): 
-		pass 
+	def __init__(self):
+		pass
 
-	async def openDriver(self): 
+	async def openDriver(self):
 		self.browser = await launch(headless = False, executablePath = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
 		self.pages = await self.browser.pages()
 		self.page = self.pages[0]
 		self.page.setDefaultNavigationTimeout(60000)
 
-	async def goToPage(self, url): 
+	async def goToPage(self, url):
 		await self.page.goto(url)
 
-	async def closeDriver(self): 
+	async def closeDriver(self):
 		await self.browser.close()
 
-	async def getDOMInfo(self): 
+	async def getDOMInfo(self):
 		final_return = await self.page.evaluate('''async () => {
 			var getDOMInfoOfElement = async function(element) {
 				if (['STYLE', 'SCRIPT'].includes(element.tagName)
@@ -32,16 +32,16 @@ class WebDriver:
 					width: rect.width, height: rect.height,
 					id: element.getAttribute('id'),
 					classes: element.getAttribute('class'),
-					attributes: {}, styles: {}, selector: '', 
+					attributes: {}, styles: {}, selector: '', xid: ref
 				};
 				allAnswers.push(answer);
 				// Record attributes
+				element.setAttribute('xid', ref);
+
 				Array.from(element.attributes).forEach(x =>
 					answer.attributes[x.name] = x.value
 				);
-				
-				console.log(element.attributes);
-				
+
 				if (answer.attributes['data-xid'] !== undefined) {
 					answer.xid = +answer.attributes['data-xid'];
 				}
@@ -118,7 +118,7 @@ class WebDriver:
 					}
 				}
 				return answer;
-			}; 
+			};
 			let allAnswers = [];
 			await getDOMInfoOfElement(document.body);
 			let commonStyles = {};
@@ -139,35 +139,35 @@ class WebDriver:
 		return final_return
 
 
-	async def click(self, selector) : 
+	async def click(self, selector) :
 		await self.page.click(selector)
 		await self.page.waitForNavigation()
 
-	async def enter_text(self, selector, text): 
+	async def enter_text(self, selector, text):
 		await self.page.type(selector, text)
-		await self.page.waitForNavigation() 
-	
+		await self.page.waitForNavigation()
 
-	async def get_elements_db(self, save_to): 
+
+	async def get_elements_db(self, save_to):
 		dominfo = await self.getDOMInfo()
 
 		with open(save_to + '.json', 'w') as outfile:
 			json.dump(dominfo, outfile, sort_keys=True, indent=4)
 
-		# dictionary with 2 keys: 'common_styles' and 'infos' 
+		# dictionary with 2 keys: 'common_styles' and 'infos'
 		return dominfo
-			
+
 url = 'https://www.amazon.com/gp/help/customer/display.html/ref=help_search_1-1?ie=UTF8&nodeId=201936940&qid=1603260667&sr=1-1'
 
 webdriver = WebDriver()
 
 loop = asyncio.get_event_loop()
-loop.run_until_complete(webdriver.openDriver()) 
-loop.run_until_complete(webdriver.goToPage(url)) 
-result = loop.run_until_complete( webdriver.get_elements_db('sample-rep2')) 
-loop.run_until_complete( webdriver.closeDriver()) 
+loop.run_until_complete(webdriver.openDriver())
+loop.run_until_complete(webdriver.goToPage(url))
+result = loop.run_until_complete( webdriver.get_elements_db('sample-rep2'))
+loop.run_until_complete( webdriver.closeDriver())
 
-loop.close() 
+loop.close()
 
 
 
