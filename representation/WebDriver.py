@@ -2,11 +2,11 @@ from pyppeteer import launch
 import asyncio
 import json 
 
-class PuppeteerAgent:
+class WebDriver:
 	def __init__(self): 
 		pass 
 
-	async def openAgent(self): 
+	async def openDriver(self): 
 		self.browser = await launch(headless = False, executablePath = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
 		self.pages = await self.browser.pages()
 		self.page = self.pages[0]
@@ -15,7 +15,7 @@ class PuppeteerAgent:
 	async def goToPage(self, url): 
 		await self.page.goto(url)
 
-	async def closeAgent(self): 
+	async def closeDriver(self): 
 		await self.browser.close()
 
 	async def getDOMInfo(self): 
@@ -159,14 +159,13 @@ class PuppeteerAgent:
 			
 url = 'https://www.amazon.com/gp/help/customer/display.html/ref=help_search_1-1?ie=UTF8&nodeId=201936940&qid=1603260667&sr=1-1'
 
-puppeteerAgent = PuppeteerAgent()
+webdriver = WebDriver()
 
 loop = asyncio.get_event_loop()
-loop.run_until_complete(puppeteerAgent.openAgent()) 
-loop.run_until_complete(puppeteerAgent.goToPage(url)) 
-result = loop.run_until_complete( puppeteerAgent.get_elements_db('sample-rep')) 
-elements_list = result['info']
-loop.run_until_complete( puppeteerAgent.closeAgent()) 
+loop.run_until_complete(webdriver.openDriver()) 
+loop.run_until_complete(webdriver.goToPage(url)) 
+result = loop.run_until_complete( webdriver.get_elements_db('sample-rep2')) 
+loop.run_until_complete( webdriver.closeDriver()) 
 
 loop.close() 
 
