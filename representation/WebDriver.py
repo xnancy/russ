@@ -16,7 +16,14 @@ class WebDriver:
 		await self.page.goto(url)
 
 	async def closeDriver(self):
-		await self.browser.close()
+		print('hi')
+		# await self.browser.close()
+
+	async def getElementFromXid(self, xid):
+		elem = await self.page.waitForSelector(f'[xid="{xid}"]')
+		return elem
+
+
 
 	async def getDOMInfo(self):
 		final_return = await self.page.evaluate('''async () => {
@@ -37,6 +44,7 @@ class WebDriver:
 				allAnswers.push(answer);
 				// Record attributes
 				element.setAttribute('xid', ref);
+				// await page.evaluate(() => { element.attributes['xid'] = ref; });
 
 				Array.from(element.attributes).forEach(x =>
 					answer.attributes[x.name] = x.value
@@ -106,6 +114,7 @@ class WebDriver:
 							left: childRect.left, top: childRect.top,
 							width: childRect.width, height: childRect.height,
 							text: childText,
+							xid: ref,
 							});
 							answer.children.push(childRef);
 						}
@@ -157,3 +166,17 @@ class WebDriver:
 		# dictionary with 2 keys: 'common_styles' and 'infos'
 		return dominfo
 
+# async def func():
+# 	a = WebDriver()
+# 	await a.openDriver()
+# 	await a.goToPage("https://www.amazon.com/gp/help/customer/display.html")
+# 	c = await a.get_elements_db('test')
+# 	elem = await a.getElementFromXid(16)
+# 	print(elem)
+# 	await asyncio.sleep(10000)
+
+
+
+# loop = asyncio.new_event_loop()
+# asyncio.set_event_loop(loop)
+# result = loop.run_until_complete(func())
