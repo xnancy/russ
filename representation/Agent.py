@@ -179,18 +179,18 @@ class Agent:
         return best_selector
 
 
-async def func():
-    a = WebDriver()
-    b = Agent(a)
-    await b.webdriver.openDriver()
-    await b.webdriver.goToPage("https://www.amazon.com/gp/help/customer/display.html")
-    test = await b.click("search", {})
-    print(test)
+# async def func():
+#     a = WebDriver()
+#     b = Agent(a)
+#     await b.webdriver.openDriver()
+#     await b.webdriver.goToPage("https://www.amazon.com/gp/help/customer/display.html")
+#     test = await b.click("search", {})
+#     print(test)
 
-    await asyncio.sleep(10000)
+#     await asyncio.sleep(10000)
 
 
 
-loop = asyncio.new_event_loop()
-asyncio.set_event_loop(loop)
-result = loop.run_until_complete(func())
+# loop = asyncio.new_event_loop()
+# asyncio.set_event_loop(loop)
+# result = loop.run_until_complete(func())
