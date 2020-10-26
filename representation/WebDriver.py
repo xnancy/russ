@@ -21,6 +21,14 @@ class WebDriver:
 
 	async def getElementFromXid(self, xid):
 		elem = await self.page.waitForSelector(f'[xid="{xid}"]')
+		# a = "href"
+		# prize_href = await self.page.evaluate(
+        #         '(elem,a) => elem[a]',
+        #         elem, a
+		# )
+		# print(prize_href)
+		# props = await elem.getProperties()
+		# print(props, 'hi')
 		return elem
 
 
@@ -166,14 +174,16 @@ class WebDriver:
 		# dictionary with 2 keys: 'common_styles' and 'infos'
 		return dominfo
 
-# async def func():
-# 	a = WebDriver()
-# 	await a.openDriver()
-# 	await a.goToPage("https://www.amazon.com/gp/help/customer/display.html")
-# 	c = await a.get_elements_db('test')
-# 	elem = await a.getElementFromXid(16)
-# 	print(elem)
-# 	await asyncio.sleep(10000)
+async def func():
+	a = WebDriver()
+	await a.openDriver()
+	await a.goToPage("https://www.amazon.com/gp/help/customer/display.html")
+	c = await a.get_elements_db('test')
+	elem = await a.getElementFromXid(16)
+	print(elem)
+	g = await a.page.evaluate(elem)
+	print(g)
+	await asyncio.sleep(10000)
 
 
 
