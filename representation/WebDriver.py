@@ -8,15 +8,14 @@ class WebDriver:
 
 	async def openDriver(self):
 		self.browser = await launch(headless = False, executablePath = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
-		self.pages = await self.browser.pages()
-		self.page = self.pages[0]
-		self.page.setDefaultNavigationTimeout(60000)
+		self.page = await self.browser.newPage()
+		# \self.page.setDefaultNavigationTimeout(60000)
 
 	async def goToPage(self, url):
-		await self.page.goto(url)
+		await asyncio.wait([self.page.goto(url), self.page.waitForNavigation()])
 
 	async def closeDriver(self):
-		print('hi')
+		print('bye, closing driver')
 		# await self.browser.close()
 
 	async def getElementFromXid(self, xid):
@@ -155,15 +154,18 @@ class WebDriver:
 		}''')
 		return final_return
 
-
-	async def click(self, selector) :
-		await self.page.click(selector)
-		await self.page.waitForNavigation()
+	# TODO: fix this, selector might exist on prevoius page 
+	async def click(self, selector):
+		print("AWAITING CLICK")
+		# self.page.waitForSelector(selector)
+		# await self.page.click(selector) 
+		await asyncio.wait([self.page.click(selector), self.page.waitForNavigation()])
+		print("CLICKED")
+		pages = await self.browser.pages()
+		self.page = pages[len(pages) - 1]
 
 	async def enter_text(self, selector, text):
 		await self.page.type(selector, text)
-		await self.page.waitForNavigation()
-
 
 	async def get_elements_db(self, save_to):
 		dominfo = await self.getDOMInfo()
@@ -180,12 +182,8 @@ async def func():
 	await a.goToPage("https://www.amazon.com/gp/help/customer/display.html")
 	c = await a.get_elements_db('test')
 	elem = await a.getElementFromXid(16)
-	print(elem)
 	g = await a.page.evaluate(elem)
-	print(g)
 	await asyncio.sleep(10000)
-
-
 
 # loop = asyncio.new_event_loop()
 # asyncio.set_event_loop(loop)
