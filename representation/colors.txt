@@ -20,3 +20,42 @@ skyblue
 teal
 aqua
 silver
+gold
+orange
+mauve
+crimson
+dark brown
+dark red
+dark purple
+dark green
+light blue
+light red
+light pink
+light purple
+light yellow
+light green
+dark orange
+light orange
+light grey
+tan
+midnight blue
+cyan
+turquoise
+ivory
+eggshell
+violet
+magenta
+lime greenchartreuse
+indigo
+hot pink
+salmon
+tomato
+khaki
+chocolate
+slate grey
+sienna
+light sky blue
+dark sky blue
+gray
+
+
