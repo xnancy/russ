@@ -1,3 +1,6 @@
+#TODO figure out how to return 
+# TODO figure out how to filter 
+# TODO figure out why match is wrong for tracking button 
 import re 
 import asyncio 
 from pyppeteer import launch
@@ -16,15 +19,36 @@ class SemanticParser:
     def parse(self, instr_tuple): 
         command, link, bold_text = instr_tuple
         KEYWORDS = ['click', 'enter', 'go to', 'select']
+        print("PARSING " + command)
         for keyword in KEYWORDS: 
-            if 'click' in command: 
+            if 'if' in command and ',' in command:
+                inp = input("(Alex): " + command.split("if", 1)[1].split(',',1)[0] + " ? (Y/N)")
+                if (inp == 'Y'):
+                    return self.parse((command.split(",", 1)[0], link, bold_text))
+                else:
+                    print("(Alex): OK skipping steps.")
+                    return [] 
+            elif 'To see' in command and ',' in command:
+                inp = input("(Alex): Do you want to see " + command.split("To see", 1)[1].split(',',1)[0] + " ? (Y/N)")
+                if (inp == 'Y'):
+                    return self.parse((command.split(",", 1)[0], link, bold_text))
+                else:
+                    print("(Alex): OK skipping steps.")
+                    return [] 
+            elif 'locate' in command: 
+                return [('RESOLVE_TEXT', command.split("locate",1)[1], '', '')]
+            elif 'click' in command and 'next to' in command:
+                return [('CLICK', command.split('click', 1)[1].split('next to', 1)[0], {'NEXTTO': command.split('next to', 1)[1]}, '')]
+            elif 'click' in command: 
                 return [('CLICK', command, {}, '')]
-            if 'go to' in command: 
+            elif 'go to' in command and (link or bold_text): 
+                return [('CLICK', command.split("go to", 1)[1], {}, '')]
+            elif 'go to' in command: 
+                return [('RESOLVE', command.split("go to", 1)[1], {}, '')]
+            elif 'select' in command: 
                 return [('CLICK', command, {}, '')]
-            if 'select' in command: 
-                return [('CLICK', command, {}, '')]
-            if 'enter' in command: 
-                return [('RESOLVE', command, '', ''), ('ENTER', command, {}, command)]
+            elif 'enter' in command: 
+                return [('RESOLVE_TEXT', command, '', ''), ('ENTER', command, {}, command)]
         return [('OUTPUT', command, '', '')]
 
 class Instructor: 
@@ -69,7 +93,7 @@ class Instructor:
         while (searchAgain == "y") : 
             choice = await self.selectResponse(searchResults, len(searchResults))
             if (choice >= 0) : 
-                await self.expandSearch(searchResults[choice][1])
+                await self.expandSearch(searchResults[choice][1], page)
                 searchAgain = input("\nWould you like to revisit the search results (y/n)? ")
            
         await browser.close()
@@ -81,15 +105,15 @@ class Instructor:
             choice = input("\n Which would you like to learn more about (QUIT to quit)? \n")
         else: 
             if (numResults == 0): 
-                print("Sorry, we couldn't find what you were looking for!\n")   
+                print("Sorry, I can't help with what you're looking for! Directing to agent...\n")   
             elif(numResults == 1): 
                 choice = 0
             elif(numResults == 2): 
-                print("The top search results are:\n")
+                print("(Alex) Happy to help with that! Which of the following would you like to do?:\n")
                 print("1. "  + searchResults[0][0] + "\n2." + searchResults[1][0] + "\n")
                 choice = input("Which would you like more information on (1 or 2)? ")
             else: 
-                print("The top 3 search results are:\n")
+                print("(Alex) Happy to help with that! Which of the following would you like to do?:\n")
                 print("1. "  + searchResults[0][0] + "\n2." + searchResults[1][0] + "\n3." + searchResults[2][0] + "\n")
                 choice = input("Which would you like more information on (1, 2, 3)? ")
     
@@ -99,9 +123,7 @@ class Instructor:
             return int(choice) - 1
     
     # TODO: Split searchResults so that it returns phrases vs lines. Currently you don't know from the tuple if the line has multiple sentences which sentence hte link or bold is in. 
-    async def expandSearch(self, searchUri) : 
-        browser = await launch(headless = False, executablePath = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
-        page = await browser.newPage()
+    async def expandSearch(self, searchUri, page) : 
         await page.goto(searchUri)
         searchResults = await page.evaluate('''() => {
             let data = [];
@@ -122,35 +144,35 @@ class Instructor:
                 }
                 data.push([link.textContent, recurseLink, steps]);
                 }
-            } else if (document.getElementsByClassName('a-section a-spacing-large ss-landing-container-wide').length > 0) {
-                elements = document.getElementsByClassName('a-link-normal a-text-normal a-color-base')
-                for (var element of elements) {
-                    data.push([element.textContent.trim(), element.href, steps]);
-                }
-            } else {
-                elements = document.getElementsByClassName('help-content');
-                let stepsElement = document.getElementsByClassName('a-list-item');
-                for (var step of stepsElement){
-
-                    if (step.innerHTML.toString().match(/href="([^"]*)/)) {
-                    actionLink = step.innerHTML.toString().match(/href="([^"]*)/)[1];
-                    if (actionLink.toString().substr(0, 4) != "http"){
-                        actionLink = "https://www.amazon.com" + actionLink;
+                } else if (document.getElementsByClassName('a-section a-spacing-large ss-landing-container-wide').length > 0) {
+                    elements = document.getElementsByClassName('a-link-normal a-text-normal a-color-base')
+                    for (var element of elements) {
+                        data.push([element.textContent.trim(), element.href, steps]);
                     }
-                    } else {
-                    actionLink = null;
-                    }
+                } else {
+                    elements = document.getElementsByClassName('help-content');
+                    let stepsElement = document.getElementsByClassName('a-list-item');
+                    for (var step of stepsElement){
 
-                    let boldStr; 
-                    if (step.innerHTML.toString().match(/<strong>([\S\s]*?)<\/strong>/gi)) {
-                    boldStr = step.innerHTML.toString().match(/<strong>([\S\s]*?)<\/strong>/gi)[0].toString(); // 0 index just grab first match
-                    boldStr = boldStr.trim().substr(8, boldStr.length-17)
-                    } else {
-                    boldStr = null;
-                    }
+                        if (step.innerHTML.toString().match(/href="([^"]*)/)) {
+                        actionLink = step.innerHTML.toString().match(/href="([^"]*)/)[1];
+                        if (actionLink.toString().substr(0, 4) != "http"){
+                            actionLink = "https://www.amazon.com" + actionLink;
+                        }
+                        } else {
+                        actionLink = null;
+                        }
 
-                    steps.push([step.textContent, actionLink, boldStr])
-                }
+                        let boldStr; 
+                        if (step.innerHTML.toString().match(/<strong>([\S\s]*?)<\/strong>/gi)) {
+                        boldStr = step.innerHTML.toString().match(/<strong>([\S\s]*?)<\/strong>/gi)[0].toString(); // 0 index just grab first match
+                        boldStr = boldStr.trim().substr(8, boldStr.length-17)
+                        } else {
+                        boldStr = null;
+                        }
+
+                        steps.push([step.textContent, actionLink, boldStr])
+                    }
                 for (var element of elements) {
                     data.push([element.textContent.trim(), element.href, steps]);
                 }
@@ -173,19 +195,28 @@ class Instructor:
                 browser.close() 
                 return
         
-            await expandSearch(recurseSearch[choice][1])
+            await expandSearch(recurseSearch[choice][1], page)
         else: 
+
+            print("LOGGING IN")
+            await self.agent.amazonLogin()
+
+            print("GOING TO URL")
+            print(page.url) 
+            await self.webdriver.goToPage(page.url)
+
             for i in range(len(searchResults[0][2])) : 
                 await self.stepHelpContent(page, searchResults[0][2][i])
-        
-        print("HERE ARE THE ACTIONS TO TAKE")
-        print(self.instructions)
+                print("RUNNING")
+                print(self.instructions)
+                await self.runInstructions()
 
         await browser.close()
 
     async def runInstructions(self): 
         for i in range(len(self.instructions)): 
             action, arg1, arg2, arg3  = self.instructions.pop(0)
+
             await agent.runParsedInstruction(action, arg1, arg2, arg3)
 
 
@@ -197,13 +228,6 @@ class Instructor:
         
         for action in actions: 
             self.instructions.extend(semanticparser.parse(action))
-
-        # after vising a help content page set driver to that URL before running instructions 
-        print(page.url) 
-        url = page.url
-        await self.webdriver.goToPage(url)
-
-        await self.runInstructions()
 
     async def parseHelpContent(self, step) : 
         KEYWORDS = ["select", "go to", "enter", "click"]
@@ -224,12 +248,13 @@ class Instructor:
             return [step]
         
         return res
-    
+
+
 loop = asyncio.get_event_loop()
+
 
 driver = WebDriver()
 loop.run_until_complete(driver.openDriver()) 
-
 agent = Agent(driver)
 semanticparser = SemanticParser()
 instructor = Instructor(driver, agent, semanticparser)

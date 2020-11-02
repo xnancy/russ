@@ -1,0 +1,937 @@
+{
+    "website": {
+      "https://support.crytivo.com": [
+        {
+          "search_query": "How do I reset my password?",
+          "url": "https://support.crytivo.com/article/18-how-do-i-reset-my-password",
+          "instructions": [
+            "Go to http://crytivo.com/",
+            "Click 'Sign In' in the upper right corner",
+            "Click 'Forgot Password'"
+          ]
+        }
+      ],
+      "https://tradalaxy.zendesk.com": [
+        {
+          "search_query": "How do I reset my password?",
+          "url": "https://tradalaxy.zendesk.com/hc/en-us/articles/360030871671-Sign-In-to-Your-Account-and-Reset-Password",
+          "instructions": [
+            "Go to https://my.tradalaxy.com/login",
+            "In the Password to Tradalaxy field on the sign-in page, click Forgot password?"
+          ]
+        }
+      ],
+      "https://support.ziprecruiter.com/": [
+        {
+          "search_query": "How do I reset my password?",
+          "url": "https://support.ziprecruiter.com/candidate/s/article/I-forgot-the-password-to-my-job-seeker-account-Password-reset-assistance",
+          "instructions": [
+            "Go to https://www.ziprecruiter.com/",
+            "Click Sign in in the upper right corner of the screen",
+            "Click I'm a job Seeker",
+            "Click Forgot password at the bottom",
+            "Enter your email address",
+            "Click Reset Password"
+          ]
+        }
+      ],
+      "https://support.piazza.com": [
+        {
+          "search_query": "How do I create a class?",
+          "url": "https://support.piazza.com/support/solutions/articles/48000616647-create-a-class",
+          "instructions": [
+            "Go to Piazza.com",
+            "Click the blue Professors and TAs Get Started button",
+            "Enter your school",
+            "Enter your class name for the correct term and click + Create a New Class:",
+            "Enter  your class name",
+            "Enter your class number",
+            "Click Create Class"
+          ]
+        }
+      ],
+      "https://www.nike.com/help": [
+        {
+          "search_query": "How do I reset my password?",
+          "url": "https://www.nike.com/help/a/forgot-password",
+          "instructions": [
+            "Go to Nike.com.",
+            "click Sign in in the upper right corner.",
+            "Click Forgot Password?",
+            "Enter the email address connected to your Nike Member profile and click “RESET.” We’ll email you instructions on how to reset your password."            
+          ]
+        }
+      ],
+      "https://leviscs.zendesk.com/": [
+        {
+          "search_query": "How do I add a shipping address?",
+          "url": "https://leviscs.zendesk.com/hc/en-us/articles/360025399631-Can-I-add-or-delete-a-shipping-or-billing-address-",
+          "instructions": [
+            "Click on My Account",
+            "Click on the Shipping Address section",
+            "Click ADD A NEW ADDRESS"
+          ]
+        }
+      ],
+      "https://www.wellsfargo.com/help/": [
+        {
+          "search_query": "How do I change my password?",
+          "url": "https://www.wellsfargo.com/help/online-banking/sign-on-faqs/",
+          "instructions": [
+            "Go to https://connect.secure.wellsfargo.com/auth/login/present?origin=cob&LOB=CONS",
+            "Click Change Username",
+            "Click Change Password"
+          ]
+        }
+      ],
+      "https://support.atlassian.com/": [
+        {
+          "search_query": "How do I create a new project?",
+          "url": "https://support.atlassian.com/jira-software-cloud/docs/create-a-new-project/",
+          "instructions": [
+            "Select Projects",
+            "Select Create project in the navigation.",
+            "Choose either a classic project or a next-gen project.",
+            "Give your project a name.",
+            "Select Create."
+          ]
+        }
+      ],
+      "https://www.ebay.com/help/": [
+        {
+          "search_query": "How do I sign up?",
+          "url": "https://www.ebay.com/help/account/signing-ebay-account/signing-ebay-account?id=4191",
+          "instructions": [
+            "Go to https://signup.ebay.com/pa/crte",
+            "Enter your First Name",
+            "Enter your Last Name",
+            "Enter your Email",
+            "Enter your Password",
+            "Click Create Account"
+          ]
+        }
+      ],
+      "https://faq.whatsapp.com/": [
+        {
+          "search_query": "How do I logout?",
+          "url": "https://faq.whatsapp.com/general/download-and-installation/how-to-log-in-or-out/",
+          "instructions": [
+            "Go to https://web.whatsapp.com/",
+            "Click Menu",
+            "Click Log out."
+          ]
+        }
+      ],
+      "https://help.yahoo.com/": [
+        {
+          "search_query": "How do I change my password?",
+          "url": "https://help.yahoo.com/kb/account/reset-yahoo-password-sln27051.html",
+          "instructions": [
+            "Go to https://login.yahoo.com/account/security?.lang=en-US&.intl=us&.src=yhelp",
+            "Click Change password.",
+           " Enter a new password.",
+            "Click Continue."
+          ]
+        }
+      ],
+      "https://www.help.tinder.com": [
+        {
+          "search_query": "How do I update my phone number?",
+          "url": "https://www.help.tinder.com/hc/en-us/articles/360005147211-I-need-to-update-my-phone-number",
+          "instructions": [
+            "Go to Tinder.com",
+            "Click the profile icon",
+           " Scroll to Account Settings",
+            "Click Phone Number > Update My Phone Number ",
+            "Enter your new phone number and follow steps for SMS verification " 
+            
+          ]
+        }
+      ],
+      "https://squareup.com/help/": [
+        {
+          "search_query": "How can I link a bank account?",
+          "url": "https://squareup.com/help/us/en/article/3896-link-and-edit-your-bank-account",
+          "instructions": [
+            "Go to https://squareup.com/dashboard/business/bank-accounts-overview",
+            "Click Account & Settings",
+            "Click Bank Accounts", 
+            "Click Add Bank Account",
+            "Enter your Routing # and Acoount #",
+            "Click Verify"
+          ]
+        }
+      ],
+      "https://www.tripadvisorsupport.com/": [
+        {
+          "search_query": "How can I report that my accommodation has temporarily closed?",
+          "url": "https://www.tripadvisorsupport.com/hc/en-us/articles/360044800594-How-can-I-report-that-my-accommodation-has-temporarily-closed-",
+          "instructions": [
+            "Sign into your Management Center.",
+            "From the top bar select “Manage listing” then click on “Name & description”.",
+            "The “General details” page will open. ",
+            "Toggle the selector to “on” in the corner of the right side of the “Mark your property as temporarily closed” box.",
+            "Select the date range for the temporary closure message to appear on your listing.",
+            "No need to click Submit."
+          ]
+        },
+        {
+          "search_query": "How can I update my business hours?",
+          "url": "https://www.tripadvisorsupport.com/hc/en-us/articles/360025540394-How-do-I-update-my-business-opening-hours-",
+          "instructions": [
+            "Log into your Management Center.",
+            "From the top menu, click “Manage Listing”.",
+            "Select “Hours” from the drop-down menu.",
+            "Update the existing hours or click the “Delete” icon beside the hours that you want to remove."
+          ]
+        },
+        {
+          "search_query": "How can I manage my reviews?",
+          "url": "https://www.tripadvisorsupport.com/hc/en-us/articles/219806687-How-can-I-edit-or-delete-a-Management-Response-",
+          "instructions": [
+            "Log in to the Management Center ",
+            "Under the “Reviews” tab in the top menu, click “Respond to Reviews”" ,
+            "Select the review with the Management Response you'd like to remove" ,
+            "Under “Response Published”, click “Delete Response” or the trash can icon"
+          ]
+        },
+        {
+          "search_query": "How can I update payment info related to my business?",
+          "url": "https://www.tripadvisorsupport.com/hc/en-us/articles/360021721434-How-can-I-update-payment-information-for-my-business-",
+          "instructions": [
+            "Log into your Management Center.",
+            "Hover over the “Help & Settings” menu at the top of the page, and click Billing and Payments.”",
+            "On the left-hand side, under “Billing Information,” click “Update.”",
+            "Update your method of payment or billing information and click “Save.”"
+          ]
+        },
+        {
+          "search_query": "How can I report my hotel has closed?",
+          "url": "https://www.tripadvisorsupport.com/hc/en-us/articles/219764027-How-can-I-report-that-my-hotel-has-closed-",
+          "instructions": [
+            "Sign into https://www.tripadvisor.com/Owners.",
+            "From the top bar select “Manage listing” then click on “Name & description”.",
+            "Click on “Listing Support” on the left menu.",
+            "Click on “Report Closure” and add a comment.",
+            "Click on “Report Closure” again to submit your request."
+          ]
+        }
+      ],
+      "https://www.yelp-support.com/": [
+        {
+          "search_query": "How do I report a review?",
+          "url": "https://www.yelp-support.com/article/How-do-I-report-a-review?l=en_US",
+          "instructions": [
+            "Locate the review in the Reviews section of your business account",
+            "Find the More Options button (the three dots) and click Report Review"
+          ]
+        },
+        {
+          "search_query": "How do I remove a review I posted?",
+          "url": "https://www.yelp-support.com/article/How-do-I-remove-a-review-that-I-posted?l=en_US",
+          "instructions": [
+            "Go to the Reviews section of your account",
+            "Click Remove Review (the trash can icon) below the review you would like to remove",
+            "Click Confirm"
+          ]
+        },        
+        {
+          "search_query": "How do I set which emails I receive from Yelp?",
+          "url": "https://www.yelp-support.com/article/How-do-I-set-which-emails-I-receive-from-Yelp?l=en_US",
+          "instructions": [
+            "Go to the Account Settings section of your account",
+            "Click Email / Notifications",
+            "Click the checkboxes to select which notifications you'd like to receive",
+            "Click Save Notification Settings"
+          ]
+        },
+        {
+          "search_query": "How do I sign up for Yelp?",
+          "url": "https://www.yelp-support.com/article/How-do-I-sign-up-for-Yelp?l=en_US",
+          "instructions": [
+            "Go to http://yelp.com/signup",
+            "Click Sign up with Facebook or enter your name, email address, password, and zip code and then click Sign Up",
+            "Follow the steps on the next pages to add a profile photo and find friends on Yelp"  
+          ]
+        },
+        {
+          "search_query": "How do I edit one of my reviews?",
+          "url": "https://www.yelp-support.com/article/How-do-I-edit-one-of-my-reviews?l=en_US",
+          "instructions": [
+            "Go to http://yelp.com/user_details_reviews_self",
+            "Click Edit review (the pencil icon) below the review you would like to edit",
+            "Edit the review text" ,
+            "Click Post to save your edited review "
+          ]
+        },
+        {
+          "search_query": "How do I edit one of my reviews?",
+          "url": "https://www.yelp-support.com/article/How-do-I-remove-credit-card-information-from-my-user-account?l=en_US",
+          "instructions": [
+            "Go to http://yelp.com/profile",
+            "Click Payment Information",
+            "Click the trash can icon to Delete"
+          ]
+        },
+        {
+          "search_query": "How do I unfriend someone?",
+          "url": "https://www.yelp-support.com/article/How-do-I-unfriend-someone-or-cancel-a-friend-invite?l=en_US",
+          "instructions": [
+            "Go to https://yelp.com/profile",
+            "Click Friends",
+           " Click the grey X to the right of the friend's name"
+            
+          ]
+        }
+      ],
+      "https://robinhood.com": [
+        {
+          "search_query": "How do I create an account?",
+          "url": "https://robinhood.com/us/en/support/articles/upgrading-to-gold/",
+          "instructions": [
+            "Tap the Account menu bar at the top right of the screen",
+            "Tap Robinhood Gold."
+          ]
+        }
+      ],
+      "https://help.instagram.com/": [
+        {
+          "search_query": "How do I create an account?",
+          "url": "https://help.instagram.com/155940534568753",
+          "instructions": [
+            "Go to instagram.com.",
+            "Click Sign up, enter your email address, create a username and password "
+          ]
+        },
+        {
+          "search_query": "How do I temporarily disable my account?",
+          "url": "https://www.facebook.com/help/instagram/728869160569983",
+          "instructions": [
+            "Log into instagram.com from a computer.",
+            "Click your profile picture in the top right and click Profile, then click Edit Profile.",
+            "Scroll down, then click Temporarily disable my account in the bottom right.",
+            "Select an option from the drop-down menu next to Why are you disabling your account? and re-enter your password.",
+            "Click Temporarily Disable Account."
+          ]
+        }
+      ],
+      "https://help.pinterest.com": [
+        {
+          "search_query": "How do I Log in to your personal or business account?",
+          "url": "https://help.pinterest.com/en/article/log-in-and-out-of-pinterest",
+          "instructions": [
+            "Go to pinterest.com/login",
+            "Enter your email address and password",
+            "Click Log in"
+          ]
+        },
+        {
+          "search_query": "How do I Log out to your personal or business account?",
+          "url": "https://help.pinterest.com/en/article/log-in-and-out-of-pinterest",
+          "instructions": [
+            "Click the directional chevron down icon at the top-right of the screen to open your menu",
+            "Click Log out"
+          ]
+        },
+        {
+          "search_query": "How do I add an accounts?",
+          "url": "https://help.pinterest.com/en/article/switch-between-accounts",
+          "instructions": [
+           " Click at the top of Pinterest",
+           " Select Add account",
+            "Enter your email and password then click Log in"
+          ]
+        },
+        {
+          "search_query": "How do I switch between accounts?",
+          "url": "https://help.pinterest.com/en/article/switch-between-accounts",
+          "instructions": [
+            "When you're logged into Pinterest, click  below your profile picture",
+            "Click on one of your other accounts to switch to that account"
+          ]
+        },
+        {
+          "search_query": "How do I change my email?",
+          "url": "https://help.pinterest.com/en/article/change-your-email",
+          "instructions": [
+            "Click  at the top of Pinterest to open your menu",
+            "Click Edit settings",
+            "Click Account settings on the left side of the screen",
+            "Enter your new email address in the Email Address field",
+            "Click Done"
+          ]
+        },
+        {
+          "search_query": "How do I reactive my account?",
+          "url": "https://help.pinterest.com/en/article/reactivate-your-account",
+          "instructions": [
+            "Go to pinterest.com/login",
+            "Enter the email and password associated with the account you want to reactivate",
+            "Click Log in"
+          ]
+        },
+        {
+          "search_query": "How do I reactive my account?",
+          "url": "https://help.pinterest.com/en/article/reactivate-your-account",
+          "instructions": [
+            "Go to pinterest.com/login",
+            "Click Continue with Facebook",
+            "Enter the email and password associated with your Facebook account",
+            "Click Continue"
+          ]
+        },
+        {
+          "search_query": "How do I create a pin from my photos?",
+          "url": "https://help.pinterest.com/en/article/create-a-pin-from-your-photos",
+          "instructions": [
+            "Log into your Pinterest account(opens in a new window) and click the plus icon at the bottom-right of your profile or home feed",
+            "Click Create a Pin",
+            "Drag and drop or click the directional arrow up circle icon to upload your image",
+            "Add a title, a description, and the destination link",
+            "Click Select above the title next to Save",
+            "Select the board you want to save to or click Create board to create a new one",
+            "Click Save"
+          ]
+        },
+        {
+          "search_query": "How do I reset my password?",
+          "url": "https://help.pinterest.com/en/article/reset-your-password",
+          "instructions": [
+            "Go to http://pinterest.com/password/reset",
+            "Enter your email, name, or username to find your account, then click Search",
+            "Click This is me next to your account to send a password reset link to your email inbox",
+            "Check the email address connected to your account for a password reset email",
+            "From the email, click Reset password and enter your new password",
+            "Click Change Password"
+          ]
+        },
+        {
+          "search_query": "How do I change my password?",
+          "url": "https://help.pinterest.com/en/article/reset-your-password",
+          "instructions": [
+           " Log into your https://www.pinterest.com/login",
+            "Click the directional chevron down icon at the top-right of your screen, then click Settings",
+            "Click Account settings from the left-side navigation",
+           " Click Change your password",
+            "Enter your old password followed by your new password",
+           " Click Change Password",
+            "Click Done"
+          ]
+        },
+        {
+          "search_query": "How do I hide a pin on my home feed?",
+          "url": "https://help.pinterest.com/en/article/hide-a-pin-on-your-home-feed",
+          "instructions": [
+            "Log into your Pinterest account",
+            "From your home feed, click the ellipsis icon in the bottom-right corner of the Pin",
+            "Click Hide Pin",
+            "Select a reason for hiding the Pin"
+          ]
+        },
+        {
+          "search_query": "How do I block someone?",
+          "url": "https://help.pinterest.com/en/article/block-or-unblock-someone",
+          "instructions": [
+            "Open the profile of the person you'd like to block",
+            "Click  on the left (FLAG BUTTON)",
+            "Click Block",
+            "Click OK to confirm"
+          ]
+        },
+        {
+          "search_query": "How do I stop getting emails?",
+          "url": "https://help.pinterest.com/en/article/want-to-stop-receiving-email",
+          "instructions": [
+            "Log into your https://www.pinterest.com/login and click the directional chevron down icon in the top-right corner",
+            "Select Settings",
+            "Click Notifications from the left-side navigation",
+            "Click Edit next to By email",
+            "Click Turn off all",
+            "Click Done at the top of the page"
+          ]
+        },
+        {
+          "search_query": "How do I find my account email?",
+          "url": "https://help.pinterest.com/en/article/find-your-account-email",
+          "instructions": [
+            "Click  at the top of Pinterest to open your menu",
+            "Click Edit settings",
+            "Click Account settings on the left side of the screen",
+            "Your email address will be listed under Basic information"
+          ]
+        },
+        {
+          "search_query": "How do I Remove your email from a Pinterest account?",
+          "url": "https://help.pinterest.com/en/article/someone-else-signed-up-with-your-email",
+          "instructions": [
+            "Open an email you received from Pinterest",
+            "Click Unsubscribe at the bottom of the email",
+            "Click Didn’t sign up for Pinterest? Let us know when Pinterest opens on the screen",
+            "Click Remove my email address"
+          ]
+        },
+        {
+          "search_query": "How do I update my search privacy?",
+          "url": "https://help.pinterest.com/en/article/update-your-search-privacy",
+          "instructions": [
+            "Click  at the top of Pinterest to open your menu (ELLIPSES)",
+           " Click Edit settings",
+            "Click Privacy and data on the left side of the screen",
+            "Under “Search Privacy”, check the box next to Hide your profile from search engines",
+            "Click Confirm",
+            "Click Done"
+          ]
+        },
+        {
+          "search_query": "How do I create an advertiser account?",
+          "url": "https://help.pinterest.com/en/business/article/create-an-advertiser-account",
+          "instructions": [
+            "From Pinterest, click Ads in the top left corner then select Overview to open the Ads Manager",
+            "Click  next to your name (ARROW BUTTON)",
+            "Click Create new ad account ",
+            "Enter a name for the ad account",
+            "Click Save"
+          ]
+        },
+        {
+          "search_query": "How do I create a campaign?",
+          "url": "https://help.pinterest.com/en/business/article/set-up-your-campaign",
+          "instructions": [
+            "Log into http://pinterest.com/business/create/",
+            "Click Ads at the top of the screen, then click Create ad",
+            "Select a goal and add your Campaign details",
+            "Click Continue to create your campaign "
+          ]
+        }
+      ],
+      "https://www.walmart.com/help/": [
+        {
+          "search_query": "Where is my order?",
+          "url": "https://www.walmart.com/help/article/How-do-I-track-an-order/f1b15863b8014cd28bc22af124103490",
+          "instructions": [
+            "Go to Walmart.com",
+            "Select the avatar icon in the upper-right corner",
+            "Select Track Order"
+          ]
+        },
+        {
+          "search_query": "How do I get a return label?",
+          "url": "https://www.walmart.com/help/article/how-do-i-get-a-return-label/11b7c4c42ff8423b8c47ab9bcf72807a",
+          "instructions": [
+            "Log in to your account.",
+            "In your Purchase History, scroll to the order you want to return.",
+            "Click Order Details.",
+            "Click Print Return Label next to the item's return date"
+          ]
+        },
+        {
+          "search_query": "How do I cancel or edit an order",
+          "url": "https://www.walmart.com/help/article/How-do-I-cancel-an-order/f501707862b64f67a3c22fa4e2405400",
+          "instructions": [
+            "In the upper-right corner of any Walmart.com page, click the Account icon.",
+            "Select Track Order.",
+            "Enter the email address used to place the order and the order number shown on your order confirmation email.",
+            "Click Cancel next to the item you wish to attempt to cancel."
+          ]
+        },
+        {
+          "search_query": "How do I reset my password?",
+          "url": "https://www.walmart.com/help/article/how-do-i-reset-my-walmart-com-password/fafc8033252745ac8ddae77b68d9f215",
+          "instructions": [
+            "Open the forgot password page.",
+            "Enter the email address registered to your Walmart.com account.",
+            "Select Request Verification Code.",
+            "Check your email for the code. Be sure to check your junk or spam folder.",
+            "Enter the code and a new password that you haven't used before.",
+            "Select Submit."
+          ]
+        },
+        {
+          "search_query": "How do I add a mobile number for pickup orders?",
+          "url": "https://www.walmart.com/help/article/add-or-modify-your-mobile-number-for-pickup-orders/daf47078e26b4277913bca996f76718e",
+          "instructions": [
+            "Add or change your mobile number by signing in to your account, then Account",
+            "In the correct order, select See Details",
+            "Next to Pickup Person, select Edit",
+            "Enter your mobile number and select Save"
+          ]
+        },
+        {
+          "search_query": "How do I create an account?",
+          "url": "https://www.walmart.com/help/article/create-an-account/205537a30a874c2baced847a73900b15?searchTitle=Search%20Results&title=Create%20an%20Account&locationQueryParams=%3Fkey%3Dcreate%20new%20account%26page%3D1",
+          "instructions": [
+           " Select the Account button in the upper-right corner of Walmart.com",
+            "Click Create an Account",
+           " Enter your name and email address on the sign-up screen",
+            "Create a password and confirm it",
+            "Select Create Account"
+          ]
+        },
+        {
+          "search_query": "How do I edit a payment",
+          "url": "https://www.walmart.com/help/article/edit-or-remove-a-payment-method/79f1e76ae07b4274a7654cdb29388e79",
+          "instructions": [
+            "Go to your account.",
+            "Select Payment Methods from the bar on the left side of the screen.",
+            "Select Edit next to the payment method you want to change, or Delete to remove a payment method."
+          ]
+        },
+        {
+          "search_query": "How do I edit a payment",
+          "url": "https://www.walmart.com/help/article/edit-or-remove-a-payment-method/79f1e76ae07b4274a7654cdb29388e79",
+          "instructions": [
+            "Go to your account.",
+            "Select Payment Methods from the bar on the left side of the screen.",
+            "Select Edit next to the payment method you want to change, or Delete to remove a payment method."
+          ]
+        }
+      ],
+      "https://www.uhc.com/": [
+        {
+          "search_query": "How do I register on myuhc.com",
+          "url": "https://www.uhc.com/individual-and-family/member-resources/frequently-asked-questions",
+          "instructions": [
+            "Enter the number on your health plan ID card.",
+            "Choose a username and password.",
+            "Enter an email address.",
+            "Enter a phone number or choose security questions."
+          ]
+        }
+      ],
+        "https://support.google.com/": [
+          {
+            "search_query": "Manage your device identity and protected content",
+            "url": "https://support.google.com/chrome/answer/4410268?co=GENIE.Platform%3DDesktop&hl=en&oco=0",
+            "instructions": [
+              "At the top right, click More More and then Settings.",
+              "Under Privacy and security, click Site settings.",
+              "Click Protected Content.",
+              "Turn off Allow sites to play protected content."
+            ]
+          }, 
+          {
+            "search_query": "Add or remove inbox categories & tabs in Gmail",
+            "url": "https://support.google.com/mail/answer/3094499?co=GENIE.Platform%3DDesktop&hl=en",
+            "instructions": [
+              "On your computer, open Gmail.",
+              "At the top right, click Settings Settings and then See all settings.",
+              "Click the Inbox tab.",
+              "In the Inbox type section, select Default. Note: To hide all tabs, select another inbox type.",
+              "In the Categories section, check the boxes of tabs you want to show. Note: You can't make new tabs; you can only show or hide existing ones.",
+              "Scroll to the bottom, then click Save Changes."
+            ]
+          },
+          {
+            "search_query": "Change or reset your password",
+            "url": "https://support.google.com/accounts/answer/41078?co=GENIE.Platform%3DDesktop&hl=en",
+            "instructions": [
+              "Open your Google Account. You might need to sign in.",
+              "Under Security, select Signing in to Google.",
+              "Choose Password. You might need to sign in again.",
+              "Enter your new password, then select Change Password."
+            ]
+          },
+          {
+            "search_query": "How do I create an account?",
+            "url": "https://support.google.com/mail/answer/56256?hl=en",
+            "instructions": [
+              "Go to the Google Account creation page.",
+             " Follow the steps on the screen to set up your account.",
+              "Use the account you created to sign in to Gmail."
+            ]
+          },
+          {
+            "search_query": "How do I add a signature?",
+            "url": "https://support.google.com/mail/answer/6562?co=GENIE.Platform%3DDesktop&hl=en",
+            "instructions": [
+              "On your computer, go to Gmail.",
+              "In the top right, click Settings Settings and then See all settings.",
+              "At the top, choose a settings page, such as General, Labels, or Inbox.",
+              "Make your changes.",
+              "After you're done with each page, click Save Changes at the bottom."
+            ]
+          },
+          {
+            "search_query": "How do I send confidential emails",
+            "url": "https://support.google.com/mail/answer/7674059?co=GENIE.Platform%3DDesktop&hl=en",
+            "instructions": [
+              "On your computer, go to Gmail.",
+             " Click Compose.",
+              "In the bottom right of the window, click Turn on confidential mode Turn on confidential mode.",
+              "Set an expiration date and passcode. These settings impact both the message text and any attachments." ,
+              "Click Save."
+            ]
+          },
+          {
+            "search_query": "How do I remove access early?",
+            "url": "https://support.google.com/mail/answer/7674059?co=GENIE.Platform%3DDesktop&hl=en",
+            "instructions": [
+              "On your computer, open Gmail.",
+              "On the left, click Sent.",
+              "Open the confidential email.",
+              "Click Remove access."
+            ]
+          },
+          {
+            "search_query": "How do I send feedback?",
+            "url": "https://support.google.com/mail/answer/9212652?co=GENIE.Platform%3DDesktop&hl=en",
+            "instructions": [
+              "Open Gmail.",
+              "In the top right, click Help Help and then Send feedback.",
+              "Type your comments into the box.",
+             " At the bottom right, click Send."
+            ]
+          },
+          {
+            "search_query": "How do I Search for your chat messages in Gmail?",
+            "url": "https://support.google.com/mail/answer/9966748?co=GENIE.Platform%3DDesktop&hl=en",
+            "instructions": [
+              "On your computer, go to Gmail.",
+              "At the top, in the search box, enter your search terms.",
+              "Click Enter", 
+              "Under the search box, click Chat.",
+              "Click the chat you want to open."
+            ]
+          },
+          {
+            "search_query": "How do I Get Google Workspace add-ons?",
+            "url": "https://support.google.com/mail/answer/7542474?hl=en",
+            "instructions": [
+              "On your computer, go to Gmail.",
+              "In the top right, click Settings Settingsand then Get add-ons.",
+              "Search for and select the tool you want to use with Gmail.",
+              "In the top right, click Install and then Continue.",
+              "Choose your account, then follow the steps on the screen."
+            ]
+          },
+          {
+            "search_query": "How do I remove Google Workspace add-ons?",
+            "url": "https://support.google.com/mail/answer/7542474?hl=en",
+            "instructions": [
+              "On your computer, go to Gmail.",
+              "In the top right, click Settings Settings and then See all settings.",
+              "Click the Add-ons tab.",
+              "In the Installed add-ons section, click Manage.",
+              "Click More More and then Remove."
+            ]
+          },
+          {
+            "search_query": "How do I Change your status on Gmail?",
+            "url": "https://support.google.com/mail/answer/9916566?co=GENIE.Platform%3DAndroid&hl=en",
+            "instructions": [
+              "On the top left, tap Menu Menu .",
+              "From your status indicator, tap Down arrow Down .",
+              "Choose how long you want to mute your notifications and appear as Do not disturb."
+            ]
+          },
+          {
+            "search_query": "How do I request a read receipt?",
+            "url": "https://support.google.com/mail/answer/9413651?hl=en",
+            "instructions": [
+              "On your computer, open Gmail.",
+" Click Compose.",
+"Compose your email as you normally would." ,
+"At the bottom right, click More options More send options and then Request read receipt." ,
+"Send your message."
+            ]
+          }
+        ],
+        "https://support.spotify.com": [
+          {
+            "search_query": "Change email address",
+            "url": "https://support.spotify.com/us/article/change-email-address/",
+            "instructions": [
+              "Log in to your account page.",
+              "Click EDIT PROFILE.",
+              "Under Email, enter your new email address.",
+              "Confirm your password.",
+              "Click SAVE PROFILE."
+            ]
+          }, 
+          {
+            "search_query": "How to log out",
+            "url": "https://support.spotify.com/us/article/how-to-log-out/",
+            "instructions": [
+              "Log in to your account page.",
+              "Click SIGN OUT EVERYWHERE." 
+            ]
+          }, 
+          {
+            "search_query": "Redeem a Spotify gift card",
+            "url": "https://support.spotify.com/us/article/spotify-gift-cards/",
+            "instructions": [
+              "Log in to spotify.com/redeem.",
+              "Enter the PIN on the back of the card, or the code from your receipt.",
+              "Click Redeem."
+            ]
+          }, 
+          {
+            "search_query": "View your receipts",
+            "url": "https://support.spotify.com/us/article/how-can-i-get-a-receipt-for-spotify/",
+            "instructions": [
+              "Log in to your account page.",
+              "Click Receipts in the menu on the left.",
+              "Click VIEW next to a transaction to see more details."
+            ]
+          }, 
+          {
+            "search_query": "Invite members to a family plan",
+            "url": "https://support.spotify.com/us/article/invite-or-remove-members-of-family-plan/",
+            "instructions": [
+              "Go to your account page.",
+              "Scroll down to Manage your family accounts.",
+              "Select the option to add or remove members."
+            ]
+          }, 
+          {
+            "search_query": "Personalize your playlist cover",
+            "url": "https://support.spotify.com/us/article/personalize-playlists/",
+            "instructions": [
+              "Click the playlist image.",
+              "In the Edit view, enter a playlist name and description.",
+              "Click CHOOSE IMAGE to upload a new cover image, or REPLACE IMAGE to replace an existing image.",
+              "Click SAVE."
+            ]
+          }, 
+          {
+            "search_query": "How can I recover a deleted playlist",
+            "url": "https://support.spotify.com/us/article/can-i-recover-a-deleted-playlist/",
+            "instructions": [
+              "Log in to your account page.",
+              "Click Recover playlists in the menu on the left. ",
+              "Click RESTORE by the playlist you want to recover.",
+              "Open Spotify and find the restored playlist at the bottom of your playlist collection."
+            ]
+          }, 
+          {
+            "search_query": "How do I cancel spotify",
+            "url": "https://support.spotify.com/us/article/how-to-cancel-your-subscription/",
+            "instructions": [
+              "Log in to your account page.",
+              "Under Your plan, click CHANGE PLAN",
+              "Scroll to Spotify Free and click CANCEL PREMIUM.",
+              "Continue through to the confirmation message." 
+            ]
+          }, 
+          {
+            "search_query": "How do I update spotify",
+            "url": "https://support.spotify.com/us/article/updating-spotify/",
+            "instructions": [
+              "Click the menu button with the blue dot .",
+              "Select Update Available. Restart Now." 
+            ]
+          }
+        ],
+        "https://www.amazon.com/gp/help/customer/display.html": [
+            {
+              "search_query": "Redeem a Gift Card",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201936940",
+              "instructions": [
+                "Locate the claim code.",
+                "Go to Your Account.",
+                "Click Apply a Gift Card to Your Account .",
+                "Enter your claim code and click Apply to Your Balance."
+              ]
+            }, 
+            {
+              "search_query": "Redeem an online Access Code",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GBD3WM89VCT74TUA",
+              "instructions": [
+                "Go to Your Games and Software Library.",
+                "Locate the code associated with your order.",
+                "Enter in the code exactly as it is shown within the redemption process on the appropriate device (computer, console, or handheld device)."                
+              ]
+            }, 
+            {
+              "search_query": "Sign Up for the Amazon Prime Free Trial",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201910190",
+              "instructions": [
+                "Go to Amazon Prime Free Trial.",
+                "Click Start your free trial."
+              ]
+            }, 
+            {
+              "search_query": "Cancel Items or Orders",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GSL37WQTJZUYA9QE",
+              "instructions": [
+                "Go to Your Orders and select the order you want to cancel.",
+                "Select the check box next to each item you want to remove from the order. To cancel the entire order, select all of the items.",
+                "Select Cancel checked items when finished."
+              ]
+            }, 
+            {
+              "search_query": "Change Your Account Settings",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=G3JHAKLM2QKM6NXS",
+              "instructions": [
+                "In Your Account, go to Login & security.",
+                "Next to the account information you'd like to update, select Edit.",
+                "Follow the on-screen instructions and select Save Changes.",
+                "After you've completed all your updates, select Done."
+              ]
+            }, 
+            {
+              "search_query": "Change Your 1-Click Settings",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201889370#:~:text=To%20change%20your%201%2DClick,will%20ship%20via%20Standard%20Shipping.",
+              "instructions": [
+                "Go to 1-Click Settings.",
+                "Click Make default located next to your address, then click Change next to the Nickname, Payment Method, or Shipping Method options.",
+                "Note: All 1-Click orders for items fulfilled by sellers other than Amazon.com will ship via Standard Shipping."
+              ]
+            }, 
+            {
+              "search_query": "Edit Your Browsing History",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GCLMGBYZLHE6JSCR",
+              "instructions": [
+                "Go to your Browsing History.",
+                "Select Remove from view below each item you'd like to remove. To remove all items, select Manage history and then select Remove all items from view."
+              ]
+            }, 
+            {
+              "search_query": "Delete your list",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201936690",
+              "instructions": [
+                "Go to Your Lists and select the list you want to delete.",
+                "On the list menu (...), click Manage Lists.",
+                "Click Delete.",
+                "Click Save Changes in the Manage Lists window to confirm."
+              ]
+            },
+            {
+              "search_query": "Track your package",
+              "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201910530",
+              "instructions": [
+                "Go to Your Orders.",
+                "Go to the order you want to track.",
+                "Click Track Package next to your order (if shipped separately)."
+              ]
+            }
+        ],
+        "https://learn.hellofurther.com": [
+          {
+            "search_query": "How can I set up Direct Deposit?",
+            "url": "https://learn.hellofurther.com/Individuals/Profile_and_Settings/Setting_Up_Direct_Deposit_for_Reimbursements",
+            "instructions": [
+              "Sign in at www.hellofurther.com.",              
+              "Click My Profile. ",
+              "Choose Payment and Banking from the menu.",
+              "On the Payments & Banking page, click Bank Accounts.",
+              "If you do not have a bank account set up, click Add Bank Account.",
+              "Enter the banking information for the account you wish to set up with Direct Deposit"
+            ]
+          }
+        ],
+        "https://stackoverflow.com/help": [
+          {
+            "search_query": "How do I add or remove login credentials from my account?",
+            "url": "https://stackoverflow.com/help/edit-credentials",
+            "instructions": [
+              "Go to https://stackoverflow.com/users/account-recovery",
+              "Enter your Email",
+              "Click Edit Profile and Settings",
+              "CLick My Logins",
+              "Click the remove link next to each login"
+            ]
+          }
+        ]
+    }
+}
