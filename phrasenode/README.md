@@ -34,9 +34,9 @@ To install dependencies:
   ```
 
 - Brew dependencies
-```
-xargs brew install < brew.txt
-```
+  ```
+  xargs brew install < brew.txt
+  ```
 
 
 Alternatively, use the docker image [`ppasupat/phrasenode`](https://hub.docker.com/r/ppasupat/phrasenode/)
