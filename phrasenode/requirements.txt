@@ -17,3 +17,5 @@ fabric==1.12.0
 pyhocon
 GitPython
 bottle
+SpeechRecognition
+PyAudio
