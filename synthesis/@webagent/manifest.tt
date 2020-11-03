@@ -9,7 +9,7 @@ class @webagent
   import loader from @org.thingpedia.v2();
   entity element #[has_ner=false] #_[description="Elements on page"]; 
   list query retrieve(out id: Entity(webagent:element),
-                     in descr: String #_[canonical={
+                     in req descr: String #_[canonical={
                          implicit_identity=true,
                          base=["description", "text"],
                          passive_verb=["containing", "about"]
@@ -18,33 +18,30 @@ class @webagent
                      in opt left: Entity(webagent:element),
                      in opt above: Entity(webagent:element),
                      in opt below: Entity(webagent:element),
-                     in opt location: Enum(top-left,top-right,bottom-left,bottom-right,top,left,right, bottom), 
-                     in opt type: Enum(button, link, input, checkbox, dropdown, image, icon, text),
-                     ;
+                     in opt location: Enum(top_left,top_right,bottom_left,bottom_right,top,left,right, bottom), 
+                     in opt type: Enum(button, link, input, checkbox, dropdown, image, icon, text)
+                     )
   #_[canonical=["element"]];
-  action click(element : Entity(webagent:element)
+  action click(in req element : Entity(webagent:element)
              #_[canonical={
                 preposition=["on"]
              }])
   #_[canonical=["click", "go to", "select"]];
-  action enter(element: Entity(webagent:element)
+  action enter(in req element: Entity(webagent:element)
              #_[canonical={
                 preposition=["in", "for"]
              }], 
-             text: String 
-             #_[canonical={
-               #NOTE: the user's ... 
-             }])
+             in req text: String)
   #_[canonical=["enter", "fill in", "type", "give", "insert"]];
-  action read(element : Entity(webagent:element))
+  action read(in req element : Entity(webagent:element))
   #_[canonical=["read", "return the value for", "get the"]];
-  action goto(website: String #_[canonical={
-co                         base=["website", "url", "page", "link"]
+  action goto(in req website: String #_[canonical={
+                         base=["website", "url", "page", "link"]
                      }] #[string_values="webagent:websites"])
   #_[canonical=["go to", "navigate to"]];
-  action ask(text_var: String)
+  action ask(in req text_var: String)
   #_[canonical=["ask"]];
-  action say(utterance: String #_[canonical={
+  action say(in req utterance: String #_[canonical={
                          base=["utterance", "information"]
                      }])
   #_[canonical=["say", "say to the user", "tell the user"]];
