@@ -9,11 +9,11 @@ class @webagent
   import loader from @org.thingpedia.v2();
   entity element #[has_ner=false] #_[description="Elements on page"]; 
   list query retrieve(out id: Entity(webagent:element),
-                     in req descr: String #_[canonical={
+                     in req description: String #_[canonical={
                          implicit_identity=true,
                          base=["description", "text"],
                          passive_verb=["containing", "about"]
-                     }]#[string_values="webagent:websites"],
+                     }]#[string_values="webagent:descriptions"],
                      in opt right: Entity(webagent:element),
                      in opt left: Entity(webagent:element),
                      in opt above: Entity(webagent:element),
