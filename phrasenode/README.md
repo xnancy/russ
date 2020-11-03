@@ -15,7 +15,7 @@ bash download_dataset.sh
 
 The code was developed in the following environment:
 
-- Python 2.7
+- Python 3.7
 - Pytorch 0.4.1
 - CUDA 9
 
