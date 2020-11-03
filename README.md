@@ -28,7 +28,9 @@ genienlp train --data /home/nancyxu97/SiteBot/synthesis/dataset --embeddings ./e
 ```
 See the training experiment spreadsheet here: https://docs.google.com/spreadsheets/d/1O7E0ipTqzBm8gXoxpoosVryC84wykes4OoQRM_rxdo0/edit?usp=sharing
 
-## To Typecheck Run: 
+## WebLang/ Typecheck :
+Learn about WebLang at: https://docs.google.com/spreadsheets/d/1QLZUi7MiYoHxIsGKfE2LspfgmEh00UzKuuHTwU-ZHUk/edit?usp=sharing
+
 ```
 genie typecheck path-to-file --dropped dropped --output out --thingpedia \@webagent/manifest.tt --cache typecheck-cache.txt --interactive
 ```
