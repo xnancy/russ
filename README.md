@@ -14,6 +14,7 @@ And run the following in order:
 - Run `npm install`
 - Run `npm link ../thingtalk`
 - Run `npm link` 
+- Restart the terminal 
 
 In the genie directory, run `ls -la node_modules` and make sure there is a symlink to the right thingtalk directory, and that both genie and thingtalk are on the right branch. May be necessary to run `npx make` if you screw up and need to remake without reinstalling all dependencies (ie you switch a branch).  
 
@@ -39,3 +40,6 @@ The file you wish you typecheck needs to be of the form (per line) :
 - don't use single quotes 
 - remove all special tokens such as emojis and trademark symbols 
 
+## Misc 
+### Splitting Train / Eval 
+Currently we run the synthesis 1M times which produces ~2M datapoints. Split 90/10 train/eval with something like `(head -1789594 > train.tsv; cat > eval.tsv) < synth1M-2.txt`
