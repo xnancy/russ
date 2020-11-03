@@ -1,0 +1,51 @@
+class @webagent
+#_[thingpedia_name="WebAgent"]
+#_[thingpedia_description="Call user with web"]
+#_[canonical="webagent"]
+#[license="BSD-3-Clause"]
+#[license_gplcompatible=true]
+#_[description="This is your call agent"]
+{
+  import loader from @org.thingpedia.v2();
+  entity element #[has_ner=false] #_[description="Elements on page"]; 
+  list query retrieve(out id: Entity(webagent:element),
+                     in descr: String #_[canonical={
+                         implicit_identity=true,
+                         base=["description", "text"],
+                         passive_verb=["containing", "about"]
+                     }]#[string_values="webagent:websites"],
+                     in opt right: Entity(webagent:element),
+                     in opt left: Entity(webagent:element),
+                     in opt above: Entity(webagent:element),
+                     in opt below: Entity(webagent:element),
+                     in opt location: Enum(top-left,top-right,bottom-left,bottom-right,top,left,right, bottom), 
+                     in opt type: Enum(button, link, input, checkbox, dropdown, image, icon, text),
+                     ;
+  #_[canonical=["element"]];
+  action click(element : Entity(webagent:element)
+             #_[canonical={
+                preposition=["on"]
+             }])
+  #_[canonical=["click", "go to", "select"]];
+  action enter(element: Entity(webagent:element)
+             #_[canonical={
+                preposition=["in", "for"]
+             }], 
+             text: String 
+             #_[canonical={
+               #NOTE: the user's ... 
+             }])
+  #_[canonical=["enter", "fill in", "type", "give", "insert"]];
+  action read(element : Entity(webagent:element))
+  #_[canonical=["read", "return the value for", "get the"]];
+  action goto(website: String #_[canonical={
+co                         base=["website", "url", "page", "link"]
+                     }] #[string_values="webagent:websites"])
+  #_[canonical=["go to", "navigate to"]];
+  action ask(text_var: String)
+  #_[canonical=["ask"]];
+  action say(utterance: String #_[canonical={
+                         base=["utterance", "information"]
+                     }])
+  #_[canonical=["say", "say to the user", "tell the user"]];
+}

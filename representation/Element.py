@@ -1,8 +1,38 @@
+from enum import Enum, auto 
+
+class Location(Enum):
+    top_left = 'top_left'
+    top_right = 'top_right'
+    bottom_left = 'bottom_left'
+    bottom_right = 'bottom_right'
+    top = 'top'
+    bottom = 'bottom'
+    left = 'left'
+    right = 'right'
+    none = ''
+
+class Type(Enum):
+    button = 'button'
+    link = 'link'
+    input_el = 'input'
+    checkbox = 'checkbox'
+    dropdown = 'dropdown'
+    image = 'image'
+    icon = 'icon'
+    text = 'text'
+    none = ''
+    
 class Element:
 # get the data and compute the additional representations here
     def __init__(self, attrs, embedding_model):
         # print (attrs)
-        self.attributes = ''
+        self.location = Location.NONE
+        self.type = Type.NONE
+        self.right = []
+        self.left = [] 
+        self.bottom = [] 
+        self.above = [] 
+        self.self.attributes = ''
         self.selector = ''
         self.text = ''
         self.class_id = ''
