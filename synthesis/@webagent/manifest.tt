@@ -9,7 +9,7 @@ class @webagent
   import loader from @org.thingpedia.v2();
   entity element #[has_ner=false] #_[description="Elements on page"]; 
   list query retrieve(out id: Entity(webagent:element),
-                     in req description: String #_[canonical={
+                     in opt description: String #_[canonical={
                          implicit_identity=true,
                          base=["description", "text"],
                          passive_verb=["containing", "about"]
@@ -39,9 +39,9 @@ class @webagent
                          base=["website", "url", "page", "link"]
                      }] #[string_values="webagent:websites"])
   #_[canonical=["go to", "navigate to"]];
-  action ask(in req text_var: String)
+  action ask(in req text: String)
   #_[canonical=["ask"]];
-  action say(in req utterance: String #_[canonical={
+  action say(in req text: String #_[canonical={
                          base=["utterance", "information"]
                      }])
   #_[canonical=["say", "say to the user", "tell the user"]];
