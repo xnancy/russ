@@ -33,6 +33,12 @@ To install dependencies:
   pip install -r requirements.txt
   ```
 
+- Brew dependencies
+```
+xargs brew install < brew.txt
+```
+
+
 Alternatively, use the docker image [`ppasupat/phrasenode`](https://hub.docker.com/r/ppasupat/phrasenode/)
 For latest image: `docker pull ppasupat/phrasenode:1.06`
 
