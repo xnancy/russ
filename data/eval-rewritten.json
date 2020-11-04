@@ -75,16 +75,20 @@
     ],
     "https://leviscs.zendesk.com/": [
       {
-        "search_query": "How do I add a shipping address?",
+        "search_query": "How do I change my name?",
         "url": "https://leviscs.zendesk.com/hc/en-us/articles/360025399631-Can-I-add-or-delete-a-shipping-or-billing-address-",
         "instructions": [
-          "Go to https://www.levi.com/US/en_US/my-account/address-book",
+          "Go to https://www.levi.com/US/en_US/my-account/update-profile",
           "Ask user for email",
           "Enter user-selected email in text field below Email* text",
           "Ask user for password",
           "Enter user-selected password in text field below Password* text",
           "Click Log In",
-          "Click ADD A NEW ADDRESS"
+          "Ask user for First Name",
+          "Enter user-selcted first name in text field below First Name*",
+          "Ask user for Last Name",
+          "Enter user-selcted last name in  text field below Last Name*",
+          "Click the Update button"
         ]
       }
     ],
