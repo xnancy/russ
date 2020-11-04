@@ -29,6 +29,11 @@ class WebDriver:
 		# props = await elem.getProperties()
 		# print(props, 'hi')
 		return elem
+	
+	async def getElementFromId(self, idParam):
+		elem = await self.page.waitForSelector(f'[id="{idParam}"]')
+		return elem
+		
 
 
 
