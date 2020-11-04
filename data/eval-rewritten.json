@@ -1,0 +1,1128 @@
+{
+  "website": {
+    "https://support.crytivo.com": [
+      {
+        "search_query": "How do I reset my password?",
+        "url": "https://support.crytivo.com/article/18-how-do-i-reset-my-password",
+        "instructions": [
+          "Go to http://crytivo.com/",
+          "Click Sign In in the upper right corner",
+          "Click Forgot Password",
+          "Ask user for email",
+          "Enter user-selected email in text field with Enter your email",
+          "Click RESET PASSWORD",
+          "Read to user: check your email for a reset password link"
+        ]
+      }
+    ],
+    "https://tradalaxy.zendesk.com": [
+      {
+        "search_query": "How do I reset my password?",
+        "url": "https://tradalaxy.zendesk.com/hc/en-us/articles/360030871671-Sign-In-to-Your-Account-and-Reset-Password",
+        "instructions": [
+          "Go to https://my.tradalaxy.com/login",
+          "Click Forgot Password in the 'Password to Tradalaxy' field",
+          "Ask user for email",
+          "Enter user-selected email in text field with Email",
+          "Click RESET PASSWORD"
+        ]
+      }
+    ],
+    "https://support.ziprecruiter.com/": [
+      {
+        "search_query": "How do I reset my password?",
+        "url": "https://support.ziprecruiter.com/candidate/s/article/I-forgot-the-password-to-my-job-seeker-account-Password-reset-assistance",
+        "instructions": [
+          "Go to https://www.ziprecruiter.com/",
+          "Click Sign in in the upper right corner of the screen",
+          "Click I'm a job Seeker",
+          "Click Forgot password at the bottom",
+          "Ask user for email address",
+          "Click Reset Password"
+        ]
+      }
+    ],
+    "https://support.piazza.com": [
+      {
+        "search_query": "How do I create a class?",
+        "url": "https://support.piazza.com/support/solutions/articles/48000616647-create-a-class",
+        "instructions": [
+          "Go to Piazza.com",
+          "Click the blue Professors and TAs Get Started button",
+          "Ask user for school",
+          "Enter user-selected school in your school text field",
+          "Ask user for class name",
+          "Enter user-selected class name in class name text field",
+          "Ask user for class number",
+          "Enter user-selected class number in text field with class number",
+          "Click Create Class"
+        ]
+      }
+    ],
+    "https://www.nike.com/help": [
+      {
+        "search_query": "How do I reset my password?",
+        "url": "https://www.nike.com/help/a/forgot-password",
+        "instructions": [
+          "Go to Nike.com.",
+          "click Sign in in the upper right corner.",
+          "Click Forgot Password?",
+          "Ask user for email address",
+          "Click RESET",
+          "Read to user: Tell user to check email"
+        ]
+      }
+    ],
+    "https://leviscs.zendesk.com/": [
+      {
+        "search_query": "How do I add a shipping address?",
+        "url": "https://leviscs.zendesk.com/hc/en-us/articles/360025399631-Can-I-add-or-delete-a-shipping-or-billing-address-",
+        "instructions": [
+          "Go to https://www.levi.com/US/en_US/my-account/address-book",
+          "Ask user for email",
+          "Enter user-selected email in text field below Email* text",
+          "Ask user for password",
+          "Enter user-selected password in text field below Password* text",
+          "Click Log In",
+          "Click ADD A NEW ADDRESS"
+        ]
+      }
+    ],
+    "https://www.wellsfargo.com/help/": [
+      {
+        "search_query": "How do I change my password?",
+        "url": "https://www.wellsfargo.com/help/online-banking/sign-on-faqs/",
+        "instructions": [
+          "Go to https://connect.secure.wellsfargo.com/auth/login/present?origin=cob&LOB=CONS",
+          "Ask user for username",
+          "Enter user-selected username in text field with username",
+          "Ask user for password",
+          "Enter user-selected password in text field with Password",
+          "Click Change Password"
+        ]
+      }
+    ],
+    "https://support.atlassian.com/": [
+      {
+        "search_query": "How do I create a new project?",
+        "url": "https://support.atlassian.com/jira-software-cloud/docs/create-a-new-project/",
+        "instructions": [
+          "Select Projects",
+          "Select Create project",
+          "Ask user to choose a classic project or a next-gen project.",
+          "Ask user for a project name",
+          "Select Create."
+        ]
+      }
+    ],
+    "https://www.ebay.com/help/": [
+      {
+        "search_query": "How do I sign up?",
+        "url": "https://www.ebay.com/help/account/signing-ebay-account/signing-ebay-account?id=4191",
+        "instructions": [
+          "Go to https://signup.ebay.com/pa/crte",
+          "Ask user for First name",
+          "Enter user-selected First Name in text field with First Name",
+          "Ask user for Last Name",
+          "Enter user-selected Last Name in text field with Last Name",
+          "Ask user for Email",
+          "Enter user-selected Email in text field with Email",
+          "Ask user for Password",
+          "Enter user-selected Password in text field with Password",
+          "Click Create Account"
+        ]
+      }
+    ],
+    "https://help.yahoo.com/": [
+      {
+        "search_query": "How do I change my password?",
+        "url": "https://help.yahoo.com/kb/account/reset-yahoo-password-sln27051.html",
+        "instructions": [
+          "Go to https://login.yahoo.com/account/security?.lang=en-US&.intl=us&.src=yhelp",
+          "Click Change password.",
+         " Enter a new password.",
+          "Click Continue."
+        ]
+      }
+    ],
+    "https://squareup.com/help/": [
+      {
+        "search_query": "How can I link a bank account?",
+        "url": "https://squareup.com/help/us/en/article/3896-link-and-edit-your-bank-account",
+        "instructions": [
+          "Go to https://squareup.com/dashboard/business/bank-accounts-overview",
+          "Ask user for Email Address",
+          "Ask user for Email Address",
+          "Enter user-selected Email Address in text field with Email Address",
+          "Ask user for Password",
+          "Enter user-selected Password in text field with Password",
+          "Click Sign in",
+          "Click Bank Accounts", 
+          "Click Add Bank Account",
+          "Ask user for Routing #",
+          "Ask usr for Account #",
+          "Click Verify"
+        ]
+      }
+    ],
+    "https://www.tripadvisorsupport.com/": [
+      {
+        "search_query": "How can I report that my accommodation has temporarily closed?",
+        "url": "https://www.tripadvisorsupport.com/hc/en-us/articles/360044800594-How-can-I-report-that-my-accommodation-has-temporarily-closed-",
+        "instructions": [
+          "Go to https://www.tripadvisor.com/Owners",
+          "Click Sign in",
+          "Click continue with email",
+          "Click Log in",
+          "Ask User for email",
+          "Enter user-selected email in the text field with Email",
+          "Ask user for password",
+          "Enter user-selected password in the text field with Password",
+          "Click Login",
+          "Enter user-selected password in the text field with Password",
+          "From the top bar select “Manage listing” then click on “Name & description”.",
+          "The “General details” page will open. ",
+          "Toggle the selector to “on” in the corner of the right side of the “Mark your property as temporarily closed” box.",
+          "Select the date range for the temporary closure message to appear on your listing.",
+          "No need to click Submit."
+        ]
+      },
+      {
+        "search_query": "How can I update my business hours?",
+        "url": "https://www.tripadvisorsupport.com/hc/en-us/articles/360025540394-How-do-I-update-my-business-opening-hours-",
+        "instructions": [
+          "Go to https://www.tripadvisor.com/Owners",
+          "Click Sign in",
+          "Click continue with email",
+          "Click Log in",
+          "Ask User for email",
+          "Enter user-selected email in the text field with Email",
+          "Ask user for password",
+          "Enter user-selected password in the text field with Password",
+          "Click Login",
+          "From the top menu, click “Manage Listing”.",
+          "Select “Hours” from the drop-down menu.",
+          "Update the existing hours or click the “Delete” icon beside the hours that you want to remove."
+        ]
+      },
+      {
+        "search_query": "How can I manage my reviews?",
+        "url": "https://www.tripadvisorsupport.com/hc/en-us/articles/219806687-How-can-I-edit-or-delete-a-Management-Response-",
+        "instructions": [
+          "Go to https://www.tripadvisor.com/Owners",
+          "Click Sign in",
+          "Click continue with email",
+          "Click Log in",
+          "Ask User for email",
+          "Enter user-selected email in the text field with Email",
+          "Ask user for password",
+          "Enter user-selected password in the text field with Password",
+          "Click Login",
+          "Under the “Reviews” tab in the top menu, click “Respond to Reviews”" ,
+          "Select the review with the Management Response you'd like to remove" ,
+          "Under “Response Published”, click “Delete Response” or the trash can icon"
+        ]
+      },
+      {
+        "search_query": "How can I update payment info related to my business?",
+        "url": "https://www.tripadvisorsupport.com/hc/en-us/articles/360021721434-How-can-I-update-payment-information-for-my-business-",
+        "instructions": [
+          "Go to https://www.tripadvisor.com/Owners",
+          "Click Sign in",
+          "Click continue with email",
+          "Click Log in",
+          "Ask User for email",
+          "Enter user-selected email in the text field with Email",
+          "Ask user for password",
+          "Enter user-selected password in the text field with Password",
+          "Click Login",
+          "Hover over the “Help & Settings” menu at the top of the page, and click Billing and Payments.”",
+          "On the left-hand side, under “Billing Information,” click “Update.”",
+          "Update your method of payment or billing information and click “Save.”"
+        ]
+      },
+      {
+        "search_query": "How can I report my hotel has closed?",
+        "url": "https://www.tripadvisorsupport.com/hc/en-us/articles/219764027-How-can-I-report-that-my-hotel-has-closed-",
+        "instructions": [
+          "Go to https://www.tripadvisor.com/Owners",
+          "Click Sign in",
+          "Click continue with email",
+          "Click Log in",
+          "Ask User for email",
+          "Enter user-selected email in the text field with Email",
+          "Ask user for password",
+          "Enter user-selected password in the text field with Password",
+          "Click Login",
+          "From the top bar select “Manage listing” then click on “Name & description”.",
+          "Click on “Listing Support” on the left menu.",
+          "Click on “Report Closure” and add a comment.",
+          "Click on “Report Closure” again to submit your request."
+        ]
+      }
+    ],
+    "https://www.yelp-support.com/": [
+      {
+        "search_query": "How do I remove a review I posted?",
+        "url": "https://www.yelp-support.com/article/How-do-I-remove-a-review-that-I-posted?l=en_US",
+        "instructions": [
+          "Go to http://yelp.com/user_details_reviews_self",
+          "Ask User for email",
+          "Enter user-selected email in the text field with Email",
+          "Ask user for password",
+          "Enter user-selected password in the text field with Password",
+          "Click Log In",
+          "Ask user for the Review to remove",
+          "Click Remove Review below user-selected Review to remove",
+          "Click Confirm"
+        ]
+      },        
+      {
+        "search_query": "How do I set which emails I receive from Yelp?",
+        "url": "https://www.yelp-support.com/article/How-do-I-set-which-emails-I-receive-from-Yelp?l=en_US",
+        "instructions": [
+          "Go to https://yelp.com/profile",
+          "Ask User for email",
+          "Enter user-selected email in the text field with Email",
+          "Ask user for password",
+          "Enter user-selected password in the text field with Password",
+          "Click Email / Notifications",
+          "Ask user for notifications they'd like to receive",
+          "Click the checkboxes next to the user-selected notifications you'd like to receive",
+          "Click Save Notification Settings"
+        ]
+      },
+      {
+        "search_query": "How do I sign up for Yelp?",
+        "url": "https://www.yelp-support.com/article/How-do-I-sign-up-for-Yelp?l=en_US",
+        "instructions": [
+          "Go to http://yelp.com/signup",
+          "Ask user for name",
+          "Enter name in text field with name text",
+          "Ask user for Email Address",
+          "Enter user-selected Email Address in text field with Email Address text",
+          "Ask user for Password",
+          "Enter user-selected Password in text field with Password text",
+          "Click Sign Up"
+        ]
+      },
+      {
+        "search_query": "How do I edit one of my reviews?",
+        "url": "https://www.yelp-support.com/article/How-do-I-edit-one-of-my-reviews?l=en_US",
+        "instructions": [
+          "Go to http://yelp.com/user_details_reviews_self",
+          "Ask User for email",
+          "Enter user-selected email in the text field with Email",
+          "Ask user for password",
+          "Enter user-selected password in the text field with Password",
+          "Ask user for review you would like to edit",
+          "Click Edit review for user-selected review you would like to edit",
+          "Ask user for text to replace",
+          "Enter user-input text to replace",
+          "Click Post"
+        ]
+      },
+      {
+        "search_query": "How do I unfriend someone?",
+        "url": "https://www.yelp-support.com/article/How-do-I-unfriend-someone-or-cancel-a-friend-invite?l=en_US",
+        "instructions": [
+          "Go to https://yelp.com/profile",
+          "Ask User for email",
+          "Enter user-selected email in the text field with Email",
+          "Ask user for password",
+          "Enter user-selected password in the text field with Password",
+          "Click Friends",
+          "Ask user for name of friend",
+          "Click the grey X to the right of the user-selected friend"
+          
+        ]
+      }
+    ],
+    "https://robinhood.com": [
+      {
+        "search_query": "How do I create an account?",
+        "url": "https://robinhood.com/us/en/support/articles/upgrading-to-gold/",
+        "instructions": [
+          "Go to https://www.robinhood.com",
+          "Click Log in",
+          "Ask User for Email or Username",
+          "Enter user-selected Email or Username in the text field under Email text",
+          "Ask user for password",
+          "Enter user-selected password in the text field under Password text",
+          "Click Sign In",
+          "Click the Account menu bar at the top right of the screen",
+          "Click Robinhood Gold."
+        ]
+      }
+    ],
+    "https://help.instagram.com/": [
+      {
+        "search_query": "How do I create an account?",
+        "url": "https://help.instagram.com/155940534568753",
+        "instructions": [
+          "Go to instagram.com.",
+          "Click Sign Up",
+          "Ask user for Email Address",
+          "Enter user-selected Email Address in text field with Email Address",
+          "Ask user for username", 
+          "Enter user-selected username in text field with username", 
+          "Ask user for password",
+          "Enter password in text field with password"
+        ]
+      }
+    ],
+    "https://help.pinterest.com": [
+      {
+        "search_query": "How do I Log in to your personal or business account?",
+        "url": "https://help.pinterest.com/en/article/log-in-and-out-of-pinterest",
+        "instructions": [
+          "Go to pinterest.com/login",
+          "Ask user for email Address",
+          "Enter user-selected Email Address in text field with Email Address text",
+          "Ask user for Password",
+          "Enter user-selected password in text field with password text",
+          "Click Log in"
+        ]
+      },
+      {
+        "search_query": "How do I Log out to your personal or business account?",
+        "url": "https://help.pinterest.com/en/article/log-in-and-out-of-pinterest",
+        "instructions": [
+          "Go to pinterest.com",
+          "Ask user for email Address",
+          "Enter user-selected Email Address in text field with Email Address text",
+          "Ask user for Password",
+          "Enter user-selected password in text field with password text",
+          "Click Log in",
+          "Click the directional chevron down icon at the top-right of the screen to open your menu",
+          "Click Log out"
+        ]
+      },
+      {
+        "search_query": "How do I add an accounts?",
+        "url": "https://help.pinterest.com/en/article/switch-between-accounts",
+        "instructions": [
+          "Go to pinterest.com/login",
+          "Ask user for email Address",
+          "Enter user-selected Email Address in text field with Email Address text",
+          "Ask user for Password",
+          "Enter user-selected password in text field with password text",
+          "Click Log in",
+          "Click the directional chevron down icon at the top-right of the screen to open your menu",
+         " Select Add Another Account",
+         "Ask user for email",
+         "Enter user-selected email in the text field with email",
+         "Ask user for password",
+         "Enter user-selected password in text field with password",
+         "Click Log in"
+        ]
+      },
+      {
+        "search_query": "How do I change my email?",
+        "url": "https://help.pinterest.com/en/article/change-your-email",
+        "instructions": [
+          "Go to pinterest.com",
+          "Ask user for email Address",
+          "Enter user-selected Email Address in text field with Email Address text",
+          "Ask user for Password",
+          "Enter user-selected password in text field with password text",
+          "Click Log in",
+          "Click the directional chevron down icon at the top-right of the screen to open your menu",
+          "Click Settings",
+          "Click Account settings on the left side of the screen",
+          "Ask user for new email address",
+          "Enter user-selected new email address in text field with Email Address",
+          "Click Done"
+        ]
+      },
+      {
+        "search_query": "How do I reactive my account?",
+        "url": "https://help.pinterest.com/en/article/reactivate-your-account",
+        "instructions": [
+          "Go to pinterest.com/login",
+          "Ask user for email they want to reactivate",
+          "Enter user-selected email in text field with Email address",
+          "Ask user for password",
+          "Enter user-selected password in text field with Password",
+          "Click Log in"
+        ]
+      },
+      {
+        "search_query": "How do I reset my password?",
+        "url": "https://help.pinterest.com/en/article/reset-your-password",
+        "instructions": [
+          "Go to http://pinterest.com/password/reset",
+          "Ask user for name or, username",
+          "Enter your name, or username in text field",
+          "Click Search",
+          "Click This is me",
+          "Read to User: Check the email address connected to your account for a password reset email"
+        ]
+      },
+      {
+        "search_query": "How do I reset my password?",
+        "url": "https://help.pinterest.com/en/article/reset-your-password",
+        "instructions": [
+          "Go to http://pinterest.com/password/reset",
+          "Ask user for email",
+          "Enter your email in text field",
+          "Click Search",
+          "Click Send a password reset email",
+          "Read to User: Check the email address connected to your account for a password reset email"
+        ]
+      },
+      {
+        "search_query": "How do I change my password?",
+        "url": "https://help.pinterest.com/en/article/reset-your-password",
+        "instructions": [
+          "Go to pinterest.com",
+          "Ask user for email Address",
+          "Enter user-selected Email Address in text field with Email Address text",
+          "Ask user for Password",
+          "Enter user-selected password in text field with password text",
+          "Click Log in",
+          "Click the directional chevron down icon at the top-right of the screen to open your menu",
+          "Click Settings",
+          "Click Account settings from the left-side navigation",
+         " Click Change your password",
+         "Ask user for old password",
+         "Enter old password in text field with old password",
+         "Ask user for new password",
+         "Enter old password in text field with new password",
+         " Click Change Password",
+          "Click Done"
+        ]
+      },
+      {
+        "search_query": "How do I hide a pin on my home feed?",
+        "url": "https://help.pinterest.com/en/article/hide-a-pin-on-your-home-feed",
+        "instructions": [
+          "Go to pinterest.com",
+          "Ask user for email Address",
+          "Enter user-selected Email Address in text field with Email Address text",
+          "Ask user for Password",
+          "Enter user-selected password in text field with password text",
+          "Click Log in",
+          "Click the ellipses in the bottom-right corner of the Pin",
+          "Click Hide Pin",
+          "Ask user for reason for hiding pin",
+          "Select user-selected reason for hiding the Pin"
+        ]
+      },
+      {
+        "search_query": "How do I block someone?",
+        "url": "https://help.pinterest.com/en/article/block-or-unblock-someone",
+        "instructions": [
+          "Go to pinterest.com",
+          "Ask user for email Address",
+          "Enter user-selected Email Address in text field with Email Address text",
+          "Ask user for Password",
+          "Enter user-selected password in text field with password text",
+          "Click Log in",
+          "Ask user name of profile",
+          "Enter user-selected name of profile in search bar textfield",
+          "Click on first account",
+          "Click Block",
+          "Click OK"
+        ]
+      },
+      {
+        "search_query": "How do I stop getting emails?",
+        "url": "https://help.pinterest.com/en/article/want-to-stop-receiving-email",
+        "instructions": [
+          "Go to pinterest.com",
+          "Ask user for email Address",
+          "Enter user-selected Email Address in text field with Email Address text",
+          "Ask user for Password",
+          "Enter user-selected password in text field with password text",
+          "Click Log in",
+          "click the directional chevron down icon in the top-right corner",
+          "Click Settings",
+          "Click Notifications from the left-side navigation",
+          "Click Edit next to By email",
+          "Click Turn off all",
+          "Click Done at the top of the page"
+        ]
+      },
+      {
+        "search_query": "How do I find my account email?",
+        "url": "https://help.pinterest.com/en/article/find-your-account-email",
+        "instructions": [
+          "Go to pinterest.com",
+          "Ask user for email Address",
+          "Enter user-selected Email Address in text field with Email Address text",
+          "Ask user for Password",
+          "Enter user-selected password in text field with password text",
+          "Click Log in",
+          "click the directional chevron down icon in the top-right corner",
+          "Click Settings",
+          "Click Account settings",
+          "read to user: email address found under basic information"
+        ]
+      },
+      {
+        "search_query": "How do I update my search privacy?",
+        "url": "https://help.pinterest.com/en/article/update-your-search-privacy",
+        "instructions": [
+          "Go to pinterest.com",
+          "Ask user for email Address",
+          "Enter user-selected Email Address in text field with Email Address text",
+          "Ask user for Password",
+          "Enter user-selected password in text field with password text",
+          "Click Log in",
+          "Click the ellipses at the top of Pinterest",
+         " Click Settings",
+          "Click Privacy and data",
+          "Click the check box next to Hide your profile from search engines",
+          "Click I understand",
+          "Click Done"
+        ]
+      },
+      {
+        "search_query": "How do I create an advertiser account?",
+        "url": "https://help.pinterest.com/en/business/article/create-an-advertiser-account",
+        "instructions": [
+          "Go to pinterest.com",
+          "Ask user for email Address",
+          "Enter user-selected Email Address in text field with Email Address text",
+          "Ask user for Password",
+          "Enter user-selected password in text field with password text",
+          "Click Log in",
+          "Click Ads in the top left corner",
+          "select Overview",
+          "Click Arrow button next to your name",
+          "Click Create new ad account ",
+          "Ask user for a name",
+          "Enter the user-selected name in text field with name",
+          "Click Save"
+        ]
+      },
+      {
+        "search_query": "How do I create a campaign?",
+        "url": "https://help.pinterest.com/en/business/article/set-up-your-campaign",
+        "instructions": [
+          "Log into http://pinterest.com/business/create/",
+          "Ask user for email Address",
+          "Enter user-selected Email Address in text field with Email Address text",
+          "Ask user for Password",
+          "Enter user-selected password in text field with password text",
+          "Click Log in",
+          "Click Ads at the top of the screen",
+          "click Create ad",
+          "Ask user for goal",
+          "Select user-selcted goal",
+          "Click Continue "
+        ]
+      }
+    ],
+    "https://www.walmart.com/help/": [
+      {
+        "search_query": "Where is my order?",
+        "url": "https://www.walmart.com/help/article/How-do-I-track-an-order/f1b15863b8014cd28bc22af124103490",
+        "instructions": [
+          "Go to https://www.walmart.com/",
+          "Click Account",
+          "Select Track Orders"
+        ]
+      },
+      {
+        "search_query": "How do I get a return label?",
+        "url": "https://www.walmart.com/help/article/how-do-i-get-a-return-label/11b7c4c42ff8423b8c47ab9bcf72807a",
+        "instructions": [
+          "Go to https://www.walmart.com/account/",
+          "Ask user for email address",
+          "enter user-selected email address in text field with email address (required)",
+          "Ask user for password",
+          "Enter user-selected password in text field with password text",
+          "Click Sign in",
+          "Click Walmart.com purchase history",
+          "Ask user for order you want to return",
+          "Click order detials next to user-selected order you want to return",
+          "Click Order Details.",
+          "Click Print Return Label next to the user selected item's return date"
+        ]
+      },
+      {
+        "search_query": "How do I cancel or edit an order",
+        "url": "https://www.walmart.com/help/article/How-do-I-cancel-an-order/f501707862b64f67a3c22fa4e2405400",
+        "instructions": [
+          "Go to https://www.walmart.com/account/wmpurchasehistory",
+          "Ask user for email address",
+          "enter user-selected email address in text field with email address (required)",
+          "Ask user for password",
+          "Enter user-selected password in text field with password text",
+          "Click Sign in",
+          "Ask user for order number",
+          "Enter order number in text field with order number",
+          "Click cancel"
+        ]
+      },
+      {
+        "search_query": "How do I reset my password?",
+        "url": "https://www.walmart.com/help/article/how-do-i-reset-my-walmart-com-password/fafc8033252745ac8ddae77b68d9f215",
+        "instructions": [
+          "Go to https://www.walmart.com/account/forgotpassword",
+          "Ask user for email address",
+          "Enter user-selected email address in text field with email address",
+          "Select Request Verification Code.",
+          "Read to user: Check your email for the code. Be sure to check your junk or spam folder.",
+          "Ask user for code",
+          "Enter user-selected code in text field with code",
+          "Select Submit."
+        ]
+      },
+      {
+        "search_query": "How do I create an account?",
+        "url": "https://www.walmart.com/help/article/create-an-account/205537a30a874c2baced847a73900b15?searchTitle=Search%20Results&title=Create%20an%20Account&locationQueryParams=%3Fkey%3Dcreate%20new%20account%26page%3D1",
+        "instructions": [
+         "Select the Account button in the upper-right corner of Walmart.com",
+          "Click Create an Account",
+          "Ask user for name",
+          "Enter name in text field with name",
+          "Ask user for email",
+          "enter email in text field with email",
+          "Ask user for password",
+          "enter password in text field with password",
+          "Select Create Account"
+        ]
+      },
+      {
+        "search_query": "How do I edit a payment",
+        "url": "https://www.walmart.com/help/article/edit-or-remove-a-payment-method/79f1e76ae07b4274a7654cdb29388e79",
+        "instructions": [
+          "Go to https://www.walmart.com/account/",
+          "Ask user for email address",
+          "enter user-selected email address in text field with email address (required)",
+          "Ask user for password",
+          "Enter user-selected password in text field with password text",
+          "Click Sign in",
+          "Click Payment Methods from the bar on the left side of the screen.",
+          "Click Edit next to the payment method you want to change"
+        ]
+      }
+    ],
+    "https://www.target.com": [
+      {
+        "search_query": "How do I check a gift card balance",
+        "url": "https://www.target.com/guest/gift-card-balance?lnk=acct_nav_check_balance",
+        "instructions": [
+          "Go to https://www.target.com/guest/gift-card-balance?lnk=acct_nav_check_balance",
+          "Ask user for Gift card number",
+          "Enter Gift card number in text field with Gift card number",
+          "ask user for gift card access number",
+          "enter gift card access number in text field with gift card access number",
+          "Click Check Balance"
+        ]
+      }
+    ],
+    "https://www.uhc.com/": [
+      {
+        "search_query": "How do I register on myuhc.com",
+        "url": "https://www.uhc.com/individual-and-family/member-resources/frequently-asked-questions",
+        "instructions": [
+          "Go to https://accounts.myuhc.com/rt/register/myuhc/en",
+          "ask user for First Name",
+          "enter user-selected First Name in text field under First Name text",
+          "ask user for Last Name",
+          "enter user-selected Last Name in text field under Last Name text",
+          "Ask user for Birth Month",
+          "Select user-selected Birth Month in Month drop down",
+          "Ask user for Birth Day",
+          "Enter user-selected birth day in text field with DD",
+          "Ask user for birth year",
+          "Enter user-selected Birth year in text field with YYYY",
+          "Ask user for Member ID",
+          "Enter user-selected Member ID in text field under Member ID text",
+          "ask user for Group or policy number",
+          "Enter user-selected Group or policy number in text field under Group or policy number text",
+          "Click Continue"
+        ]
+      }
+    ],
+      "https://support.google.com/": [
+        {
+          "search_query": "Manage your device identity and protected content",
+          "url": "https://support.google.com/chrome/answer/4410268?co=GENIE.Platform%3DDesktop&hl=en&oco=0",
+          "instructions": [
+            "Go to chrome://settings/",
+            "Click privacy and security",
+            "Click Site settings",
+            "Click Additional Content settings",
+            "Click Protected Content",
+            "Select the Turn off Allow sites to play protected content checkbox"
+          ]
+        }, 
+        {
+          "search_query": "Add or remove inbox categories & tabs in Gmail",
+          "url": "https://support.google.com/mail/answer/3094499?co=GENIE.Platform%3DDesktop&hl=en",
+          "instructions": [
+            "Go to https://mail.google.com/mail/u/0/#settings/general",
+            "Ask user for email",
+            "Enter user-selected Email in text box with Email or phone",
+            "Click Next",
+            "Ask user for password",
+            "Enter user-selected password in text box with password",
+            "Click Next",
+            "Click the gear icon in the top right",
+            "Click See all settings",
+            "Click the Inbox tab.",
+            "Select Default.",
+            "Click the check box",
+            "Click Save Changes."
+          ]
+        },
+        {
+          "search_query": "Change or reset your password",
+          "url": "https://support.google.com/accounts/answer/41078?co=GENIE.Platform%3DDesktop&hl=en",
+          "instructions": [
+            "Go to https://myaccount.google.com/",
+            "Click Security",
+            "Click Password",
+            "Ask user for old password",
+            "Enter user-selected old password in text field with Enter your password",
+            "Click Next",
+            "Ask user for new password",
+            "Enter user-selected new password in text field with new password",
+            "Enter user-selected new password in text field with confirm new password",
+            "Click CHANGE PASSWORD"
+          ]
+        },
+        {
+          "search_query": "How do I create an account?",
+          "url": "https://support.google.com/mail/answer/56256?hl=en",
+          "instructions": [
+            "Go to https://accounts.google.com/SignUp",
+            "Ask user for first name",
+            "Enter user-selected first name in text field with first name",
+            "Ask user for last name",
+            "Enter user-selected last name in text field with last name",
+            "Ask user for username",
+            "Enter user-selected username in text field with username",
+            "Ask user for password",
+            "Enter user-selected password in text field with password",
+            "Enter user-selected password in text field with confirm",
+            "Click Next"
+          ]
+        },
+        {
+          "search_query": "How do I add a signature?",
+          "url": "https://support.google.com/mail/answer/6562?co=GENIE.Platform%3DDesktop&hl=en",
+          "instructions": [
+            "Go to mail.google.com",
+            "Ask user for email",
+            "Enter user-selected Email in text box with Email or phone",
+            "Click Next",
+            "Ask user for password",
+            "Enter user-selected password in text box with password",
+            "Click Next",
+            "Click the gear icon in the top right",
+            "Click See all settings.",
+            "Click + Create New in the Signature section"
+          ]
+        },
+        {
+          "search_query": "How do I send confidential emails",
+          "url": "https://support.google.com/mail/answer/7674059?co=GENIE.Platform%3DDesktop&hl=en",
+          "instructions": [
+            "Go to mail.google.com",
+            "Ask user for email",
+            "Enter user-selected Email in text box with Email or phone",
+            "Click Next",
+            "Ask user for password",
+            "Enter user-selected password in text box with password",
+            "Click Next",
+            "Click Compose.",
+            "Click Turn confidential mode on / off button",
+            "Click Save."
+          ]
+        },
+        {
+          "search_query": "How do I remove access early?",
+          "url": "https://support.google.com/mail/answer/7674059?co=GENIE.Platform%3DDesktop&hl=en",
+          "instructions": [
+            "Go to mail.google.com",
+            "Ask user for email",
+            "Enter user-selected Email in text box with Email or phone",
+            "Click Next",
+            "Ask user for password",
+            "Enter user-selected password in text box with password",
+            "Click Next",
+            "On the left, click Sent.",
+            "Open the confidential email.",
+            "Click Remove access."
+          ]
+        },
+        {
+          "search_query": "How do I send feedback?",
+          "url": "https://support.google.com/mail/answer/9212652?co=GENIE.Platform%3DDesktop&hl=en",
+          "instructions": [
+            "Go to mail.google.com",
+            "Ask user for email",
+            "Enter user-selected Email in text box with Email or phone",
+            "Click Next",
+            "Ask user for password",
+            "Enter user-selected password in text box with password",
+            "Click Next",
+            "Click the question icon in the top right",
+            "Click Help",
+            "Click Send feedback.",
+            "Ask user for comments",
+            "Enter comments in text field with comments",
+           " At the bottom right, click Send."
+          ]
+        },
+        {
+          "search_query": "How do I Search for your chat messages in Gmail?",
+          "url": "https://support.google.com/mail/answer/9966748?co=GENIE.Platform%3DDesktop&hl=en",
+          "instructions": [
+            "Go to https://mail.google.com/",
+            "Ask the user for the search keywords",
+            "Enter the user-selected search keywords in the search bar with the text Search mail",
+            "Click Enter", 
+            "Click the first search result"
+          ]
+        },
+        {
+          "search_query": "How do I Get Google Workspace add-ons?",
+          "url": "https://support.google.com/mail/answer/7542474?hl=en",
+          "instructions": [
+            "Go to mail.google.com",
+            "Click Settings Settings",
+            "Click Get add-ons.",
+            "Search for and select the tool you want to use with Gmail.",
+            "Click Install and then Continue."
+          ]
+        },
+        {
+          "search_query": "How do I remove Google Workspace add-ons?",
+          "url": "https://support.google.com/mail/answer/7542474?hl=en",
+          "instructions": [
+            "On your computer, go to Gmail.",
+            "In the top right, click Settings Settings and then See all settings.",
+            "Click the Add-ons tab.",
+            "In the Installed add-ons section, click Manage.",
+            "Click More More and then Remove."
+          ]
+        },
+        {
+          "search_query": "How do I Change your status on Gmail?",
+          "url": "https://support.google.com/mail/answer/9916566?co=GENIE.Platform%3DAndroid&hl=en",
+          "instructions": [
+            "Click Menu Menu .",
+            "Click arrow Down .",
+            "Ask user how long you want to mute your notifications",
+            "Select user-selected how long you want to mute your notifications"
+          ]
+        },
+        {
+          "search_query": "How do I request a read receipt?",
+          "url": "https://support.google.com/mail/answer/9413651?hl=en",
+          "instructions": [
+            "Go to mail.google.com",
+            " Click Compose.",
+            "Click more options",
+            "Click more send options",
+            "Click request read receipts",
+            "Click Send"
+          ]
+        }
+      ],
+      "https://support.spotify.com": [
+        {
+          "search_query": "Change email address",
+          "url": "https://support.spotify.com/us/article/change-email-address/",
+          "instructions": [
+            "Go to http://www.spotify.com/account?_ga=2.170055017.893322237.1604048036-1104676808.1602105716",
+            "Click EDIT PROFILE.",
+            "ask User for new email address",
+            "Enter user-selected email address in text field with email",
+            "Click SAVE PROFILE."
+          ]
+        }, 
+        {
+          "search_query": "How to log out",
+          "url": "https://support.spotify.com/us/article/how-to-log-out/",
+          "instructions": [
+            "Go to http://www.spotify.com/account?_ga=2.170055017.893322237.1604048036-1104676808.1602105716",
+            "Click SIGN OUT EVERYWHERE." 
+          ]
+        }, 
+        {
+          "search_query": "Redeem a Spotify gift card",
+          "url": "https://support.spotify.com/us/article/spotify-gift-cards/",
+          "instructions": [
+            "Go to http://www.spotify.com/account?_ga=2.170055017.893322237.1604048036-1104676808.1602105716",
+            "Ask user for PIN on the back of the card or code from your receipt",
+            "Enter the user-selected PIN on the back of the card, or the code from your receipt in the text field with code",
+            "Click Redeem."
+          ]
+        }, 
+        {
+          "search_query": "View your receipts",
+          "url": "https://support.spotify.com/us/article/how-can-i-get-a-receipt-for-spotify/",
+          "instructions": [
+            "Go to http://www.spotify.com/account?_ga=2.170055017.893322237.1604048036-1104676808.1602105716",
+            "Click Receipts in the menu on the left.",
+            "Click VIEW"
+          ]
+        }, 
+        {
+          "search_query": "Invite members to a family plan",
+          "url": "https://support.spotify.com/us/article/invite-or-remove-members-of-family-plan/",
+          "instructions": [
+            "Go to http://www.spotify.com/account?_ga=2.8245755.893322237.1604048036-1104676808.1602105716.",
+            "Select the option to add or remove members."
+          ]
+        }, 
+        {
+          "search_query": "Personalize your playlist cover",
+          "url": "https://support.spotify.com/us/article/personalize-playlists/",
+          "instructions": [
+            "Click the playlist image.",
+            "Ask the user for a name",
+            "Enter user-selected name in text field with name",
+            "Ask user for description",
+            "Enter user-selected description in text field with description",
+            "Click SAVE."
+          ]
+        }, 
+        {
+          "search_query": "How can I recover a deleted playlist",
+          "url": "https://support.spotify.com/us/article/can-i-recover-a-deleted-playlist/",
+          "instructions": [
+            "Go to http://www.spotify.com/account?_ga=2.170055017.893322237.1604048036-1104676808.1602105716",
+            "Click Recover playlists in the menu on the left. ",
+            "Click RESTORE"
+          ]
+        }, 
+        {
+          "search_query": "How do I cancel spotify",
+          "url": "https://support.spotify.com/us/article/how-to-cancel-your-subscription/",
+          "instructions": [
+            "Go to http://www.spotify.com/account?_ga=2.170055017.893322237.1604048036-1104676808.1602105716",
+            "Click CHANGE PLAN",
+            "Click CANCEL PREMIUM.",
+            "Click confirm" 
+          ]
+        }, 
+        {
+          "search_query": "How do I update spotify",
+          "url": "https://support.spotify.com/us/article/updating-spotify/",
+          "instructions": [
+            "Click the menu button with the blue dot .",
+            "Select Update Available. Restart Now." 
+          ]
+        }
+      ],
+      "https://www.amazon.com/gp/help/customer/display.html": [
+          {
+            "search_query": "Redeem a Gift Card",
+            "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201936940",
+            "instructions": [
+              "Locate the claim code.",
+              "Go to https://www.amazon.com/gp/css/your-account-access",
+              "Click Gift cards",
+              "Click Redeem a gift card",
+              "Ask user for your claim code",
+              "Enter user-selected claim code in text field with Claim code",
+              "Click Apply to Your Balance."
+            ]
+          }, 
+          {
+            "search_query": "Redeem an online Access Code",
+            "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GBD3WM89VCT74TUA",
+            "instructions": [
+              "Go to https://www.amazon.com/YourGamesAndSoftware",
+              "Read to user: Locate the code associated with your order.",
+              "Ask user for code",
+              "Enter code in text field with code"          
+            ]
+          }, 
+          {
+            "search_query": "Sign Up for the Amazon Prime Free Trial",
+            "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201910190",
+            "instructions": [
+              "Go to https://www.amazon.com/gp/prime/pipeline/signup",
+              "Click Start your free trial."
+            ]
+          }, 
+          {
+            "search_query": "Cancel Items or Orders",
+            "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GSL37WQTJZUYA9QE",
+            "instructions": [
+              "Go to https://www.amazon.com/gp/css/your-orders-access",
+              "Ask user for the order you want to cancel",
+              "Click the check box next to the user-selected order you want to cancel",
+              "Select Cancel checked items"
+            ]
+          }, 
+          {
+            "search_query": "Change Your 1-Click Settings",
+            "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201889370#:~:text=To%20change%20your%201%2DClick,will%20ship%20via%20Standard%20Shipping.",
+            "instructions": [
+              "Go to https://www.amazon.com/cpe/manageoneclick?ref_=cs_change",
+              "Click Make default located next to your address",
+              "Ask user for Nickname, Payment Method, or Shipping Method",
+              "Click Change next to the user input"
+            ]
+          }, 
+          {
+            "search_query": "Edit Your Browsing History",
+            "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GCLMGBYZLHE6JSCR",
+            "instructions": [
+              "Go to https://www.amazon.com/gp/yourstore/pym/cc/",
+              "Ask user for item you'd like to remove",
+              "Select Remove next to user-selected item to remove"
+            ]
+          }, 
+          {
+            "search_query": "Delete your list",
+            "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201936690",
+            "instructions": [
+              "Go to https://www.amazon.com/wishlist",
+              "Ask user for list you want to delete",
+              "Click user selected list you want to delete",
+              "Click the list menu (...)",
+              "click Manage Lists.",
+              "Click Delete.",
+              "Click Save Changes"
+            ]
+          },
+          {
+            "search_query": "Track your package",
+            "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201910530",
+            "instructions": [
+              "Go to https://www.amazon.com/gp/css/your-orders-access",
+              "Ask user for the order you want to track",
+              "Click the user-selected order you want to track",
+              "Click Track Package"
+            ]
+          }
+      ],
+      "https://learn.hellofurther.com": [
+        {
+          "search_query": "How can I set up Direct Deposit?",
+          "url": "https://learn.hellofurther.com/Individuals/Profile_and_Settings/Setting_Up_Direct_Deposit_for_Reimbursements",
+          "instructions": [
+            "Sign in at www.hellofurther.com.",              
+            "Click My Profile. ",
+            "Choose Payment and Banking from the menu.",
+            "Click Bank Accounts."
+          ]
+        }
+      ],
+      "https://stackoverflow.com/help": [
+        {
+          "search_query": "How do I add or remove login credentials from my account?",
+          "url": "https://stackoverflow.com/help/edit-credentials",
+          "instructions": [
+            "Go to https://stackoverflow.com/users/account-recovery",
+            "Enter your Email",
+            "Click Edit Profile and Settings",
+            "CLick My Logins",
+            "Click the remove link next to each login"
+          ]
+        }
+      ]
+  }
+}
