@@ -184,11 +184,11 @@
           "Enter user-selected password in the text field with Password",
           "Click Login",
           "Enter user-selected password in the text field with Password",
-          "From the top bar select “Manage listing” then click on “Name & description”.",
-          "The “General details” page will open. ",
-          "Toggle the selector to “on” in the corner of the right side of the “Mark your property as temporarily closed” box.",
-          "Select the date range for the temporary closure message to appear on your listing.",
-          "No need to click Submit."
+          "From the top bar select Manage listing",
+          "Click on Name & description",
+          "Select on for the Mark your property as temporarily closed box",
+          "Ask user for the range of dates the property is closed for",
+          "Enter the user-selected range of dates in the date selector"
         ]
       },
       {
