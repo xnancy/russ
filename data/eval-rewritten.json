@@ -106,19 +106,6 @@
         ]
       }
     ],
-    "https://support.atlassian.com/": [
-      {
-        "search_query": "How do I create a new project?",
-        "url": "https://support.atlassian.com/jira-software-cloud/docs/create-a-new-project/",
-        "instructions": [
-          "Select Projects",
-          "Select Create project",
-          "Ask user to choose a classic project or a next-gen project.",
-          "Ask user for a project name",
-          "Select Create."
-        ]
-      }
-    ],
     "https://www.ebay.com/help/": [
       {
         "search_query": "How do I sign up?",
@@ -204,9 +191,10 @@
           "Ask user for password",
           "Enter user-selected password in the text field with Password",
           "Click Login",
-          "From the top menu, click “Manage Listing”.",
-          "Select “Hours” from the drop-down menu.",
-          "Update the existing hours or click the “Delete” icon beside the hours that you want to remove."
+          "Click Manage Listing",
+          "Select Hours from the drop-down menu.",
+          "Ask user for new hours",
+          "Enter new hours in text field with text hours"
         ]
       },
       {
@@ -222,9 +210,9 @@
           "Ask user for password",
           "Enter user-selected password in the text field with Password",
           "Click Login",
-          "Under the “Reviews” tab in the top menu, click “Respond to Reviews”" ,
+          "Click Respond to Reviews",
           "Select the review with the Management Response you'd like to remove" ,
-          "Under “Response Published”, click “Delete Response” or the trash can icon"
+          "Click Delete Response"
         ]
       },
       {
@@ -240,9 +228,10 @@
           "Ask user for password",
           "Enter user-selected password in the text field with Password",
           "Click Login",
-          "Hover over the “Help & Settings” menu at the top of the page, and click Billing and Payments.”",
-          "On the left-hand side, under “Billing Information,” click “Update.”",
-          "Update your method of payment or billing information and click “Save.”"
+          "Hover over the Help & Settings menu at the top of the page",
+          "Click Billing and Payments",
+          "On the left-hand side, under “Billing Information,” click Update",
+          "Click Save"
         ]
       },
       {
@@ -259,9 +248,9 @@
           "Enter user-selected password in the text field with Password",
           "Click Login",
           "From the top bar select “Manage listing” then click on “Name & description”.",
-          "Click on “Listing Support” on the left menu.",
-          "Click on “Report Closure” and add a comment.",
-          "Click on “Report Closure” again to submit your request."
+          "Click on Listing Support on the left menu.",
+          "Click on Report Closure",
+          "Click on Report Closure"
         ]
       }
     ],
