@@ -291,9 +291,9 @@ say_file = open("synth-strings/say.txt" ,  "r")
 says = say_file.readlines()
 says = [say.strip() for say in says]
 
-synth = Synthesizer('synth1M-2.txt')
+synth = Synthesizer('synth100k.txt')
 
-for i in tqdm(range(1000000)): 
+for i in tqdm(range(100000)): 
     descr = random.choice(descriptions)
     descr = random.choices([descr ,  ''] ,  weights = (70 , 1))[0].replace(u"\u2122", '')
     website = random.choice(websites)
