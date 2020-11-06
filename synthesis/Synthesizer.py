@@ -41,6 +41,18 @@ type_dict = {
     'text': ['text' ,  'content' ,  'section'] , 
     '': ['']
 }
+
+location_dict = { 
+    'top_left': ['top-left', 'topleft', 'upper left', 'top left', 'upper-left', 'upperleft', 'left top'], 
+    'top_right': ['top-right', 'topright', 'upper right', 'top right', 'upper-right', 'upperright', 'right top'], 
+    'bottom_left': ['bottom-left', 'bottomleft', 'lower left', 'bottom left', 'lower-left', 'lowerleft', 'left bottom'], 
+    'bottom_right': ['bottom-right', 'bottomright', 'lower right', 'bottom right', 'lower-right', 'lowerright', 'right bottom'], 
+    'top': ['top', 'upper'], 
+    'bottom': ['bottom', 'lower'],
+    'left': ['left'], 
+    'right': ['right'] 
+}
+
 class Synthesizer: 
     def __init__(self ,  file_path): 
         self.file = open(file_path ,  'a')
@@ -67,26 +79,26 @@ class Synthesizer:
         options = [] 
         if location and type_html and (not descr or descr == " "): 
             # type location
-            options.append(" the " + random.choice(type_dict[type_html.value]) + random.choice([' in ' ,  ' on ']) + random.choice([' the ' ,  ' ']) + location.value.replace("_" ,  " ") + random.choice([' of the page ' ,  ' of the screen ' ,  ' of the website ' ,  '']))
-            options.append(" the " + random.choice(type_dict[type_html.value]) + " at the " + location.value.replace("_" ,  " "))
+            options.append(random.choice([' the ', ' ']) + random.choice(type_dict[type_html.value]) + random.choice([' in ' ,  ' on ']) + random.choice([' the ' ,  ' ']) + random.choice(location_dict[location.value]) + random.choice([' of the page ' ,  ' of the screen ' ,  ' of the website ' ,  '']))
+            options.append(random.choice([' the ', ' ']) + random.choice(type_dict[type_html.value]) + " at the " + random.choice(location_dict[location.value]))
             # location type 
-            options.append(" the " + location.value.replace("_" ,  " ") + " " + random.choice(type_dict[type_html.value]) + random.choice([' on the website ' ,  ' on the page ' ,  '']))
+            options.append(random.choice([' the ', ' ']) + random.choice(location_dict[location.value]) + + " " + random.choice(type_dict[type_html.value]) + random.choice([' on the website ' ,  ' on the page ' ,  '']))
         elif location and type_html and descr: 
             # descr type location
-            options.append(" the " + descr + " " + random.choice(type_dict[type_html.value]) + random.choice([' at' ,  ' near' ,  ' on']) + " the " + location.value.replace("_" ,  " ")+ random.choice([' of the page ' ,  ' of the screen ' ,  ' of the website ' ,  '']))
+            options.append(random.choice([' the ', ' ']) + descr + " " + random.choice(type_dict[type_html.value]) + random.choice([' at' ,  ' near' ,  ' on']) + " the " + random.choice(location_dict[location.value]) + random.choice([' of the page ' ,  ' of the screen ' ,  ' of the website ' ,  '']))
             # location descr type 
-            options.append(" the " + location.value.replace("_" ,  " ") + " " + descr + " " + random.choice(type_dict[type_html.value]) + random.choice([' on the website ' ,  ' on the page ' ,  '']))
+            options.append(random.choice([' the ', ' ']) + random.choice(location_dict[location.value]) + " " + descr + " " + random.choice(type_dict[type_html.value]) + random.choice([' on the website ' ,  ' on the page ' ,  '']))
             # location type descr 
-            options.append(" the " + location.value.replace("_" ,  " ") + " " + random.choice(type_dict[type_html.value]) + random.choice([' that says ' ,  ' with ' ,  ' containing ']) + descr)
+            options.append(random.choice([' the ', ' ']) + random.choice(location_dict[location.value]) + " " + random.choice(type_dict[type_html.value]) + random.choice([' that says ' ,  ' with ' ,  ' containing ']) + descr)
             # type location descr 
-            options.append(" the " + location.value.replace("_" ,  " ") + " " + random.choice(type_dict[type_html.value]) + random.choice([' on the website ' ,  ' on the page ' ,  '']) + random.choice([' that says ' ,  ' with ' ,  ' containing ']) + descr)
+            options.append(random.choice([' the ', ' ']) + random.choice(location_dict[location.value]) + " " + random.choice(type_dict[type_html.value]) + random.choice([' on the website ' ,  ' on the page ' ,  '']) + random.choice([' that says ' ,  ' with ' ,  ' containing ']) + descr)
             # type descr location 
-            options.append(" the " + random.choice(type_dict[type_html.value]) + random.choice([' that says ' ,  ' with ' ,  ' about ']) + descr + random.choice([' at ' ,  ' near ' ,  ' on  ']) + " the " + location.value.replace("_" ,  " ")+ random.choice([' of the page ' ,  ' of the screen ' ,  ' of the website ' ,  ' ']))
+            options.append(random.choice([' the ', ' ']) + random.choice(type_dict[type_html.value]) + random.choice([' that says ' ,  ' with ' ,  ' about ']) + descr + random.choice([' at ' ,  ' near ' ,  ' on  ']) + " the " + random.choice(location_dict[location.value]) + random.choice([' of the page ' ,  ' of the screen ' ,  ' of the website ' ,  ' ']))
         elif location and descr: 
-            options.append(descr + " " + random.choice([' at ' ,  ' near ' ,  ' on ']) + " the " + location.value.replace("_" ,  " ")+ random.choice([' of the page ' ,  ' of the screen ' ,  ' of the website ' ,  ' ']))
+            options.append(descr + " " + random.choice([' at ' ,  ' near ' ,  ' on ']) + " the " + random.choice(location_dict[location.value])+ random.choice([' of the page ' ,  ' of the screen ' ,  ' of the website ' ,  ' ']))
         elif type_html and descr: 
-            options.append(" the " + descr + " " + random.choice(type_dict[type_html.value]))
-            options.append(" the " + random.choice(type_dict[type_html.value]) + " that says " + descr)
+            options.append(random.choice([' the ', ' ']) + descr + " " + random.choice(type_dict[type_html.value]))
+            options.append(random.choice([' the ', ' ']) + random.choice(type_dict[type_html.value]) + " that says " + descr)
         elif descr: 
             options.append(descr)
         
@@ -109,19 +121,19 @@ class Synthesizer:
             for el_option_side in el_options_side: 
                 for rel_value in rel_values : 
                     for action in actions: 
-                        options.append(rel_value + " " + el_option_side + " ,  " + action + " " + el_option+ "  .")
-                        options.append(action + " " + el_option + " " + rel_value + el_option_side+ "  .")
+                        options.append(rel_value + " " + el_option_side + " ,  " + action + " " + el_option + random.choice(["", " ."]))
+                        options.append(action + " " + el_option + " " + rel_value + el_option_side + random.choice(["", " ."]))
 
         if location and location_side and location.value == location_side.value: 
             for el_option in self.get_element_descriptors(descr ,  type_html): 
                 for el_option_side in self.get_element_descriptors(descr_side ,  type_html_side): 
                     for rel_value in rel_values : 
                         for action in actions: 
-                                options.append(random.choice([' At ' ,  ' near ' ,  ' on ']) + " the " + location.value.replace("_" ,  " ")+ random.choice([' of the page ' ,  ' of the screen ' ,  ' of the website ' ,  ' ']) + " ,  " + action + " " + el_option + " " + rel_value + el_option_side+ "  . ")
-                                options.append(random.choice([' At ' ,  ' near ' ,  ' on ']) + " the " + location.value.replace("_" ,  " ")+ random.choice([' of the page ' ,  ' of the screen '  ,  ' of the website ' ,  ' ']) + " ,  " + rel_value + " " + el_option_side + " ,  " + action + " " + el_option+ " . ")
+                                options.append(random.choice([' At ' ,  ' near ' ,  ' on ']) + " the " + location.value.replace("_" ,  " ")+ random.choice([' of the page ' ,  ' of the screen ' ,  ' of the website ' ,  ' ']) + " ,  " + action + " " + el_option + " " + rel_value + el_option_side + random.choice(["", " ."]))
+                                options.append(random.choice([' At ' ,  ' near ' ,  ' on ']) + " the " + location.value.replace("_" ,  " ")+ random.choice([' of the page ' ,  ' of the screen '  ,  ' of the website ' ,  ' ']) + " ,  " + rel_value + " " + el_option_side + " ,  " + action + " " + el_option + random.choice(["", " ."]))
 
-                                options.append(" Go to the " + location.value + " of the page and " + action + " " + el_option + " " + rel_value + el_option_side+ " .")
-                                options.append(" Go to the " + location.value + " of the page and " + rel_value + " " + el_option_side + " ,  " + action + " " + el_option+ "  . ")
+                                options.append(" Go to the " + location.value + " of the page and " + action + " " + el_option + " " + rel_value + el_option_side + random.choice(["", " ."]))
+                                options.append(" Go to the " + location.value + " of the page and " + rel_value + " " + el_option_side + " ,  " + action + " " + el_option + random.choice(["", " ."]))
 
         option = random.choice(options)
         hash_object = hashlib.sha224(option.lower().encode('utf-8'))
@@ -139,13 +151,13 @@ class Synthesizer:
         options = []
 
         for el_option in self.get_element_descriptors(descr ,  location ,  type_html):
-                options.append(random.choice(actions) + " " + el_option+ " .")
+                options.append(random.choice(actions) + " " + el_option + random.choice(["", " ."]))
 
         if location: 
             location_options = ["go to the " + location.value + " of the page and " ,  random.choice([' at ' ,  ' near ' ,  ' on ']) + " the " + location.value.replace("_" ,  " ")+ random.choice([' of the page ' ,  ' of the screen ' ,  ' of the website ' ,  ' ']) + " ,  "]
             for location_option in location_options:
                 for el_option in self.get_element_descriptors(descr ,  type_html): 
-                    options.append(location_option + " " + random.choice(actions) + " " + el_option+ " .")
+                    options.append(location_option + " " + random.choice(actions) + " " + el_option + random.choice(["", " ."]))
 
         option = random.choice(options)
         hash_object = hashlib.sha224(option.lower().encode('utf-8'))
@@ -160,11 +172,11 @@ class Synthesizer:
     def goto(self ,  website): 
         command = "now => @webagent.goto param:website =  \"  " + website + "  \" "
         options = [] 
-        options.append(" Go to " +website+ " . ")
-        options.append(" Navigate to " + website+ " . ")
-        options.append(" Redirect to " + website+ " . ")
-        options.append(" Go to the website " + website+ " . ")
- 
+        options.append("go to " +website + random.choice(["", " ."]))
+        options.append("navigate to " + website + random.choice(["", " ."]))
+        options.append("redirect to " + website + random.choice(["", " ."]))
+        options.append("go to the website " + website + random.choice(["", " ."]))
+        
         option = random.choice(options)
         hash_object = hashlib.sha224(option.lower().encode('utf-8'))
         hex_dig = hash_object.hexdigest()
@@ -176,11 +188,11 @@ class Synthesizer:
         self.file.write(command + "\n")
     
     def ask(self ,  text_var): 
-        command = "let param:" + re.sub(' +', '_', text_var).lower().strip() + " = ( @webagent.ask param:text =  \"  " + text_var +  "  \" ) "
+        command = "let param:" + re.sub('\'', '', re.sub(' +', '_', text_var.strip())).lower().strip() + " = ( @webagent.ask param:text =  \"  " + text_var +  "  \" ) "
         options = []
-        options.append("Ask the " + random.choice(["user for their " ,  "customer for their " ,  "caller for their "]) + text_var+ " .")
-        options.append("Get the " + random.choice(["user's " ,  "customer's " ,  "caller's "]) + text_var+ " .")
-        options.append("What is the " + random.choice(["user's " ,  "customer's " ,  "caller's "]) + text_var+ " ? ")
+        options.append("Ask " + random.choice([" the ", " "]) + random.choice(["user for " ,  "customer for " ,  "caller for "]) + random.choice([' his ', ' her ', ' their ', ' ', ' ']) + text_var + random.choice(["", " ."]))
+        options.append("Get " + random.choice([" the ", " "]) + random.choice(["user's " ,  "customer's " ,  "caller's "]) + text_var + random.choice(["", " ."]))
+        options.append("What is  " + random.choice([" the ", " "]) + random.choice(["user's " ,  "customer's " ,  "caller's "]) + text_var+ " ? ")
 
         option = random.choice(options)
         hash_object = hashlib.sha224(option.lower().encode('utf-8'))
@@ -197,8 +209,8 @@ class Synthesizer:
         options = [] 
         el_options = self.get_element_descriptors(descr ,  location ,  type_html)
         for el_option in el_options: 
-            options.append(random.choice([' Type in ' ,  ' Enter ' ,  ' Give ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + el_option+ " .")
-            options.append(random.choice([' In ' ,  ' For ']) + el_option + random.choice([' type in ' ,  ' enter ' ,  ' give ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) +text_var+ " .")
+            options.append(random.choice([' Type in ' ,  ' Enter ' ,  ' Give ']) + random.choice([' the ', '']) + random.choice(['' ,  " user's " ,  " customer's " ,  " caller's ", " user-selected ", ' user-selected ']) + text_var + random.choice([' in ' ,  ' for ']) + el_option + random.choice(["", " ."]))
+            options.append(random.choice([' In ' ,  ' For ']) + el_option + random.choice([' type in ' ,  ' enter ' ,  ' give ']) + + random.choice([' the ', '']) + random.choice(['' ,  " user's " ,  " customer's " ,  " caller's ", " user-selected ", ' user-selected '])  +text_var + random.choice(["", " ."]))
 
         option = random.choice(options)
         hash_object = hashlib.sha224(option.lower().encode('utf-8'))
@@ -225,18 +237,18 @@ class Synthesizer:
         for el_option in el_options: 
             for el_option_side in el_options_side: 
                 for rel_value in rel_values : 
-                    options.append(rel_value + " " + el_option_side + " ,  " + random.choice(['type in ' ,  'enter ' ,  'give ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + el_option+ " .")
-                    options.append(random.choice(['Type in ' ,  'Enter ' ,  'Give ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + " " + el_option + " " + rel_value + el_option_side+ " .")
+                    options.append(rel_value + " " + el_option_side + " ,  " + random.choice(['type in ' ,  'enter ' ,  'give ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + el_option + random.choice(["", " ."]))
+                    options.append(random.choice(['Type in ' ,  'Enter ' ,  'Give ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + " " + el_option + " " + rel_value + el_option_side + random.choice(["", " ."]))
 
         if location and location_side and location.value == location_side.value: 
             for el_option in self.get_element_descriptors(descr ,  type_html): 
                 for el_option_side in self.get_element_descriptors(descr_side ,  type_html_side): 
                     for rel_value in rel_values : 
-                        options.append(random.choice([' At' ,  ' Near' ,  ' On']) + " the " + location.value.replace("_" ,  " ")+ random.choice([' of the page' ,  ' of the screen' ,  ' of the website' ,  '']) + " ,  " + random.choice(['type in ' ,  'enter ' ,  'give ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + " " + el_option + " " + rel_value + el_option_side+ " .")
-                        options.append(random.choice([' At' ,  ' Near' ,  ' On']) + " the " + location.value.replace("_" ,  " ")+ random.choice([' of the page' ,  ' of the screen' ,  ' of the website' ,  '']) + " ,  " + rel_value + " " + el_option_side + " ,  " + random.choice(['type in ' ,  'enter ' ,  'give ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + " " + el_option+ " .")
+                        options.append(random.choice([' At' ,  ' Near' ,  ' On']) + " the " + location.value.replace("_" ,  " ")+ random.choice([' of the page' ,  ' of the screen' ,  ' of the website' ,  '']) + " ,  " + random.choice(['type in ' ,  'enter ' ,  'give ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + " " + el_option + " " + rel_value + el_option_side + random.choice(["", " ."]))
+                        options.append(random.choice([' At' ,  ' Near' ,  ' On']) + " the " + location.value.replace("_" ,  " ")+ random.choice([' of the page' ,  ' of the screen' ,  ' of the website' ,  '']) + " ,  " + rel_value + " " + el_option_side + " ,  " + random.choice(['type in ' ,  'enter ' ,  'give ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + " " + el_option + random.choice(["", " ."]))
 
-                        options.append("Go to the " + location.value + " of the page and " + random.choice(['type in ' ,  'enter ' ,  'give ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + " " + el_option + " " + rel_value + el_option_side+ " .")
-                        options.append("Go to the " + location.value + " of the page and " + rel_value + " " + el_option_side + " ,  " + random.choice(['type in ' ,  'enter ' ,  'give ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + " " + el_option+ " .")
+                        options.append("Go to the " + location.value + " of the page and " + random.choice(['type in ' ,  'enter ' ,  'give ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + " " + el_option + " " + rel_value + el_option_side + random.choice(["", " ."]))
+                        options.append("Go to the " + location.value + " of the page and " + rel_value + " " + el_option_side + " ,  " + random.choice(['type in ' ,  'enter ' ,  'give ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + " " + el_option + random.choice(["", " ."]))
 
         option = random.choice(options)
         hash_object = hashlib.sha224(option.lower().encode('utf-8'))
@@ -251,7 +263,8 @@ class Synthesizer:
     def say(self ,  text): 
         command = "now => @webagent.say param:text =  \" " + text + "  \" "
         options = [] 
-        options.append(random.choices(['Say ' ,  'Say to the user ' ,  'Say to the caller ' ,  'Say to the customer ' ,  'Tell the user ' ,  'Tell the caller ' ,  'Tell the customer '] ,  weights = (3 ,  1 ,  1 ,  1 ,  1 ,  1 ,  1))[0] + text + " .")
+        options.append(random.choices(['read to ', 'say to ']) + random.choice([' the ', '']) + random.choice([' user ', ' customer ', ' caller ']) + random.choice([' : ', ' : ', '']) + text + random.choice(["", " ."]))
+        options.append(random.choices(['say : ', 'read : ']) + text + random.choice(["", " ."]))
 
         option = random.choice(options)
         hash_object = hashlib.sha224(option.lower().encode('utf-8'))
@@ -291,9 +304,9 @@ say_file = open("synth-strings/say.txt" ,  "r")
 says = say_file.readlines()
 says = [say.strip() for say in says]
 
-synth = Synthesizer('synth100k.txt')
+synth = Synthesizer('synth1.5M.txt')
 
-for i in tqdm(range(100000)): 
+for i in tqdm(range(1500000)): 
     descr = random.choice(descriptions)
     descr = random.choices([descr ,  ''] ,  weights = (70 , 1))[0].replace(u"\u2122", '')
     website = random.choice(websites)
@@ -309,21 +322,21 @@ for i in tqdm(range(100000)):
 
     if random.uniform(0,1) < 0.3: 
         synth.basic_action(action_read ,  action_command_read ,  descr ,  location = location ,  type_html = type_html)
-    if random.uniform(0,1) < 0.3: 
+    if random.uniform(0,1) < 0.2: 
         synth.basic_action(action_click ,  action_command_click ,  descr ,  location = location ,  type_html = type_html)
 
     ask = random.choice(asks)
-    if random.uniform(0,1) < 0.3 and ask: 
+    if random.uniform(0,1) < 0.4 and ask: 
         synth.ask(ask)
 
     say = random.choice(says)
     if random.uniform(0, 1) < 0.3 and say: 
         synth.say(say)
     
-    if random.uniform(0,1) < 0.3 and ask: 
+    if random.uniform(0,1) < 0.4 and ask: 
         synth.enter_basic(ask ,  descr ,  location = location ,  type_html = type_html)
 
-    if random.uniform(0 ,1)  < 0.3 and website: 
+    if random.uniform(0 ,1)  < 0.4 and website: 
         synth.goto(website)
 
     if relative: 
