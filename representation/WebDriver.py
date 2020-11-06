@@ -31,7 +31,7 @@ class WebDriver:
 		# props = await elem.getProperties()
 		# print(props, 'hi')
 		return elem
-	
+
 	async def getElementFromId(self, idParam):
 		elem = await self.page.waitForSelector(f'[id="{idParam}"]')
 		return elem
@@ -55,8 +55,6 @@ class WebDriver:
 				};
 				allAnswers.push(answer);
 				// Record attributes
-				element.setAttribute('xid', ref);
-				// await page.evaluate(() => { element.attributes['xid'] = ref; });
 
 				Array.from(element.attributes).forEach(x =>
 					answer.attributes[x.name] = x.value
@@ -140,6 +138,11 @@ class WebDriver:
 				}
 				return answer;
 			};
+			let xidRunningCount = 0;
+			document.querySelectorAll('*').forEach(function(node) {
+    			node.setAttribute('xid', xidRunningCount);
+				xidRunningCount += 1;
+			});
 			let allAnswers = [];
 			await getDOMInfoOfElement(document.body);
 			let commonStyles = {};
@@ -159,11 +162,11 @@ class WebDriver:
 		}''')
 		return final_return
 
-	# TODO: fix this, selector might exist on prevoius page 
+	# TODO: fix this, selector might exist on prevoius page
 	async def click(self, selector):
 		print("AWAITING CLICK")
 		# self.page.waitForSelector(selector)
-		# await self.page.click(selector) 
+		# await self.page.click(selector)
 		await asyncio.wait([self.page.click(selector), self.page.waitForNavigation()])
 		print("CLICKED")
 		pages = await self.browser.pages()
