@@ -18,7 +18,7 @@ import asyncio
 import time
 
 from WebDriver import WebDriver
-import Element from Element 
+from Element import Element 
 
 class Agent:
 
@@ -82,7 +82,7 @@ class Agent:
         await self.webdriver.goToPage('https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&')
         await self.webdriver.enter_text('#ap_email', 'nancyxu97@gmail.com')
         await self.webdriver.click('#continue')
-        await self.webdriver.enter_text('#ap_password', '6261WangGou!')
+        await self.webdriver.enter_text('#ap_password', '!Test6261')
         await self.webdriver.click('#signInSubmit')
         await self.webdriver.page.waitForNavigation()
         # await self.click('Click here to refresh the page', {})
@@ -159,7 +159,7 @@ class Agent:
 
     # find the element that best matches the descr and satisfies filters in the DOM
     # TODO: RUN AND MAKE SURE THE SELECTOR WORKS
-    def matchElement(self, descr, filters, dom):
+    def retrieve(self, descr, filters, dom):
         # dom = self.webdriver.get_elements_db()
         dom = dom
         descr_embedding = self.embedding_model.encode([descr])[0]
