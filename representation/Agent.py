@@ -17,8 +17,10 @@ import numpy as np
 import asyncio
 import time
 
-from WebDriver import WebDriver
-from Element import Element 
+from representation.WebDriver import WebDriver
+from representation.Element import Element
+# from WebDriver import WebDriver
+# from Element import Element 
 
 class Agent:
 
