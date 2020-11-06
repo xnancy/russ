@@ -7,49 +7,11 @@ from pyppeteer import launch
 
 from Agent import Agent
 from WebDriver import WebDriver
-
+from SemnaticParser import SemnaticParser
 # Instructor interacts with the user and parses the instruction templates
 
 #TODO: build the semantic parser, and use in parse.py
-class SemanticParser: 
-    def __init__(self): 
-        return 
 
-    # isntr_tuple of the form  (text, link, bold text)
-    def parse(self, instr_tuple): 
-        command, link, bold_text = instr_tuple
-        KEYWORDS = ['click', 'enter', 'go to', 'select']
-        print("PARSING " + command)
-        for keyword in KEYWORDS: 
-            if 'if' in command and ',' in command:
-                inp = input("(Alex): " + command.split("if", 1)[1].split(',',1)[0] + " ? (Y/N)")
-                if (inp == 'Y'):
-                    return self.parse((command.split(",", 1)[0], link, bold_text))
-                else:
-                    print("(Alex): OK skipping steps.")
-                    return [] 
-            elif 'To see' in command and ',' in command:
-                inp = input("(Alex): Do you want to see " + command.split("To see", 1)[1].split(',',1)[0] + " ? (Y/N)")
-                if (inp == 'Y'):
-                    return self.parse((command.split(",", 1)[0], link, bold_text))
-                else:
-                    print("(Alex): OK skipping steps.")
-                    return [] 
-            elif 'locate' in command: 
-                return [('RESOLVE_TEXT', command.split("locate",1)[1], '', '')]
-            elif 'click' in command and 'next to' in command:
-                return [('CLICK', command.split('click', 1)[1].split('next to', 1)[0], {'NEXTTO': command.split('next to', 1)[1]}, '')]
-            elif 'click' in command: 
-                return [('CLICK', command, {}, '')]
-            elif 'go to' in command and (link or bold_text): 
-                return [('CLICK', command.split("go to", 1)[1], {}, '')]
-            elif 'go to' in command: 
-                return [('RESOLVE', command.split("go to", 1)[1], {}, '')]
-            elif 'select' in command: 
-                return [('CLICK', command, {}, '')]
-            elif 'enter' in command: 
-                return [('RESOLVE_TEXT', command, '', ''), ('ENTER', command, {}, command)]
-        return [('OUTPUT', command, '', '')]
 
 class Instructor: 
     def __init__(self, webdriver, agent, semanticparser):

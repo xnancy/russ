@@ -5,7 +5,7 @@
         "search_query": "How do I reset my password?",
         "url": "https://support.crytivo.com/article/18-how-do-i-reset-my-password",
         "instructions": [
-          "Go to http://crytivo.com/",
+          "Go to http://crytivo.com/", thingtalk_hash, element, dom 
           "Click Sign In in the upper right corner",
           "Click Forgot Password",
           "Ask user for email",
@@ -21,7 +21,7 @@
         "url": "https://tradalaxy.zendesk.com/hc/en-us/articles/360030871671-Sign-In-to-Your-Account-and-Reset-Password",
         "instructions": [
           "Go to https://my.tradalaxy.com/login",
-          "Click Forgot Password in the 'Password to Tradalaxy' field",
+          "Click Forgot Password",
           "Ask user for email",
           "Enter user-selected email in text field with Email",
           "Click RESET PASSWORD"

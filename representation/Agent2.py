@@ -7,6 +7,9 @@ import asyncio
 import time
 from enum import Enum
 from WebDriver import WebDriver
+from SemanticParser import commands_to_webtalk
+from nltk import edit_distance
+import pylev
 
 class Location(Enum):
     top_left = 'top_left'
@@ -43,8 +46,8 @@ class Element:
         self.descr_embedding = np.zeros(768)
         if 'text' in attrs.keys():
             self.description = attrs['text']
-        if self.description :
-            self.descr_embedding = embedding_model.encode([self.description])[0]
+        # if self.description :
+        #     self.descr_embedding = embedding_model.encode([self.description])[0]
        
         # left/right/top/bottom coords used for comparing with other elements 
         # set left/ right /top/botton default to the most extreme so they dont count if no value given 
@@ -155,34 +158,41 @@ class Agent2:
 
     # get variable stored with closest name embedding 
     def getVariable(self, name): 
-        
-        name_embedding = self.embedding_model.encode([name])[0]
+        # name_embedding = self.embedding_model.encode([name])[0]
         scores = {} 
-        for var_name, var_embedding in self.all_vars_embeddings.items():
-            score = cs([name_embedding], [var_embedding])[0][0]
+        for var_name in self.all_vars.items():
+            # score = cs([name_embedding], [var_embedding])[0][0]
+            score = 100 - edit_distance(var_name, name)
             scores[var_name] = score
-        
-        best_var_name = max(scores.items(), key=operator.itemgetter(1))[0]
-        print('CHOSE THIS VARIABLE: ' + best_var_name + ' FOR ' + name)
+        best_var_name, score = max(scores.items(), key=operator.itemgetter(1))[0]
+        print('Chose var: ' + best_var_name + ' for ' + name)
         return self.all_vars[best_var_name]
 
     # filters is a dict of the form {filter: value} ex {'location': 'upperleft'}
     def passFilters(self, element, body_width, body_height, right=False, left=False, above=False, below=False, location=False, html_type=False, tag = '', type_raw=''):
         if right and element.right and (element.right < right.right or (element.right - right.right) / body_width > 0.2): 
+            print("A")
             return False 
         if left and element.left and (element.left > left.left or (left.left - element.left) / body_width > 0.2): 
+            print("B")
             return False
         if above and element.top and (element.top > above.top or (above.top - element.top) / body_height > 0.2): 
+            print("C")
             return False 
         if below and element.bottom and (element.bottom < below.bottom or (element.bottom - below.bottom)  / body_height > 0.2): 
+            print("D")
             return False 
         if location and element.location and location.value != element.location.value: 
+            print("E")
             return False 
         if html_type and element.html_type and html_type.value != element.html_type.value: 
+            print("F")
             return False 
         if type_raw and element.type_raw and type_raw != element.type_raw: 
+            print("G")
             return False 
         if tag and element.tag and tag != element.tag: 
+            print("H")
             return False 
         return True 
 
@@ -207,11 +217,24 @@ class Agent2:
         enum_dict = {}
         params = self.get_params_from_string(parsed_wt) 
         if parsed_wt.count("@webagent.retrieve") == 0 and parsed_wt.count("@webagent.say") == 1: 
-            await self.say(parsed_wt.split("param:text")[-1].replace("\"", " ").replace("=", " ").strip())            
+            await self.say(parsed_wt.split("param:text")[-1].replace(")", " ").replace("\"", " ").replace("=", " ").strip())            
         elif parsed_wt.count("@webagent.retrieve") == 0 and parsed_wt.count("@webagent.ask") == 1: 
-            await self.ask(parsed_wt.split("param:text")[-1].replace("\"", " ").replace("=", " ").strip())
+            await self.ask(parsed_wt.split("param:text")[-1].replace(")", " ").replace("\"", " ").replace("=", " ").strip())
+        elif parsed_wt.count("@webagent.retrieve") == 0 and parsed_wt.count("@webagent.goto") == 1 and "com" in parsed_wt:
+            url = parsed_wt.split("com")[0].split(" ")[-1] + "com"
+            if "www" not in url: 
+                url = "www." + url
+            if "http" not in url: 
+                url = "http://" + url 
+            await self.goto(url)
         elif parsed_wt.count("@webagent.retrieve") == 0 and parsed_wt.count("@webagent.goto") == 1:
-            await self.goto(parsed_wt.split("param:website")[-1].replace("\"", " ").replace("=", " ").strip())
+            url = parsed_wt.split("param:website")[-1].replace(")", " ").replace("\"", " ").replace("=", " ").strip()
+            if "www" not in url: 
+                url = "www." + url
+            if "http" not in url: 
+                url = "http://" + url 
+            await self.goto(url)
+            await self.goto(url)
         elif parsed_wt.count("@webagent.retrieve") == 1 and parsed_wt.count("@webagent.read") == 1:     
             await self.read(description = params['description'], location = params['location'], html_type = params['html_type'])
         elif parsed_wt.count("@webagent.retrieve") == 1 and parsed_wt.count("@webagent.click") == 1:     
@@ -274,7 +297,7 @@ class Agent2:
 
     # TODO: define the remaining functions
     async def click(self, description='', right =False, left=False, above=False, below=False, location=False, html_type=False):
-        elements = await self.retrieve(description=description, right=right, left=left,above=above, below=below, location=location, html_type=Type.button)
+        elements = await self.retrieve(description=description, right=right, left=left,above=above, below=below, location=location, html_type=html_type)
         element=  elements[0]
         # await self.webdriver.page.waitForNavigation()
         # elem = await self.webdriver.getElementFromXid(selector)
@@ -293,7 +316,7 @@ class Agent2:
     async def ask(self, var):
         val = input("(Alex): What is the " + var +" ? \n")
         self.all_vars[var] = val
-        self.all_vars_embeddings[var] = self.embedding_model.encode([val])[0]
+        # self.all_vars_embeddings[var] = self.embedding_model.encode([val])[0]
          
     def say(self, text):
         print("(Alex): " + text)
@@ -311,7 +334,7 @@ class Agent2:
     async def retrieve(self, description='', right =False, left=False, above=False, below=False, location=False, html_type=False, tag = '', type_raw = '', return_list = False):
         # dom = self.webdriver.get_elements_db()
         self.dom = await self.getDOM() 
-        descr_embedding = self.embedding_model.encode([description])[0]
+        # descr_embedding = self.embedding_model.encode([description])[0]
         scores = {}
         elements = {} 
         text_scores = {} 
@@ -319,51 +342,63 @@ class Agent2:
         body_width = self.dom[0]['width']
         body_height = self.dom[0]['height']
 
+        description_list =  description.lower().split(" ")
+        print(self.dom)
+        time.sleep(10000)
         for el_row in self.dom:
             element = Element(el_row, self.embedding_model, body_height, body_width)
             if element.hidden == True or not self.passFilters(element, body_width, body_height, right, left, above, below, location, html_type, tag, type_raw):
                 continue
-            score = cs([descr_embedding], [element.descr_embedding])[0][0]
+                
+            # score = cs([descr_embedding], [element.descr_embedding])[0][0]
+
+            # Compute word level lev distance
+            score = pylev.levenshtein(description_list,  element.description.lower().split(" "))
+
+            score = 100 - score
             scores[element.ref] = score
             elements[element.ref] = element 
             text_scores[element.description] = score
 
             if description == element.description: 
-                scores[element.ref] = 1.1
-                elements[element.ref] = element 
-                text_scores[element.description] = 1.1
-            if description in element.description: 
-                scores[element.ref] = 0.94
-                elements[element.ref] = element 
-                text_scores[element.description] = 0.94
-            num_words = len(description.split())
-            num_in = 0 
+                scores[element.ref] += 2 * len(element.description.split())
+                text_scores[element.description] += 2 * len(element.description.split())
             for word in description.split(): 
-                if word.lower() in element.description.lower(): num_in += 1
-            if num_in > 0: 
-                scores[element.ref] = 0.8 + num_in / num_words * 0.14 - len(element.description.split()) * 0.01
-                elements[element.ref] = element 
-                text_scores[element.description] = 0.8 + num_in / num_words * 0.14 - len(element.description.split()) * 0.01
+                if word in element.description: 
+                    scores[element.ref] += 2
+                    text_scores[element.description] += 2
 
         # print("MATCH SCORES: ")
         # print({k: v for k, v in sorted(text_scores.items(), key=lambda item: item[1])})
-        
-        if len(list(scores.keys())) == 1: 
-            return[elements[list(scores.keys())[0]]]
+        print(scores)
         
         best_xid = max(scores.items(), key=operator.itemgetter(1))[0]
-        print(elements[best_xid].description)
+        print("Best element match contains text: " + str(elements[best_xid].description))
         return [elements[best_xid]]
 
 async def func():
     a = WebDriver()
     b = Agent2(a)
+    parsed = commands_to_webtalk(["Go to instagram.com.",
+          "Click Sign Up",
+          "Ask user for Email Address",
+          "Enter user-selected Email Address in text field with Email Address",
+          "Ask user for username", 
+          "Enter user-selected username in text field with username", 
+          "Ask user for password",
+          "Enter password in text field with password"])
+    # parsed = commands_to_webtalk(['go to amazon.com', 'ask the user for their search', 'enter your search', 'click the button next to epic daily deal'])
+    print("Parsed instructions: " + str(parsed))
     await b.webdriver.openDriver()
+    for parse in parsed: 
+        await b.runParsedInstruction(parse)
+    """
     await b.runParsedInstruction("now => @webagent.goto param:website = \" https://www.amazon.com/ \"")
     await b.runParsedInstruction("let param:your_search = ( @webagent.ask param:text = \" your search \" )")
     await b.runParsedInstruction("now => @webagent.retrieve => @webagent.enter param:text = \" your search \" on param:element = param:id ")
     await b.runParsedInstruction("now => ( @webagent.retrieve param:description = \" epic daily deal\" ) join ( @webagent.retrieve param:description = \" see more \" ) on param:below = param:id => @webagent.read param:element = param:id")
     await asyncio.sleep(10000)
+    """
 
 loop = asyncio.new_event_loop()
 asyncio.set_event_loop(loop)

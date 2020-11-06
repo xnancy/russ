@@ -12,6 +12,8 @@ class WebDriver:
 		# \self.page.setDefaultNavigationTimeout(60000)
 
 	async def goToPage(self, url):
+		print("Navigating to: ")
+		print(url)
 		await asyncio.wait([self.page.goto(url), self.page.waitForNavigation()])
 
 	async def closeDriver(self):
