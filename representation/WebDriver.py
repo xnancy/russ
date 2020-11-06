@@ -33,8 +33,6 @@ class WebDriver:
 	async def getElementFromId(self, idParam):
 		elem = await self.page.waitForSelector(f'[id="{idParam}"]')
 		return elem
-		
-
 
 
 	async def getDOMInfo(self):

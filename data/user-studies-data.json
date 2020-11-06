@@ -1,0 +1,166 @@
+{
+  "amazon1": {
+    "search_query": "Redeem a Gift Card",
+    "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201936940",
+    "instructions": [
+      "Go to https://www.amazon.com/gp/css/your-account-access",
+      "Click Gift cards",
+      "Ask user for email",
+      "Enter user-selected email in text field under email address or username",
+      "Ask user for password",
+      "Enter user-selected password in text field under password",
+      "Click Sign in",
+      "Read to user: Locate the claim code.",
+      "Click Redeem a gift card",
+      "Ask user for your claim code",
+      "Enter user-selected claim code in text field with Claim code",
+      "Click Apply to Your Balance"
+    ]
+  },
+  "amazon2": {
+    "search_query": "Track your package",
+    "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201910530",
+    "instructions": [
+      "Go to https://www.amazon.com/gp/css/your-orders-access",
+      "Ask user for email",
+      "Enter user-selected email in text field under email address or username",
+      "Ask user for password",
+      "Enter user-selected password in text field under password",
+      "Click Sign in",
+      "Ask user for the order you want to track",
+      "Click Track Package by the user-selected order you want to track"
+    ]
+  },
+  "google1": {
+    "search_query": "How do I create an account?",
+    "url": "https://support.google.com/mail/answer/56256?hl=en",
+    "instructions": [
+      "Go to https://accounts.google.com/SignUp",
+      "Ask user for first name",
+      "Enter user-selected first name in text field with first name",
+      "Ask user for last name",
+      "Enter user-selected last name in text field with last name",
+      "Ask user for username",
+      "Enter user-selected username in text field with username",
+      "Ask user for password",
+      "Enter user-selected password in text field with password",
+      "Enter user-selected password in text field with confirm",
+      "Click Next"
+    ]
+  },
+  "google2":  {
+    "search_query": "How do I send feedback?",
+    "url": "https://support.google.com/mail/answer/9212652?co=GENIE.Platform%3DDesktop&hl=en",
+    "instructions": [
+      "Go to mail.google.com",
+      "Ask user for email",
+      "Enter user-selected Email in text box with Email or phone",
+      "Click Next",
+      "Ask user for password",
+      "Enter user-selected password in text box with password",
+      "Click Next",
+      "Click the question icon in the top right",
+      "Click Help",
+      "Click Send feedback.",
+      "Ask user for comments",
+      "Enter comments in text field with comments",
+     " At the bottom right, click Send."
+    ]
+  },
+  "pinterest1":  {
+    "search_query": "How do I create an advertiser account?",
+    "url": "https://help.pinterest.com/en/business/article/create-an-advertiser-account",
+    "instructions": [
+      "Go to pinterest.com",
+      "Ask user for email Address",
+      "Enter user-selected Email Address in text field with Email Address text",
+      "Ask user for Password",
+      "Enter user-selected password in text field with password text",
+      "Click Log in",
+      "Click Ads in the top left corner",
+      "select Overview",
+      "Click Arrow button next to your name",
+      "Click Create new ad account ",
+      "Ask user for a name",
+      "Enter the user-selected name in text field with name",
+      "Click Save"
+    ]
+  },
+  "pinterest2":  {
+    "search_query": "How do I create a campaign?",
+    "url": "https://help.pinterest.com/en/business/article/set-up-your-campaign",
+    "instructions": [
+      "Log into http://pinterest.com/business/create/",
+      "Ask user for email Address",
+      "Enter user-selected Email Address in text field with Email Address text",
+      "Ask user for Password",
+      "Enter user-selected password in text field with password text",
+      "Click Log in",
+      "Click Ads at the top of the screen",
+      "click Create ad",
+      "Ask user for goal",
+      "Select user-selcted goal",
+      "Click Continue "
+    ]
+  }, 
+  "yelp1":       {
+    "search_query": "How do I edit one of my reviews?",
+    "url": "https://www.yelp-support.com/article/How-do-I-edit-one-of-my-reviews?l=en_US",
+    "instructions": [
+      "Go to http://yelp.com/user_details_reviews_self",
+      "Ask User for email",
+      "Enter user-selected email in the text field with Email",
+      "Ask user for password",
+      "Enter user-selected password in the text field with Password",
+      "Ask user for review you would like to edit",
+      "Click Edit review for user-selected review you would like to edit",
+      "Ask user for text to replace",
+      "Enter user-input text to replace",
+      "Click Post"
+    ]
+  },
+  "yelp2": {
+    "search_query": "How do I remove a review I posted?",
+    "url": "https://www.yelp-support.com/article/How-do-I-remove-a-review-that-I-posted?l=en_US",
+    "instructions": [
+      "Go to http://yelp.com/user_details_reviews_self",
+      "Ask User for email",
+      "Enter user-selected email in the text field with Email",
+      "Ask user for password",
+      "Enter user-selected password in the text field with Password",
+      "Click Log In",
+      "Ask user for the Review to remove",
+      "Click Remove Review below user-selected Review to remove",
+      "Click Confirm"
+    ]
+  }, 
+  "walmart1":  {
+    "search_query": "How do I cancel or edit an order",
+    "url": "https://www.walmart.com/help/article/How-do-I-cancel-an-order/f501707862b64f67a3c22fa4e2405400",
+    "instructions": [
+      "Go to https://www.walmart.com/account/wmpurchasehistory",
+      "Ask user for email address",
+      "enter user-selected email address in text field with email address (required)",
+      "Ask user for password",
+      "Enter user-selected password in text field with password text",
+      "Click Sign in",
+      "Ask user for order number",
+      "Enter order number in text field with order number",
+      "Click cancel"
+    ]
+  },
+  "walmart2":   {
+    "search_query": "How do I reset my password?",
+    "url": "https://www.walmart.com/help/article/how-do-i-reset-my-walmart-com-password/fafc8033252745ac8ddae77b68d9f215",
+    "instructions": [
+      "Go to https://www.walmart.com/account/forgotpassword",
+      "Ask user for email address",
+      "Enter user-selected email address in text field with email address",
+      "Select Request Verification Code.",
+      "Read to user: Check your email for the code. Be sure to check your junk or spam folder.",
+      "Ask user for code",
+      "Enter user-selected code in text field with code",
+      "Select Submit."
+    ]
+  }
+}

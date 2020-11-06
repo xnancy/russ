@@ -1115,7 +1115,6 @@
             "search_query": "Redeem a Gift Card",
             "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201936940",
             "instructions": [
-              "Read to user: Locate the claim code.",
               "Go to https://www.amazon.com/gp/css/your-account-access",
               "Click Gift cards",
               "Ask user for email",
@@ -1123,10 +1122,11 @@
               "Ask user for password",
               "Enter user-selected password in text field under password",
               "Click Sign in",
+              "Read to user: Locate the claim code.",
               "Click Redeem a gift card",
               "Ask user for your claim code",
               "Enter user-selected claim code in text field with Claim code",
-              "Click Apply to Your Balance."
+              "Click Apply to Your Balance"
             ]
           },
           {
