@@ -6,20 +6,28 @@ class VoiceDriver:
     self.recognizer = sr.Recognizer()
     self.speaker = pyttsx3.init() 
 
-  def listen(self):
+  def listen(self, text):
     with sr.Microphone() as source:
       self.recognizer.adjust_for_ambient_noise(source)
-      print("Please say something ")
+      print(text)
+      print("Recognizing Now ... ")
       audio = self.recognizer.listen(source)
-      print("Reconizing Now ... ")
 
       try:
         dest = self.recognizer.recognize_google(audio)
-        print("You have said : " + dest)
-        return dest
+        if dest is not None:
+          return dest
+        else:    
+          print("I didn't catch that")    
+          self.speak("I didn't catch that")
+          self.speak(text)
+          self.listen(text)
 
       except Exception as e:
-        print("Error : " + str(e))
+        print("I didn't catch that")
+        self.speak("I didn't catch that")
+        self.speak(text)
+        return self.listen(text)
 
   def speak(self, text): 
     self.speaker.say(text)  

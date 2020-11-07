@@ -8,12 +8,12 @@ class WebDriver:
 
 	async def openDriver(self):
 		self.browser = await launch(headless = False, executablePath = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
-		self.page = await self.browser.newPage()
+		# self.page = await self.browser.newPage()
+		context = await self.browser.createIncognitoBrowserContext()
+		self.page = await context.newPage()
 		# \self.page.setDefaultNavigationTimeout(60000)
 
 	async def goToPage(self, url):
-		print("Navigating to: ")
-		print(url)
 		await asyncio.wait([self.page.goto(url), self.page.waitForNavigation()])
 
 	async def closeDriver(self):

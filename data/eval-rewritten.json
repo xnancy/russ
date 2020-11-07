@@ -307,6 +307,7 @@
           "Enter user-selected email in the text field with Email",
           "Ask user for password",
           "Enter user-selected password in the text field with Password",
+          "Click Log In",
           "Click Email / Notifications",
           "Ask user for notifications they'd like to receive",
           "Click the checkboxes next to the user-selected notifications you'd like to receive",
@@ -336,6 +337,7 @@
           "Enter user-selected email in the text field with Email",
           "Ask user for password",
           "Enter user-selected password in the text field with Password",
+          "Click Log In",
           "Ask user for review you would like to edit",
           "Click Edit review for user-selected review you would like to edit",
           "Ask user for text to replace",
@@ -352,6 +354,7 @@
           "Enter user-selected email in the text field with Email",
           "Ask user for password",
           "Enter user-selected password in the text field with Password",
+          "Click Log In",
           "Click Friends",
           "Ask user for name of friend",
           "Click the grey X to the right of the user-selected friend"
@@ -409,7 +412,7 @@
         "search_query": "How do I Log out to your personal or business account?",
         "url": "https://help.pinterest.com/en/article/log-in-and-out-of-pinterest",
         "instructions": [
-          "Go to pinterest.com",
+          "Go to pinterest.com/login",
           "Ask user for email Address",
           "Enter user-selected Email Address in text field with Email Address text",
           "Ask user for Password",
@@ -442,7 +445,7 @@
         "search_query": "How do I change my email?",
         "url": "https://help.pinterest.com/en/article/change-your-email",
         "instructions": [
-          "Go to pinterest.com",
+          "Go to pinterest.com/login",
           "Ask user for email Address",
           "Enter user-selected Email Address in text field with Email Address text",
           "Ask user for Password",
@@ -496,7 +499,7 @@
         "search_query": "How do I change my password?",
         "url": "https://help.pinterest.com/en/article/reset-your-password",
         "instructions": [
-          "Go to pinterest.com",
+          "Go to pinterest.com/login",
           "Ask user for email Address",
           "Enter user-selected Email Address in text field with Email Address text",
           "Ask user for Password",
@@ -518,7 +521,7 @@
         "search_query": "How do I hide a pin on my home feed?",
         "url": "https://help.pinterest.com/en/article/hide-a-pin-on-your-home-feed",
         "instructions": [
-          "Go to pinterest.com",
+          "Go to pinterest.com/login",
           "Ask user for email Address",
           "Enter user-selected Email Address in text field with Email Address text",
           "Ask user for Password",
@@ -534,7 +537,7 @@
         "search_query": "How do I block someone?",
         "url": "https://help.pinterest.com/en/article/block-or-unblock-someone",
         "instructions": [
-          "Go to pinterest.com",
+          "Go to pinterest.com/login",
           "Ask user for email Address",
           "Enter user-selected Email Address in text field with Email Address text",
           "Ask user for Password",
@@ -551,7 +554,7 @@
         "search_query": "How do I stop getting emails?",
         "url": "https://help.pinterest.com/en/article/want-to-stop-receiving-email",
         "instructions": [
-          "Go to pinterest.com",
+          "Go to pinterest.com/login",
           "Ask user for email Address",
           "Enter user-selected Email Address in text field with Email Address text",
           "Ask user for Password",
@@ -569,7 +572,7 @@
         "search_query": "How do I find my account email?",
         "url": "https://help.pinterest.com/en/article/find-your-account-email",
         "instructions": [
-          "Go to pinterest.com",
+          "Go to pinterest.com/login",
           "Ask user for email Address",
           "Enter user-selected Email Address in text field with Email Address text",
           "Ask user for Password",
@@ -585,7 +588,7 @@
         "search_query": "How do I update my search privacy?",
         "url": "https://help.pinterest.com/en/article/update-your-search-privacy",
         "instructions": [
-          "Go to pinterest.com",
+          "Go to pinterest.com/login",
           "Ask user for email Address",
           "Enter user-selected Email Address in text field with Email Address text",
           "Ask user for Password",
@@ -603,7 +606,7 @@
         "search_query": "How do I create an advertiser account?",
         "url": "https://help.pinterest.com/en/business/article/create-an-advertiser-account",
         "instructions": [
-          "Go to pinterest.com",
+          "Go to pinterest.com/login",
           "Ask user for email Address",
           "Enter user-selected Email Address in text field with Email Address text",
           "Ask user for Password",
@@ -622,7 +625,7 @@
         "search_query": "How do I create a campaign?",
         "url": "https://help.pinterest.com/en/business/article/set-up-your-campaign",
         "instructions": [
-          "Log into http://pinterest.com/business/create/",
+          "Go to http://pinterest.com/business/create/",
           "Ask user for email Address",
           "Enter user-selected Email Address in text field with Email Address text",
           "Ask user for Password",
@@ -685,25 +688,26 @@
           "Go to https://www.walmart.com/account/forgotpassword",
           "Ask user for email address",
           "Enter user-selected email address in text field with email address",
-          "Select Request Verification Code.",
+          "Click Submit",
           "Read to user: Check your email for the code. Be sure to check your junk or spam folder.",
           "Ask user for code",
           "Enter user-selected code in text field with code",
-          "Select Submit."
+          "Select Submit Code"
         ]
       },
       {
         "search_query": "How do I create an account?",
         "url": "https://www.walmart.com/help/article/create-an-account/205537a30a874c2baced847a73900b15?searchTitle=Search%20Results&title=Create%20an%20Account&locationQueryParams=%3Fkey%3Dcreate%20new%20account%26page%3D1",
         "instructions": [
-         "Select the Account button in the upper-right corner of Walmart.com",
-          "Click Create an Account",
-          "Ask user for name",
-          "Enter name in text field with name",
+          "Go to https://www.walmart.com/account/signup",
+          "Ask user for first name",
+          "Enter name in text field with first name",
+          "Ask user for last name",
+          "Enter name in text field with last name",
           "Ask user for email",
-          "enter email in text field with email",
+          "enter email in text field with email address",
           "Ask user for password",
-          "enter password in text field with password",
+          "enter password in text field with create a password",
           "Select Create Account"
         ]
       },
