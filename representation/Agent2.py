@@ -10,6 +10,7 @@ from WebDriver import WebDriver
 from SemanticParser import commands_to_webtalk
 from nltk import edit_distance
 import pylev
+from VoiceDriver import VoiceDriver
 
 class Location(Enum):
     top_left = 'top_left'
@@ -148,8 +149,9 @@ class Element:
     
 # variables stored as string with spaces (remove _case) and map to string
 class Agent2:
-    def __init__(self, webdriver):
+    def __init__(self, webdriver, voicedriver):
         self.webdriver = webdriver
+        self.voicedriver = voicedriver
         # stores str and Element values. varname: value 
         self.all_vars = {}
         self.all_vars_embeddings = {} 
@@ -171,28 +173,40 @@ class Agent2:
     # filters is a dict of the form {filter: value} ex {'location': 'upperleft'}
     def passFilters(self, element, body_width, body_height, right=False, left=False, above=False, below=False, location=False, html_type=False, tag = '', type_raw=''):
         if right and element.right and (element.right < right.right or (element.right - right.right) / body_width > 0.2): 
-            print("A")
+            # print("A")
             return False 
         if left and element.left and (element.left > left.left or (left.left - element.left) / body_width > 0.2): 
-            print("B")
+            # print("B")
             return False
         if above and element.top and (element.top > above.top or (above.top - element.top) / body_height > 0.2): 
-            print("C")
+            # print("C")
             return False 
         if below and element.bottom and (element.bottom < below.bottom or (element.bottom - below.bottom)  / body_height > 0.2): 
-            print("D")
+            # print("D")
             return False 
-        if location and element.location and location.value != element.location.value: 
-            print("E")
-            return False 
+        if location and element.location :
+            if location.value == 'top': 
+                if (element.location.value != 'top_left'  and element.location.value != 'top_right'): 
+                    return False 
+            elif location.value == 'bottom': 
+                if (element.location.value != 'bottom_left'  and element.location.value != 'bottom_right'): 
+                    return False 
+            elif location.value == 'left': 
+                if (element.location.value != 'top_left'  and element.location.value != 'bottom_left'): 
+                    return False 
+            elif location.value == 'right': 
+                if (element.location.value != 'top_right'  and element.location.value != 'bottom_right'): 
+                    return False 
+            elif location.value != element.location.value: 
+                return false 
         if html_type and element.html_type and html_type.value != element.html_type.value: 
-            print("F")
+            # print("F")
             return False 
-        if type_raw and element.type_raw and type_raw != element.type_raw: 
-            print("G")
+        if type_raw and element.type_raw and element.type_raw.lower() not in [raw.lower() for raw in type_raw] : 
+            # print("G")
             return False 
-        if tag and element.tag and tag != element.tag: 
-            print("H")
+        if tag and element.tag and tag.lower() != element.tag.lower(): 
+            # print("H")
             return False 
         return True 
 
@@ -221,8 +235,11 @@ class Agent2:
         elif parsed_wt.count("@webagent.retrieve") == 0 and parsed_wt.count("@webagent.ask") == 1: 
             await self.ask(parsed_wt.split("param:text")[-1].replace(")", " ").replace("\"", " ").replace("=", " ").strip())
         elif parsed_wt.count("@webagent.retrieve") == 0 and parsed_wt.count("@webagent.goto") == 1 and "com" in parsed_wt:
-            url = parsed_wt.split("com")[0].split(" ")[-1] + "com"
-            if "www" not in url: 
+            url = parsed_wt.split(".com")[0].split(" ")[-1] + ".com"
+            if len(parsed_wt.split(".com")) > 1: 
+                if not parsed_wt.split(".com")[1][0] == " ": 
+                    url += parsed_wt.split(".com")[1].split()[0]
+            if "www" not in url  and 'http' not in url: 
                 url = "www." + url
             if "http" not in url: 
                 url = "http://" + url 
@@ -297,6 +314,8 @@ class Agent2:
 
     # TODO: define the remaining functions
     async def click(self, description='', right =False, left=False, above=False, below=False, location=False, html_type=False):
+        
+        print("Retrieving element to click")
         elements = await self.retrieve(description=description, right=right, left=left,above=above, below=below, location=location, html_type=html_type)
         element=  elements[0]
         # await self.webdriver.page.waitForNavigation()
@@ -307,19 +326,21 @@ class Agent2:
     # can enter from var of if string_val = True just use the val
     # type = 'text' and tag = 'input' 
     async def enter(self, text_var, description='', right =False, left=False, above=False, below=False, location=False, html_type=False):
-        elements = await self.retrieve(description=description, right=right, left=left,above=above, below=below, location=location, html_type=html_type, tag = "INPUT", type_raw = "text")
+        elements = await self.retrieve(description=description, right=right, left=left,above=above, below=below, location=location, html_type=html_type, tag = "INPUT", type_raw = ["text", 'date', 'datetime-local', 'email', 'month', 'number','password', 'range', 'search', 'tel', 'url', 'week', 'color'])
         element=  elements[0]
         text_input = self.getVariable(text_var)
         await self.webdriver.enter_text(f'[xid="{element.ref}"]', text_input)
 
     # returns a selector corresponding to var value (basically store selector as var instead of click in CLICK)
     async def ask(self, var):
-        val = input("(Alex): What is the " + var +" ? \n")
+        self.voicedriver.speak("What is your " + var +" ? ")
+        if 'email' in var or 'username' in var or 'password' in var: 
+            val = self.voicedriver.listen().replace(" ", "").strip() 
         self.all_vars[var] = val
         # self.all_vars_embeddings[var] = self.embedding_model.encode([val])[0]
          
     def say(self, text):
-        print("(Alex): " + text)
+        self.voicedriver.speak(text)
 
     async def goto(self, website): 
         await self.webdriver.goToPage(website)
@@ -327,12 +348,14 @@ class Agent2:
     async def read(self, description='', right =False, left=False, above=False, below=False, location=False, html_type=False):
         elements = await self.retrieve(description = description, right = right, left = left,above = above, below = below, location = location, html_type = html_type)
         element = elements[0]
-        print("(Alex): " + element.description)
+        self.voicedriver.speak(element.description)
 
     # find the element that best matches the descr and satisfies filters in the DOM
     # TODO: RUN AND MAKE SURE THE SELECTOR WORKS
     async def retrieve(self, description='', right =False, left=False, above=False, below=False, location=False, html_type=False, tag = '', type_raw = '', return_list = False):
         # dom = self.webdriver.get_elements_db()
+        print("Getting the dom")
+        description = description.lower().replace("?", "").replace(".", "")
         self.dom = await self.getDOM() 
         # descr_embedding = self.embedding_model.encode([description])[0]
         scores = {}
@@ -342,9 +365,9 @@ class Agent2:
         body_width = self.dom[0]['width']
         body_height = self.dom[0]['height']
 
-        description_list =  description.lower().split(" ")
-        print(self.dom)
-        time.sleep(10000)
+        description_list =  description.lower().strip().split(" ")
+        print("Matching elements to: " + description + ", location: "  +  str(location) + ", html type: " + str(html_type) + ", tag: " +  str(tag) + ", type raw: " +  str(type_raw) + " in the dom")
+        
         for el_row in self.dom:
             element = Element(el_row, self.embedding_model, body_height, body_width)
             if element.hidden == True or not self.passFilters(element, body_width, body_height, right, left, above, below, location, html_type, tag, type_raw):
@@ -353,46 +376,72 @@ class Agent2:
             # score = cs([descr_embedding], [element.descr_embedding])[0][0]
 
             # Compute word level lev distance
-            score = pylev.levenshtein(description_list,  element.description.lower().split(" "))
+            score = pylev.levenshtein(description_list,  element.description.replace("?", "").replace(".", "").lower().strip().split(" "))
 
             score = 100 - score
             scores[element.ref] = score
             elements[element.ref] = element 
             text_scores[element.description] = score
 
-            if description == element.description: 
-                scores[element.ref] += 2 * len(element.description.split())
-                text_scores[element.description] += 2 * len(element.description.split())
+            if description.strip().replace(" ", '') == element.description.replace("?", "").replace(".", "").lower().replace(" ", '').strip(): 
+                return [element]
+
+            if description.lower() in element.description.replace("?", "").replace(".", "").lower() or element.description.replace("?", "").replace(".", "").lower() in description.lower(): 
+                scores[element.ref] = 100 + min(len(description.lower().split()), len(element.description.replace("?", "").replace(".", "").lower().split()))
+                text_scores[element.description] = 100 + min(len(description.lower().split()), len(element.description.replace("?", "").replace(".", "").lower().split()))
+
             for word in description.split(): 
-                if word in element.description: 
+                if word in element.description.replace("?", "").replace(".", "").lower(): 
                     scores[element.ref] += 2
                     text_scores[element.description] += 2
 
         # print("MATCH SCORES: ")
         # print({k: v for k, v in sorted(text_scores.items(), key=lambda item: item[1])})
-        print(scores)
-        
+        # print(text_scores)
         best_xid = max(scores.items(), key=operator.itemgetter(1))[0]
         print("Best element match contains text: " + str(elements[best_xid].description))
         return [elements[best_xid]]
 
 async def func():
-    a = WebDriver()
-    b = Agent2(a)
-    parsed = commands_to_webtalk(["Go to instagram.com.",
-          "Click Sign Up",
-          "Ask user for Email Address",
-          "Enter user-selected Email Address in text field with Email Address",
-          "Ask user for username", 
-          "Enter user-selected username in text field with username", 
-          "Ask user for password",
-          "Enter password in text field with password"])
-    # parsed = commands_to_webtalk(['go to amazon.com', 'ask the user for their search', 'enter your search', 'click the button next to epic daily deal'])
+    webDriver = WebDriver()
+    voiceDriver = VoiceDriver() 
+    b = Agent2(webDriver, voiceDriver)
+    
+    
+    voiceDriver.speak("Hi! Welcome to the Zip Recruiter call service. How can I help you today?")
+    complaint = voiceDriver.listen()
+    
+    voiceDriver.speak("Thanks I can help you with " + complaint)
+    voiceDriver.speak("Please give me a second as I figure out how " + complaint)
+    parsed = commands_to_webtalk(["Go to https://www.ziprecruiter.com/",
+          "Click Sign in in the upper right corner of the screen",
+          "Click I'm a job Seeker",
+          "Click Forgot password at the bottom",
+          "Ask user for email address",
+          "Enter email address in email address textbox", 
+          "Click Reset Password"])
+
+
     print("Parsed instructions: " + str(parsed))
     await b.webdriver.openDriver()
+
+    voiceDriver.speak("OK. To help you first I need to login to ziprecruiter.com and attempt to sign in")
+    await b.runParsedInstruction(parsed[0])
+    await b.runParsedInstruction(parsed[1])
+    voiceDriver.speak("I will say you are a job seeker")
+    await b.runParsedInstruction(parsed[2])
+    await b.runParsedInstruction(parsed[3])
+    await b.runParsedInstruction(parsed[4])
+    voiceDriver.speak("I'm going to enter your email to reset your password")
+    await b.runParsedInstruction(parsed[5])
+    await b.runParsedInstruction(parsed[6])
+    voiceDriver.speak("Your password reset is complete, please check your email")
+    
+    """
     for parse in parsed: 
         await b.runParsedInstruction(parse)
-    """
+    
+   
     await b.runParsedInstruction("now => @webagent.goto param:website = \" https://www.amazon.com/ \"")
     await b.runParsedInstruction("let param:your_search = ( @webagent.ask param:text = \" your search \" )")
     await b.runParsedInstruction("now => @webagent.retrieve => @webagent.enter param:text = \" your search \" on param:element = param:id ")
