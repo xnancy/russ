@@ -6,11 +6,11 @@ import numpy as np
 import asyncio
 import time
 from enum import Enum
-from WebDriver import WebDriver
-from SemanticParser import commands_to_webtalk
+from representation.WebDriver import WebDriver
+from representation.SemanticParser import commands_to_webtalk
 from nltk import edit_distance
 import pylev
-from VoiceDriver import VoiceDriver
+from representation.VoiceDriver import VoiceDriver
 
 class Location(Enum):
     top_left = 'top_left'
@@ -349,6 +349,7 @@ class Agent2:
         elements = await self.retrieve(description = description, right = right, left = left,above = above, below = below, location = location, html_type = html_type)
         element = elements[0]
         self.voicedriver.speak(element.description)
+        return element.description
 
     # find the element that best matches the descr and satisfies filters in the DOM
     # TODO: RUN AND MAKE SURE THE SELECTOR WORKS

@@ -26,13 +26,13 @@ class Element:
 # get the data and compute the additional representations here
     def __init__(self, attrs, embedding_model):
         # print (attrs)
-        self.location = Location.NONE
-        self.type = Type.NONE
+        self.location = Location.none
+        self.type = Type.none
         self.right = []
         self.left = [] 
         self.bottom = [] 
         self.above = [] 
-        self.self.attributes = ''
+        self.attributes = ''
         self.selector = ''
         self.text = ''
         self.class_id = ''

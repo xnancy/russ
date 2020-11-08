@@ -94,11 +94,11 @@ class Agent:
     async def click(self, descr, filters):
         # await self.webdriver.page.waitForNavigation()
         dom = await self.getDOM()
-        element = self.matchElement(descr, filters, dom)
-        print(element.text)
+        el_row = self.retrieve(descr, dom)
+        print(el_row['text'])
         # elem = await self.webdriver.getElementFromXid(selector)
-        print("CLICKING SELECTOR: " + str(element.ref))
-        await self.webdriver.click(f'[xid="{element.ref}"]')
+        print("CLICKING SELECTOR: " + str(el_row['ref']))
+        await self.webdriver.click("[xid=" + str(el_row['ref']) + "]")
 
     # returns a string of var value
     async def resolveText(self, var):
@@ -161,16 +161,13 @@ class Agent:
 
     # find the element that best matches the descr and satisfies filters in the DOM
     # TODO: RUN AND MAKE SURE THE SELECTOR WORKS
-    def retrieve(self, descr, filters, dom):
-        # dom = self.webdriver.get_elements_db()
-        dom = dom
-        descr_embedding = self.embedding_model.encode([descr])[0]
-        scores = {}
-        elements = {} 
-        text_scores = {} 
-        print("MATCHING " + descr)
+    def retrieve(self, descr, dom):
 
         for el_row in dom:
+            if 'text' in el_row.keys() and descr.lower().strip() in el_row['text'].lower().strip() : 
+                return el_row
+                
+            """
             element = Element(el_row, self.embedding_model)
             if element.hidden == True or not self.passFilters(element, filters):
                 continue
@@ -202,7 +199,7 @@ class Agent:
         best_xid = max(scores.items(), key=operator.itemgetter(1))[0]
         print(elements[best_xid].text)
         return elements[best_xid]
-
+        """
 # async def func():
 #     a = WebDriver()
 #     b = Agent(a)

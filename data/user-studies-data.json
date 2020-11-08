@@ -27,7 +27,6 @@
       "Ask user for password",
       "Enter user-selected password in text field under password",
       "Click Sign in",
-      "Ask user for the order you want to track",
       "Click Track Package by the user-selected order you want to track"
     ]
   },

@@ -7,6 +7,9 @@ class VoiceDriver:
     self.speaker = pyttsx3.init() 
 
   def listen(self, text):
+    return input(text) 
+
+    """
     with sr.Microphone() as source:
       self.recognizer.adjust_for_ambient_noise(source)
       print(text)
@@ -28,10 +31,13 @@ class VoiceDriver:
         self.speak("I didn't catch that")
         self.speak(text)
         return self.listen(text)
-
+    """
+    
   def speak(self, text): 
-    self.speaker.say(text)  
-    self.speaker.runAndWait() 
+    print(" (ALEX) : " + text )
+  
+    # self.speaker.say(text)  
+    # self.speaker.runAndWait() 
 
 
 def main():

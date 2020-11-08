@@ -175,6 +175,11 @@ class WebDriver:
 	async def enter_text(self, selector, text):
 		await self.page.type(selector, text)
 
+	async def read_text(self, selector):
+		element = await self.page.querySelector(selector)
+		title = await self.page.evaluate('(element) => element.innerText', element)
+		return title 
+
 	async def get_elements_db(self, save_to):
 		dominfo = await self.getDOMInfo()
 
