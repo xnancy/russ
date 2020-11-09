@@ -33,7 +33,7 @@ class Type(Enum):
 type_dict = {
     'button': ['button' ,  'selector'] , 
     'link': ['url' ,  'link'] ,  
-    'input': ['textbox' ,  'searchbox' ,  'input'] , 
+    'input': ['textbox' ,  'text field', 'text field', 'textfield', 'searchbox' ,  'input'] , 
     'checkbox': ['checkbox'] ,  
     'dropdown': ['dropdown' ,  'down arrow'] ,  
     'image': ['image' ,  'picture'] ,  
@@ -89,11 +89,11 @@ class Synthesizer:
             # location descr type 
             options.append(random.choice([' the ', ' ']) + random.choice(location_dict[location.value]) + " " + descr + " " + random.choice(type_dict[type_html.value]) + random.choice([' on the website ' ,  ' on the page ' ,  '']))
             # location type descr 
-            options.append(random.choice([' the ', ' ']) + random.choice(location_dict[location.value]) + " " + random.choice(type_dict[type_html.value]) + random.choice([' that says ' ,  ' with ' ,  ' containing ']) + descr)
+            options.append(random.choice([' the ', ' ']) + random.choice(location_dict[location.value]) + " " + random.choice(type_dict[type_html.value]) + random.choice([' that says ' ,  ' with ' , ' with text ',  ' containing ']) + descr)
             # type location descr 
-            options.append(random.choice([' the ', ' ']) + random.choice(location_dict[location.value]) + " " + random.choice(type_dict[type_html.value]) + random.choice([' on the website ' ,  ' on the page ' ,  '']) + random.choice([' that says ' ,  ' with ' ,  ' containing ']) + descr)
+            options.append(random.choice([' the ', ' ']) + random.choice(location_dict[location.value]) + " " + random.choice(type_dict[type_html.value]) + random.choice([' on the website ' ,  ' on the page ' ,  '']) + random.choice([' that says ' ,  ' with ' , ' with text ', ' containing ']) + descr)
             # type descr location 
-            options.append(random.choice([' the ', ' ']) + random.choice(type_dict[type_html.value]) + random.choice([' that says ' ,  ' with ' ,  ' about ']) + descr + random.choice([' at ' ,  ' near ' ,  ' on  ']) + " the " + random.choice(location_dict[location.value]) + random.choice([' of the page ' ,  ' of the screen ' ,  ' of the website ' ,  ' ']))
+            options.append(random.choice([' the ', ' ']) + random.choice(type_dict[type_html.value]) + random.choice([' that says ' ,  ' with ' , ' with text ',  ' about ']) + descr + random.choice([' at ' ,  ' near ' ,  ' on  ']) + " the " + random.choice(location_dict[location.value]) + random.choice([' of the page ' ,  ' of the screen ' ,  ' of the website ' ,  ' ']))
         elif location and descr:
             options.append(descr + " " + random.choice([' at ' ,  ' near ' ,  ' on ']) + " the " + random.choice(location_dict[location.value])+ random.choice([' of the page ' ,  ' of the screen ' ,  ' of the website ' ,  ' ']))
         elif type_html and descr:
@@ -265,7 +265,7 @@ class Synthesizer:
         options = [] 
         options.append(random.choice(['read to ', 'say to ']) + random.choice([' the ', '']) + random.choice([' user ', ' customer ', ' caller ']) + random.choice([' : ', ' : ', '']) + text + random.choice(["", " ."]))
         options.append(random.choice(['say : ', 'read : ']) + text + random.choice(["", " ."]))
-
+        options.append("tell " + random.choice[(' user ', ' ')] + random.choice([' to ', ' ']) + text)
         option = random.choice(options)
         hash_object = hashlib.sha224(option.lower().encode('utf-8'))
         hex_dig = hash_object.hexdigest()
