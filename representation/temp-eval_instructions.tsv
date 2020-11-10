@@ -1,0 +1,135 @@
+Go to https://squareup.com/dashboard/business/bank-accounts-overview	87e9f4059aba34c28156587421bee6ab85ec5de50708edf1f100ef864b0faf7a	159 	1
+Ask user for Email Address	633b15793670ee23a8ac687c82a9544801dec3dca5f13f87dcf42c95c148084b	None	2
+Enter user-selected Email Address in text field with Email Address	aa246c78fbf6a536415d92fe0d83a06f88f5d63e60d0cfb8f8f7eff3b827e036	36	3
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	4
+Enter user-selected Password in text field with Password	4d8fee26e2eba84d758ae7b990c4b5ee00f5a7daad7cb16799a8dad1ca5e28fd	41	5
+Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	47	6
+
+Go to https://squareup.com/signup	80ac0f428ae8a57556db2fec089811a9795c0807a940e87d7a0d87b7053c5603	123	23
+Ask user for Email Address	633b15793670ee23a8ac687c82a9544801dec3dca5f13f87dcf42c95c148084b	None	24
+Enter user-selected Email Address in text field under Enter your email	8dca3b55c49494fef188e76cbbba2d2976814ad37787a82141e768c6593974bb	113	25
+Enter user-selected Email Address in text field under Confirm your email	376d3ef2363a28cdae3d406edeaa27bbf3c9b80a16a92585fa4a0b402a5812d9	119	26
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	27
+Enter user-selected Password in text field with Create a password	1f54b60b1edaaa5e3f020c4f7cb3b1018db3ee19f4454885a4a40e2604fd4ef6	127	28
+Ask user for country	8db4c4893b738260dddb10ce207ddc355649f83cf381650c71b9f40a0aa17e38	None	29
+Select user selected country in drop down under Country text	99ca6bda9864cd300bbbf1b9d84bc9ce65d832a36df84f73525d594f770d87df	136	30
+Click checkbox to the left of I agree to Square's Terms, Privacy Policy, and E-sign Consent	05072fc87b938fee1c814d3a1338a2bec168ca54631aa192e28d96ebc8d30c95	314	31
+Click Continue	feeeca4c2b7e2168ffcb9eea0a6b1b29eea92f1ab92206b13a6ce46897552e96	327	32
+
+
+Go to http://yelp.com/user_details_reviews_self	1b11276995ac0f51873a61fafc0d675e60f88b8317e15f9e478b69cd7212e214	205	41
+Ask User for email	60dd63c22b10e3e07062cf983a50ef7d0a58b56a703d9c84b4cac7b123232c07	None	42
+Enter user-selected email in the text field with Email	8ce60d82bafd3301056017e4ad2b70f0925db726e6c694ad78b68948bdc0b426	4004	43
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	44
+Enter user-selected password in the text field with Password	75f01fcaf769e041abb05244585614acc5f009c9159072a9203006fda945becb	4006	45
+Click Log In	a1319cbe365b610c2766916c17209eecb55c76734029aac6dedbec831c90878b	4011	46
+Ask user for the Review to remove	e11e3b88f8bc4384a56aeea0d370ec520932cab6d8520963f178c9bf45a64a9d	None	47
+Click Remove Review below user-selected Review to remove	ed45004cfe6256cc2b7aabd3d902c9c7bb20143fc7bff7e1fe332a2759cdf33a	3844	48
+Click Confirm	0d70e3c336ae29818d47352071c4e9ca61a5d5cad920b76b3364a8993ee4bd14	4327	49
+
+Go to https://yelp.com/profile	1ea16d8a26a81c42b7bfc4a0498bbfbfec6001898f21c1e6f1b62e49c98ee78c	204	50
+Ask User for email	60dd63c22b10e3e07062cf983a50ef7d0a58b56a703d9c84b4cac7b123232c07	None	51
+Enter user-selected email in the text field with Email	8ce60d82bafd3301056017e4ad2b70f0925db726e6c694ad78b68948bdc0b426	4007	52
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	53
+Enter user-selected password in the text field with Password	75f01fcaf769e041abb05244585614acc5f009c9159072a9203006fda945becb	4009	53
+Click Email / Notifications	f17b1d23ba07f60be065952288be66a225c8a9f8423ffc28656d25f8c380c081	3514	55
+Ask user for notifications they'd like to receive	e2b8af1a6ad3b194c85575c4976bcbee6dd7fc4baaddd7d14e188c0725ddf69e	None	56
+Click the checkboxes next to the user-selected notifications you'd like to receive	a8764dbd18014c0eb362062fbaf26d63d248114fc14c4b054fb8856b0b80b6ce	3292	57
+Click Save Notification Settings	4713e09b096c198d734013edc52bf76e2eb6c52c159abd0447f48188beb3d19c	3429	58
+
+Go to http://yelp.com/signup	f70098761b5c87339e9394a6270a9b5f4c0dc87bc1d8b797afe02294d0a46ace	214	59
+Ask user for name	28f326e852c52a5ed9c83ab6b77166596b5789ad23e8ad4844208accfd254fbb	None	60
+Enter name in text field with name text	f6d5cd0ce68ecd9eecf720693aa53bb3f6e925841a6fc3497491a3897575fa5d	3399	61
+Ask user for Email Address	633b15793670ee23a8ac687c82a9544801dec3dca5f13f87dcf42c95c148084b	None	62
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	3405	63
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	64
+Enter user-selected Password in text field with Password text	a62da108a9d9b542a280c19974b717a716c9bd3280d8ca0f38c25000ce3b3b14	3407	65
+Click Sign Up	44d76618bb1246c78369d3a86a39b9575d8cb6c47757e66bc6fae867b0da70c1	3632	66
+
+Go to http://yelp.com/user_details_reviews_self	1b11276995ac0f51873a61fafc0d675e60f88b8317e15f9e478b69cd7212e214	207 s 67
+Ask User for email	60dd63c22b10e3e07062cf983a50ef7d0a58b56a703d9c84b4cac7b123232c07	None	68
+Enter user-selected email in the text field with Email	8ce60d82bafd3301056017e4ad2b70f0925db726e6c694ad78b68948bdc0b426	4004	69
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	70
+Enter user-selected password in the text field with Password	75f01fcaf769e041abb05244585614acc5f009c9159072a9203006fda945becb	4006	71
+Ask user for review you would like to edit	632015e6f562cfec8bb711c0259150ea286a567c147fdca3acabc0046d1f4c61	None	72
+Click Edit review for user-selected review you would like to edit	4bd7e250dfa6ad24888eda2008c9f8074dec0c7bebdb10ebd053d9ed72b0b66b	3844	73
+Ask user for text to replace	d1ef427185c4fc14704e0193c4921727fd5123f176ecf19797adb756d2f46aff	None	74
+Enter user-input text to replace	5554bd3c2225a7aa889464fa32d7afd14202f19b7c4d706a2676d360e9943ff9	167 	75
+Click Post	3a8bfb1b3fc02a9a2f5460fea7992061cb1f236b39165ea74c8d205d70159a27	188	 76
+
+Go to instagram.com.	3d2cba25a8b135c6592347fd1d9b962bb7a9659a886f5239585b2110f3c46427	208	94
+Click Sign Up	44d76618bb1246c78369d3a86a39b9575d8cb6c47757e66bc6fae867b0da70c1	167	95
+Ask user for Email Address	633b15793670ee23a8ac687c82a9544801dec3dca5f13f87dcf42c95c148084b	None	96
+Enter user-selected Email Address in text field with Email Address	aa246c78fbf6a536415d92fe0d83a06f88f5d63e60d0cfb8f8f7eff3b827e036	136	97
+Ask user for username	a8dce033b307a01782571893d3cd7cd21b0f009835f969cdd1b3928f8722c87a	None	98
+Enter user-selected username in text field with username	8ac2ed3f6af2ec67203a066c70ca7ce5da4f3a4a154d22efef6338e6c53fe860	148	99
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	100
+Enter password in text field with password	a831155ad4856982ec5a42d28155493f52ae82b975b7103c243e3c627a1df0ac	154	101
+
+Go to pinterest.com/login	2b73b9e7d05c75faab7cf19cf6b9f316a64ca52bc123f69f128d28ddb66b4da0	209	102
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	103
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	422	104
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	105
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	426	106
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	432	107
+
+Go to pinterest.com/login	7eb89d8aa3b60fff9517e6b6ca8a201b8f075b9ed543bf1c87a85ae07a0985da	209	108
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	109
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	421	110
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	111
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	425	112
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	431	113
+Click the directional chevron down icon at the top-right of the screen to open your menu	ad1b89f511969ef1ec221df7abb8f1257a01c27230cb9f4e529e5ece9e97cda3	184	114
+Click Log out	7254974cc2afccef7824cee54a4ab3a441d9c80d6e9f3d7290af204987b6da80	257	115
+
+Go to pinterest.com/login	2b73b9e7d05c75faab7cf19cf6b9f316a64ca52bc123f69f128d28ddb66b4da0	None	 116
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	117
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	421	118
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	119
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	425	120
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	431	121
+Click the directional chevron down icon at the top-right of the screen to open your menu	ad1b89f511969ef1ec221df7abb8f1257a01c27230cb9f4e529e5ece9e97cda3	176	122
+Select Add Another Account	80e90dcb9e43c6928f4b02751aac596706751ec50e796c65def35b37334974fb	200	123
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	124
+Enter user-selected email in the text field with email	be45cfaa16877ce1b3e020137565b7a8423f5ffd129226407836cb31a8c815df	209	125
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	126
+Enter user-selected password in text field with password	1552671baaba65424ffb308a5eec961c6bb4e8d27ad3921d3391ce1b9520906c	213	127
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	219	128
+
+Go to pinterest.com	7eb89d8aa3b60fff9517e6b6ca8a201b8f075b9ed543bf1c87a85ae07a0985da	398	129
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	130
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	422	131
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	132
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	426	133
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	432	134
+Click the directional chevron down icon at the top-right of the screen to open your menu	ad1b89f511969ef1ec221df7abb8f1257a01c27230cb9f4e529e5ece9e97cda3	181	135
+Click Settings	a0293047027463bedf6843bae2988b3d509834d0a59c6872e319656a0bbaf7d7	221	136
+Click Account settings on the left side of the screen	579a9c2653abf5499d4698907fcc28e56916c8076625e31a0d1b3c672370e65b	225	137
+Ask user for new email address	8eb677754d93e5c3e0b3849f63a25c375750d51a22524ddef17f1803f1709382	None	138
+Enter user-selected new email address in text field with Email Address	bfca4e9e27feb38b1ec5bb22d63fb8163f6041fe21242a88ea6d7c4d55a3803d	295	139
+Click Done	245600ba36f37b64601df73e82fc81a1b6ad1906a44370e8651be43c58fbf3a3	287	140
+
+Go to pinterest.com/login	2b73b9e7d05c75faab7cf19cf6b9f316a64ca52bc123f69f128d28ddb66b4da0	187	141
+Ask user for email they want to reactivate	76870abac7fd309e0fae86fbfd875a55c530ba942ba0f1d9d9752f44b2f6008a	None	142
+Enter user-selected email in text field with Email address	1962058289a98a61f9fa7cafc8a656865bd73ffeac941155eb7fa6db9f478f8c	422	143
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	144
+Enter user-selected password in text field with Password	57797a439112e9d02a78110f5fed4f078c58f1b6fea1ef13c21ab024acc61f83	426	145
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	432	146
+
+Go to http://pinterest.com/password/reset	71662a594ab6deffb0dd52809d896ee6d36b66496a06ed288a18574c09909994	22	147
+Ask user for name or, username	bf1f4db1e1fbab9bbe0dc27ab8254be539752c3d450fda0c00a79a40ac19f2f8	None	148
+Enter your name, or username in text field	ad66b29cc55c2a75ac44b1a7e3823a680ebfcaa96581122fd3fbab35b128026f	118	149
+Click Search	00dd2e59ebe98299de497a6dd854ee543667deec189a67f13c9bd61b08e47564	121	150
+Click This is me	406318225a82da58dc56478d0db4b9c992153843af517abe509cfa84561be3a2	126	151
+Read to User: Check the email address connected to your account for a password reset email	6a6689e1474ebbc779d5a198e9af0630b1192602fe0c7550654dfdc7d1e02bc6	None	152
+
+Go to http://pinterest.com/password/reset	71662a594ab6deffb0dd52809d896ee6d36b66496a06ed288a18574c09909994	22	147
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	148
+Enter your email in text field	719de44ae7b5d55e638d7bf92af1495609633cca7fe803b2bfa00efc754bcd70	118	149
+Click Search	00dd2e59ebe98299de497a6dd854ee543667deec189a67f13c9bd61b08e47564	121	150
+Click Send a password reset email	27731c060b39b310c0bfb500321ef07ba526c743266d82e42805019747eeeb38	126	151
+Read to User: Check the email address connected to your account for a password reset email	6a6689e1474ebbc779d5a198e9af0630b1192602fe0c7550654dfdc7d1e02bc6	None	152
+
+Go to https://www.walmart.com/	83d1b13a6acfbeaec4057a7eff356be7035c6feb85cddf24f17f9fc0b1f3a3c8	95	315
+Click Account	83031f14639721bdd01b5b90b10824d4b45eb1e1a6331ab5229906ecb037538b	5447	316
+Select Track Orders	3ae06c34e3dcefd18a015813ca22d76b32c4c034a312c69e93b460d47382c683	5491	317
