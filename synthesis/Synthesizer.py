@@ -88,6 +88,7 @@ class Synthesizer:
         options = [] 
         if descr and descr != " " and user_descr: 
             descr = random.choice([' the user-selected ', ' the user selected ', ' user-selected ', ' user selected ']) + descr
+        
         if location and type_html and (not descr or descr == " "): 
             # type location
             options.append(random.choice([' the ', ' ']) + random.choice(type_dict[type_html.value]) + random.choice([' in ' ,  ' on ']) + random.choice([' the ' ,  ' ']) + random.choice(location_dict[location.value]) + random.choice([' of the page ' ,  ' of the screen ' ,  ' of the website ' ,  '']))
@@ -110,6 +111,8 @@ class Synthesizer:
         elif type_html and descr:
             options.append(random.choice([' the ', ' ']) + descr + " " + random.choice(type_dict[type_html.value]))
             options.append(random.choice([' the ', ' ']) + random.choice(type_dict[type_html.value]) + " that says " + descr)
+        elif type_html: 
+            options.append(random.choice([' the ', ' ']) + random.choice(type_dict[type_html.value])) 
         elif descr: 
             options.append(descr)
         
@@ -211,13 +214,13 @@ class Synthesizer:
         self.file.write(option + "\t")
         self.file.write(command + "\n")
 
-    def enter_basic(self ,  text_var ,  descr ,  location = '' ,  type_html = '', user_descr = False): 
-        command = "now => " + self.element_ref(descr ,  location ,  type_html, user_descr) + " => @webagent.enter" + " param:text =    \" " + text_var + " \"  on param:element = param:id "
+    def enter_basic(self ,  text_var ,  descr ,  location = '' ,  type_html = ''): 
+        command = "now => " + self.element_ref(descr ,  location ,  type_html) + " => @webagent.enter" + " param:text =    \" " + text_var + " \"  on param:element = param:id "
         options = [] 
-        el_options = self.get_element_descriptors(descr ,  location ,  type_html, user_descr)
+        el_options = self.get_element_descriptors(descr ,  location ,  type_html)
         for el_option in el_options: 
-            options.append(random.choice([' Type in ' ,  ' Enter ' ,  ' Give ']) + random.choice([' the ', '']) + random.choice(['' ,  " user's " ,  " customer's " ,  " caller's ", " user-selected ", ' user-selected ']) + text_var + random.choice([' in ' ,  ' for ']) + el_option + random.choice(["", " ."]))
-            options.append(random.choice([' In ' ,  ' For ']) + el_option + random.choice([' type in ' ,  ' enter ' ,  ' give ']) +  random.choice([' the ', '']) + random.choice(['' ,  " user's " ,  " customer's " ,  " caller's ", " user-selected ", ' user-selected '])  +text_var + random.choice(["", " ."]))
+            options.append(random.choice([' Type in ' ,  ' Enter ' ]) + random.choice([' the ', '']) + random.choice(['' ,  " user's " ,  " customer's " ,  " caller's ", " user-selected ", ' user-selected ']) + text_var + random.choice([' in ' ,  ' for ']) + el_option + random.choice(["", " ."]))
+            options.append(random.choice([' In ' ,  ' For ']) + el_option + random.choice([' type in ' ,  ' enter ' ]) +  random.choice([' the ', '']) + random.choice(['' ,  " user's " ,  " customer's " ,  " caller's ", " user-selected ", ' user-selected '])  +text_var + random.choice(["", " ."]))
 
         option = random.choice(options)
         hash_object = hashlib.sha224(option.lower().encode('utf-8'))
@@ -229,11 +232,11 @@ class Synthesizer:
         self.file.write(option + "\t")
         self.file.write(command + "\n")
 
-    def enter_secondary(self ,  text_var ,  relative ,  descr ,  location = '' ,  type_html = '' ,  descr_side = '' ,  location_side = '' ,  type_html_side = '', user_descr = False, user_descr_side = False):
-        command = "now => ( " + self.element_ref(descr_side ,  location_side ,  type_html_side, user_descr_side) + " ) join ( " + self.element_ref(descr ,  location ,  type_html, user_descr) + " ) on param:" + relative.value + " = param:id  => @webagent.enter"  + " param:text =   \" " + text_var + "  \"  on param:element = param:id"
+    def enter_secondary(self ,  text_var ,  relative ,  descr ,  location = '' ,  type_html = '' ,  descr_side = '' ,  location_side = '' ,  type_html_side = '', user_descr_side = False):
+        command = "now => ( " + self.element_ref(descr_side ,  location_side ,  type_html_side, user_descr_side) + " ) join ( " + self.element_ref(descr ,  location ,  type_html) + " ) on param:" + relative.value + " = param:id  => @webagent.enter"  + " param:text =   \" " + text_var + "  \"  on param:element = param:id"
         options = [] 
         el_options_side = self.get_element_descriptors(descr_side ,  location_side ,  type_html_side, user_descr_side)
-        el_options = self.get_element_descriptors(descr ,  location ,  type_html, user_descr)
+        el_options = self.get_element_descriptors(descr ,  location ,  type_html)
 
         rel_values = []
         if relative.value == ' left ' or relative.value == ' right ': 
@@ -244,18 +247,18 @@ class Synthesizer:
         for el_option in el_options: 
             for el_option_side in el_options_side: 
                 for rel_value in rel_values : 
-                    options.append(rel_value + " " + el_option_side + " ,  " + random.choice(['type in ' ,  'enter ' ,  'give ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + el_option + random.choice(["", " ."]))
-                    options.append(random.choice(['Type in ' ,  'Enter ' ,  'Give ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + " " + el_option + " " + rel_value + el_option_side + random.choice(["", " ."]))
+                    options.append(rel_value + " " + el_option_side + " ,  " + random.choice(['type in ' ,  'enter ' ]) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + el_option + random.choice(["", " ."]))
+                    options.append(random.choice(['Type in ' ,  'Enter ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + " " + el_option + " " + rel_value + el_option_side + random.choice(["", " ."]))
 
         if location and location_side and location.value == location_side.value: 
             for el_option in self.get_element_descriptors(descr ,  type_html=type_html, user_descr=user_descr): 
                 for el_option_side in self.get_element_descriptors(descr_side ,  type_html=type_html_side, user_descr=user_descr_side): 
                     for rel_value in rel_values : 
-                        options.append(random.choice([' At' ,  ' Near' ,  ' On']) + " the " + location.value.replace("_" ,  " ")+ random.choice([' of the page' ,  ' of the screen' ,  ' of the website' ,  '']) + " ,  " + random.choice(['type in ' ,  'enter ' ,  'give ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + " " + el_option + " " + rel_value + el_option_side + random.choice(["", " ."]))
-                        options.append(random.choice([' At' ,  ' Near' ,  ' On']) + " the " + location.value.replace("_" ,  " ")+ random.choice([' of the page' ,  ' of the screen' ,  ' of the website' ,  '']) + " ,  " + rel_value + " " + el_option_side + " ,  " + random.choice(['type in ' ,  'enter ' ,  'give ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + " " + el_option + random.choice(["", " ."]))
+                        options.append(random.choice([' At' ,  ' Near' ,  ' On']) + " the " + location.value.replace("_" ,  " ")+ random.choice([' of the page' ,  ' of the screen' ,  ' of the website' ,  '']) + " ,  " + random.choice(['type in ' ,  'enter ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + " " + el_option + " " + rel_value + el_option_side + random.choice(["", " ."]))
+                        options.append(random.choice([' At' ,  ' Near' ,  ' On']) + " the " + location.value.replace("_" ,  " ")+ random.choice([' of the page' ,  ' of the screen' ,  ' of the website' ,  '']) + " ,  " + rel_value + " " + el_option_side + " ,  " + random.choice(['type in ' ,  'enter ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + " " + el_option + random.choice(["", " ."]))
 
-                        options.append("Go to the " + location.value + " of the page and " + random.choice(['type in ' ,  'enter ' ,  'give ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + " " + el_option + " " + rel_value + el_option_side + random.choice(["", " ."]))
-                        options.append("Go to the " + location.value + " of the page and " + rel_value + " " + el_option_side + " ,  " + random.choice(['type in ' ,  'enter ' ,  'give ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + " " + el_option + random.choice(["", " ."]))
+                        options.append("Go to the " + location.value + " of the page and " + random.choice(['type in ' ,  'enter ']) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + " " + el_option + " " + rel_value + el_option_side + random.choice(["", " ."]))
+                        options.append("Go to the " + location.value + " of the page and " + rel_value + " " + el_option_side + " ,  " + random.choice(['type in ' ,  'enter ' ]) + random.choice(['the ' ,  "the user's " ,  "the customer's " ,  "the caller's "]) + text_var + random.choice([' in ' ,  ' for ']) + " " + el_option + random.choice(["", " ."]))
 
         option = random.choice(options)
         hash_object = hashlib.sha224(option.lower().encode('utf-8'))
@@ -311,7 +314,7 @@ say_file = open("synth-strings/say.txt" ,  "r")
 says = say_file.readlines()
 says = [say.strip() for say in says]
 
-synth = Synthesizer('synth1.5M.txt')
+synth = Synthesizer('synth1.5-3.txt')
 
 for i in tqdm(range(1500000)): 
     descr = random.choice(descriptions)
@@ -325,6 +328,9 @@ for i in tqdm(range(1500000)):
     relative = random.choices([relative ,  ''] ,  weights = (1 ,  3))[0]
     user_descr = False 
     user_descr_side = False 
+
+    if not (descr or type_html): 
+        continue 
 
     if random.uniform(0,1) < 0.2: 
         user_descr = True 
@@ -365,9 +371,13 @@ for i in tqdm(range(1500000)):
         user_descr_side = True 
 
     if random.uniform(0,1) < 0.4 and ask: 
-        synth.enter_basic(ask ,  descr ,  location = location ,  type_html = type_html, user_descr = user_descr)
+        enter_type = ''
+        if random.uniform(0,1) < 0.6: 
+            enter_type = Type('input')
+        if descr or enter_type: 
+            synth.enter_basic(ask ,  descr ,  location = location ,  type_html = enter_type)
 
-    if random.uniform(0 ,1)  < 0.4 and website: 
+    if random.uniform(0 ,1)  < 0.6 and website: 
         synth.goto(website)
 
     if relative: 
@@ -395,7 +405,7 @@ for i in tqdm(range(1500000)):
         user_descr = False 
         user_descr_side = False 
 
-        if random.uniform(0,1) < 0.2: 
+        if random.uniform(0,1) < 0.3: 
             user_descr = True 
         if random.uniform(0,1) < 0.2: 
             user_descr_side = True 
@@ -412,7 +422,11 @@ for i in tqdm(range(1500000)):
             user_descr_side = True 
         
         if random.uniform(0,1)<0.8 and ask: 
-            synth.enter_secondary(ask ,  relative ,  descr ,  location = location ,  type_html = type_html ,  descr_side = descr_side ,  location_side = location_side ,  type_html_side = type_html_side, user_descr=user_descr, user_descr_side=user_descr_side)
+            enter_type = ''
+            if random.uniform(0,1) < 0.6: 
+                enter_type = Type('input')
+            if enter_type or descr: 
+                synth.enter_secondary(ask ,  relative ,  descr ,  location = location ,  type_html = enter_type ,  descr_side = descr_side ,  location_side = location_side ,  type_html_side = type_html_side, user_descr_side=user_descr_side)
 
 """
 synth = Synthesizer('testsynth.txt')
