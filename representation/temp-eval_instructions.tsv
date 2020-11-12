@@ -159,11 +159,11 @@ Enter user-selected Email Address in text field with Email Address text	7d146973
 Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	173
 Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	425	174
 Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	431	175
-v_first image (top left, puppy)
+v_Pin to choose: puppy in the top left
 Click the ellipses in the bottom-right corner of the Pin	606b2cd60cc48572c18fb7a850f075e195e0963a31210fec3c2c1861545374f0	284	176
 Click Hide Pin	eac25a628127bb41755c733637bbcbb277b625af687c1ee3c509d847468819d5	607	177
 Ask user for reason for hiding pin	1d542386fdd23e2a8bea13fc5d3cbc7c71bf02b5bcd7b9cac7be4d0a157f7871	None	178
-v_choose Not relevant to me
+v_reason for hiding pin: Not relevant to me
 Select user-selected reason for hiding the Pin	7412a922618849180f4fc4d60700ed8813804733d53cb3c6fec6340fae195766	579	179
 
 Go to pinterest.com	7eb89d8aa3b60fff9517e6b6ca8a201b8f075b9ed543bf1c87a85ae07a0985da	None	180
@@ -174,7 +174,7 @@ Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2d
 Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	426	184
 Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	432	185
 Ask user name of profile	1fc00f73402885a059889aaf0c106e66c30665aefa96a59e756441e17527ad05	0	186
-v_maryann rizzo
+v_user selected name of profile: Maryann Rizzo
 Enter user-selected name of profile in search bar textfield	96184ec929c7717924e2bad4028c9cdbcb330b6d9e5526c85845519caca660f4	143	187
 Click on first account	fb3a61c71e44f609a6c6e9861a8068f7810b849536b3059a7cddd59b3455637e	136	188
 Click Block	752b5419598b3355cab2f3a6cc59f87773d447f26299c058c12f4ab99ebf8349	267	189
@@ -230,7 +230,7 @@ Enter user-selected password in text field with password text	a9a3d642ee6da27c79
 Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	432	230
 Click Ads in the top left corner	479d5dbccb43fb21ed63b3a9cff9da47237fcd70650b0b6f7e18ca571af7fa72	136	231
 select Overview	e197e8a79b036a5de624c353584aaaa504fa3f9f18a1b9d586d2136fa42aa5d3	150	232
-v_smalltinyhippopotamus
+v_name: small tiny hippopotamus
 Click Arrow button next to your name	02ae0095458392cb58e75a0d4c85da820770d22c7fac234746beca5574126eef	133	233
 Click Create new ad account 	8e8a3f9383a875f50486c0462d4aec4ccb9f3672e9ed536ed76360927059e0e7	179	234
 Ask user for a name	1e1cc282e14b08db03b94fdca6c8f531216b3c1f8297c31cf065273cf54b3154	None	235
@@ -248,7 +248,7 @@ Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	43
 Click Ads at the top of the screen	51fcb8c6bcb42ddcd4b2c5a5f6c6d411c3ee00a90dc68b1362e621f03fe8386a	138	244
 click Create ad	651703c6f76dd420de8920921a83dd5cb944555950ecf63172b43dec2d3f8a90	150	245
 Ask user for goal	d91c80e2a09383d433c54b0afb25346ab5372da1dc6c76d4db52a7cbc9dd60e2	None	246
-v_Brand Awareness
+v_user selected goal: Brand Awareness
 Select user-selcted goal	6b854aca172ac589b06e41ad1015e1c8b6e6062f3d67456c3d3a24761c3c730f	291	247
 Click Continue 	a32441c86ddc150829a046c5fa766540b595d1d224dafab19d9c60b7fb873599	368	248
 
