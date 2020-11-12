@@ -260,3 +260,162 @@ Read to user: Check your email for the code. Be sure to check your junk or spam 
 Ask user for code	0ab0790f09d82fbaba0f1ef86249fd6e61a16467da08f489a08e4ffda9d5e86f	None	343
 Enter user-selected code in text field with code	0f10bf7107a4796e0db9ba2c15c02ba1d35689a7655cde474c5d9338b056c9ad	417	344
 Select Submit.	89d46af03d3fff11bea68d511546f23c4410dd99b772b34325b23b11a6cd87a3	431	345
+
+i_Go to https://www.walmart.com	insert hash	None	346
+Select the Account button in the upper-right corner of Walmart.com	84661d00dadeafa8d87289daa1495c570609891f19ae68ce8c3064782347e9cd	5703	347
+Click Create an Account	70764073268a11b6dd050ca283ee16fcc7327d06b0d6d677a0e95cb69a570d16	5748	348
+Ask user for name	28f326e852c52a5ed9c83ab6b77166596b5789ad23e8ad4844208accfd254fbb	None	349
+Enter name in text field with name	cc3eebb91f8dca51c77e397f7f45f89df4d9b24b3d83d145915dac41e37077d6	133	350
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	351
+enter email in text field with email	4723c33e9cdf6a2f7d97077ab4dde23336c2d8cc502aa99b4f08f6352a4ee590	147	352
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	353
+enter password in text field with password	a07ec28e9e64f8f58629749c5bb849017bd00920d9fdef45978eeb7994b40174	154	354
+Select Create Account	79ce0e6527c9e8f82c728e8e68c4c215f0d3e735b5a44d373b9b05f60eb4f18b	186	355
+
+Go to https://www.walmart.com/account/	084ba13495bc0555bdf10bba4f06e5eace8aeff5013f81e0a2bda79a0b83cbed	None	356
+r_ Go to https://www.walmart.com/account/login?returnUrl=%2Faccount%3Fr%3Dyes	insert hash	None	356
+Ask user for email address	2acd3a120c269d5774223684bc6af51e328ef5afc01f3f4e3371037fa8e6ce71	None	357
+enter user-selected email address in text field with email address (required)	c9e3a86455ba42079ee6ee53b43e669dfca9c5c22149e87eb24899ad4a951e59	94	358
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	359
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	101	360
+Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	125	361
+Click Payment Methods from the bar on the left side of the screen.	9337eb170f047c70481daa3456877df5c68f7927def2997bf6fcb25643ff70db	5783	362
+v_Payment method to change: Mastercard under "Credit or Debit Card"
+Click Edit next to the payment method you want to change	af228d33d8ee0312530d6b4c215c952bd54103c8987298617908d31886b975ac	115	363
+
+Go to https://www.target.com/guest/gift-card-balance?lnk=acct_nav_check_balance	f7334a14046077e640e1bd973fed22e7e0df14a80dfe57da448cc2e6cfd06c3a	None	364
+Ask user for Gift card number	06030bb481ad9e7638432d3412612111c1ae455ff2a21ff1567399ede49ba3e7	None	365
+Enter Gift card number in text field with Gift card number	00c2be3e609caefcc7e2573d957155aee8fd41008baa4fd31c54f8c1dc9d403e	318	366
+ask user for gift card access number	4bfbd79c3f00a072964ea4ac0cfea94ecb666a1021393588ecc602537888f842	None	367
+enter gift card access number in text field with gift card access number	cb0738be4b666143e332cee81319f58bb2ce97c5b3b8da01616a7b22a316df99	323	368
+Click Check Balance	191bde798d5d13c1737f87c7488cc76219cb463895eb572bf58efaa8523c6143	334	369
+
+Go to https://accounts.myuhc.com/rt/register/myuhc/en	b97ef54ea88ff4e7bbbe1be51caea8387a921e701442671e93bf4e8dea86f59c	None	370
+ask user for First Name	4f8b01aa8c878f24abe347090e0fb671d43c26792f4507ed696be1d1cf29aa88	None	371
+enter user-selected First Name in text field under First Name text	80bb41fd6ee605ab47764f14c1b7ac704a4308c20809bb1701f2def3014b07a8	68	372
+ask user for Last Name	fd10a8052fe969b488ee9488e319112c1e028e4a1f09c5a5d5cfc98218c2d935	None	373
+enter user-selected Last Name in text field under Last Name text	0cca2c124819ccf8ac78cc03f6bdc5a47c4fca84667695bc3bff5271bb457a05	74	374
+Ask user for Birth Month	68f4c231858b8c5d43eb52c74fc5e52cf84aa2ff5ed6b23eb3df910aabbd44d4	None	375
+Select user-selected Birth Month in Month drop down	ca8f7f57b845d2079502eb9d3e9004f21c7b1419fbec179e400def31663e6127	84	376
+Ask user for Birth Day	e0a09437c6290f93e3c0500781353d627d1b381b336c11ef7c55a1ae238559a1	None	377
+Enter user-selected birth day in text field with DD	2c261b654e9337b7368a9a165be6af70c8f005b4dec44e3679d6dc9fe3e05627	103	378
+Ask user for birth year	aabb767b8e945ab3cb307dfacae962609cd7fd9f95fd28f24573fdb577d49142	None	379
+Enter user-selected Birth year in text field with YYYY	a98ea4d6cd16706b382957151d16a66a862c8884981041770c9aac7b6a476971	107	380
+Ask user for Member ID	7d793b625b3e65f993e58c51b5bf7ebc82444ef94af037f08fef936834ed4fdb	None	381
+Enter user-selected Member ID in text field under Member ID text	a1d1446970a8c014b9c77fea7c9e0b067b6ec64100048c295581f4332b436f30	129	382
+ask user for Group or policy number	8f6ac6b038a1a7720a030cd9c07400d2f787568ff6ec0b943c576c588de65775	None	383
+Enter user-selected Group or policy number in text field under Group or policy number text	c1b6cd814def06bb5d323ce66f98d87dd9511a94e89d374f73cf1b1aef34cceb	135	384
+Click Continue	feeeca4c2b7e2168ffcb9eea0a6b1b29eea92f1ab92206b13a6ce46897552e96	140	385
+
+Go to https://mail.google.com/mail/u/0/#settings/general	d1cc77c172ae2d162d1936b1c46d4d3888de336e997f83338d8dc1e47257d35e	None	392
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	393
+Enter user-selected Email in text box with Email or phone	cffece638a6d0f24bf91b65ef1a4a4d1052a45a79792c3301778f268a1f4d2cd	75	394
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	116	395
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	396
+Enter user-selected password in text box with password	e9813cf1422157d94012f6b7df4e2ed0e0388989427526925b5c4b81bd355926	103	397
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	151	398
+Click the gear icon in the top right	644e758a58944b09223a01c2664dcb193488d4d201d35c9107137e2df153c151	210	399
+Click See all settings	f3225cb4b74e818d3b8c2d2de29d8f48819a3b0ab3f3c4a85438a1d6ad770a0c	1847	400
+Click the Inbox tab.	e30c15472e7157f7424845a0c940ebae2c5deed18f73b2eaeeedd6ee28ed29bd	457	401
+Select Default.	698401beccdb61f0dd4df6271b60fb6387c3d6c5fdf8d483c059473dbaeddc67	1752	402
+v_Check box to click: Updates
+Click the check box	8fb50ce76738b6fa3dcaf0fd6405dab692ceed85b68407d30f87d91c9207eec0	1877	403
+Click Save Changes.	1ace3c2378f69aad63427c9b526f4697373d68bd65808f414b29ae7c22769500	2122	404
+
+Go to https://myaccount.google.com/	a261ef07983c7af64319a95dd668095bc8347a4e0bf8341c7d7c5ed55d9c1129	None	405
+Click Use another account	e305ed54ddc96d8a060d0263fcdb5f2c47fd6b2282aa00e2549d97fd00076d91	43	406
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	407
+Enter user-selected Email in text box with Email or phone	cffece638a6d0f24bf91b65ef1a4a4d1052a45a79792c3301778f268a1f4d2cd	75	408
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	116	409
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	410
+Enter user-selected password in text box with password	e9813cf1422157d94012f6b7df4e2ed0e0388989427526925b5c4b81bd355926	103	411
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	151	412
+Click Security	bd20458148087a4d0c47aecee1126153c64ae9ae7804ba2c6176ea797e00902e	230	413
+Click Password	b51046f1a44b99af11d57fea8cd17e82602e3318f72b635059d970566fb5448e	940	414
+Ask user for old password	3025964f50581f60b01c1994c84dbba8d040629c219fafe327a14118aa0c34c9	None	415
+Enter user-selected old password in text field with Enter your password	80ba99f9d221ba69f531fd13e88a2dffc126ba3669935189c3e31ada4577f9de	104	416
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	152	417
+Ask user for new password	a698f6b6750823a301ef035b86d3c1ea059cb0a8722a93571bfd161d85643aba	None	418
+Enter user-selected new password in text field with new password	13261c3501b6e45ba0624e3f7e34f885c1d6bb5c9140e091702c9b6b0dd26987	239	419
+Enter user-selected new password in text field with confirm new password	f9ddac3d3b471078017c236caa6288ea53b373b6099a3a803a7c596c1a475115	269	420
+Click CHANGE PASSWORD	b3b9f128e17cf32915ef0f623b17300f11f122ab151817f1d6e6cd1aaf45ca9d	295	421
+
+Go to https://accounts.google.com/SignUp	ecedade51dffd76225fba5158f7cd81c2f1619379a347949cdd8f2ff4f9b8cf2	None	422
+Ask user for first name	3721ad727991ce3c24cb18b52071520ccb1ab293704699ddd5a9a1cfd0e99c75	None	423
+Enter user-selected first name in text field with first name	0a0bf8267634b59b95a924008184ae1defac15feb51cec1d54ec899e7f6a8e41	77	424
+Ask user for last name	62b528d1d30346a04801df19213187aaa5945121860b79a47ca592f01b886768	None	425
+Enter user-selected last name in text field with last name	bb2778453eb01270a1a73c46edf6be3d026576bcac95f333bc44cf1f35f75b8b	88	426
+Ask user for username	a8dce033b307a01782571893d3cd7cd21b0f009835f969cdd1b3928f8722c87a	None	427
+Enter user-selected username in text field with username	8ac2ed3f6af2ec67203a066c70ca7ce5da4f3a4a154d22efef6338e6c53fe860	103	428
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	429
+Enter user-selected password in text field with password	1552671baaba65424ffb308a5eec961c6bb4e8d27ad3921d3391ce1b9520906c	129	430
+Enter user-selected password in text field with confirm	79dd1ffcdc98dc8c4f1eb2f9757a53f462fbe45b08725e0a9f7ea135ecfe17c8	140	431
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	170	432
+
+Go to mail.google.com	4ec76185a34ceacd22101f9f44b5fc366cb04631064f7b3955fed5d5b339e44e	0	433
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	434
+Enter user-selected Email in text box with Email or phone	cffece638a6d0f24bf91b65ef1a4a4d1052a45a79792c3301778f268a1f4d2cd	75	435
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	116	436
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	437
+Enter user-selected password in text box with password	e9813cf1422157d94012f6b7df4e2ed0e0388989427526925b5c4b81bd355926	103	438
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	151	439
+Click the gear icon in the top right	644e758a58944b09223a01c2664dcb193488d4d201d35c9107137e2df153c151	179	440
+Click See all settings.	28c329197abbff3355d2edf5598bb0f87106660b9e54490c68b2db04c849eb04	1841	441
+Click + Create New in the Signature section	751fd4bdb2427cd614888385bf874bfaefed7edf8dcac5697cbf3a8e8ed4d04d	1384	442
+
+Go to mail.google.com	4ec76185a34ceacd22101f9f44b5fc366cb04631064f7b3955fed5d5b339e44e	None	443
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	444
+Enter user-selected Email in text box with Email or phone	cffece638a6d0f24bf91b65ef1a4a4d1052a45a79792c3301778f268a1f4d2cd	75	445
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	116	446
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	447
+Enter user-selected password in text box with password	e9813cf1422157d94012f6b7df4e2ed0e0388989427526925b5c4b81bd355926	103	448
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	151	449
+Click Compose.	7838d9aa1315b1b68f1ef7724203eceaeabe475ed5544ff8be58708ec05e7d2b	316	450
+Click Turn confidential mode on / off button	615df527a882f139597ae0f07f473547fbf69a9d4c02e631bea96000f37045ad	2348	451
+Click Save.	7872e76a8c07f325e25c4fc509adc25781f32f79e59fb833cee2bf48382d71d6	2747	452
+
+Go to mail.google.com	4ec76185a34ceacd22101f9f44b5fc366cb04631064f7b3955fed5d5b339e44e	None	453
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	454
+Enter user-selected Email in text box with Email or phone	cffece638a6d0f24bf91b65ef1a4a4d1052a45a79792c3301778f268a1f4d2cd	75	455
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	116	456
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	457
+Enter user-selected password in text box with password	e9813cf1422157d94012f6b7df4e2ed0e0388989427526925b5c4b81bd355926	103	458
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	151	459
+On the left, click Sent.	b19e12431dd2c55360e68f37ed5cf2e981d2bb0c8743ecc106143d5b3ac5fc9c	335	460
+v_Confidential email: The email to sam.masling@gmail.com
+Open the confidential email.	3f4fe2f3247b280b14a23f9e57c4568e0fbc41890d98c9bbfdf1167aaa4ceb91	1954	461
+Click Remove access.	f50115d91697aaa58699412d337e56a0bd62e40354e2053ea0cc3da663a40f8b	2149	462
+
+Go to mail.google.com	4ec76185a34ceacd22101f9f44b5fc366cb04631064f7b3955fed5d5b339e44e	None	463
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	464
+Enter user-selected Email in text box with Email or phone	cffece638a6d0f24bf91b65ef1a4a4d1052a45a79792c3301778f268a1f4d2cd	75	465
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	116	466
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	467
+Enter user-selected password in text box with password	e9813cf1422157d94012f6b7df4e2ed0e0388989427526925b5c4b81bd355926	103	468
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	151	469
+Click the question icon in the top right	ee139299b9595c099239ca1fe46a16b03411821d0aa90e9395ea71ff5f892d7b	198	470
+Click Help	3641e16c97cb554f59fdf98ef49c072d8fe8406b8e58c14f12029e0c28b3a1ff	203	471
+Click Send feedback.	d5837c242b8394b370f74dec48de2bc8962b0925457611dd0188aea36359a1a4	208	472
+Ask user for comments	9b797175942422bc02abfd8bb78af27e873d7c1ab4a7d711918e109ade6ce7d3	None	473
+Enter comments in text field with comments	179cec63ffd7f54a6d6aedcda3c9616d09bf5f1f9b123ae28e7fdf425fdf5829	N/A	474
+At the bottom right, click Send.	bdf39be83fec81c26aeec944e35ea0f7777e6a1581ac1b940891be9dcf0be4a1	N/A	475
+
+Go to mail.google.com	4ec76185a34ceacd22101f9f44b5fc366cb04631064f7b3955fed5d5b339e44e	None	476
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	477
+Enter user-selected Email in text box with Email or phone	cffece638a6d0f24bf91b65ef1a4a4d1052a45a79792c3301778f268a1f4d2cd	75	478
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	116	479
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	480
+Enter user-selected password in text box with password	e9813cf1422157d94012f6b7df4e2ed0e0388989427526925b5c4b81bd355926	103	481
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	151	482
+i_Click the gear icon in the top right	644e758a58944b09223a01c2664dcb193488d4d201d35c9107137e2df153c151	210	483
+Click see all settings	ae6383c9edaaf94ede18da5b81281c2826bd2ea485249b4efe9914707eb1ee8c	1841	441
+Click the mail notifications off checkbox	8539f400803132a32e27d13ae5d0a32d810223bcb91ae304efd84e419d071377	1235	485
+Click save changes	a04b2dfbf1c0692288be4fae11c9c1a06799e9f2eb497425cefcad56cb102eb6	1741	486
+
+Go to http://www.spotify.com/account?_ga=2.170055017.893322237.1604048036-1104676808.1602105716	b1f2eae7794db7ee0c76d95ff94900f37d7f3384a8996ed5080dac86668d5429	None	487
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	488
+Enter user-selected email in text field under email address or username	0edc043242d6ed475e62e7a0c454b169ff5c9e579cb994d03c6445cd3e39c017	44	489
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	490
+Enter user-selected password in text field under password	6484483d59aa34c1cbc8680044f27f4840479fe2a9e7117e67b6679b8a860ee4	48	491
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	60	492
+Click SIGN OUT EVERYWHERE.	17865a2e4dcff49329bfafe404f145cded359ff45bcaff64f442db90c4f2055a	241	493
