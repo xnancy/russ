@@ -133,3 +133,130 @@ Read to User: Check the email address connected to your account for a password r
 Go to https://www.walmart.com/	83d1b13a6acfbeaec4057a7eff356be7035c6feb85cddf24f17f9fc0b1f3a3c8	95	315
 Click Account	83031f14639721bdd01b5b90b10824d4b45eb1e1a6331ab5229906ecb037538b	5447	316
 Select Track Orders	3ae06c34e3dcefd18a015813ca22d76b32c4c034a312c69e93b460d47382c683	5491	317
+
+Go to pinterest.com	7eb89d8aa3b60fff9517e6b6ca8a201b8f075b9ed543bf1c87a85ae07a0985da	None	153
+r_Go to pinterest.com/login	insert hash	None	154
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	155
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	422	156
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	157
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	426	158
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	432	159
+Click the directional chevron down icon at the top-right of the screen to open your menu	ad1b89f511969ef1ec221df7abb8f1257a01c27230cb9f4e529e5ece9e97cda3	187	160
+Click Settings	a0293047027463bedf6843bae2988b3d509834d0a59c6872e319656a0bbaf7d7	220	161
+Click Account settings from the left-side navigation	2d8761be8a3be6ae0e4d16d91bb581989e369a4a03bce1706d4d4425f6c3bf0c	232	162
+ Click Change your password	8d57bbe6ea080bf47294a83a8f1f0f0c81a482437e365c9da105f602ee7d28b0	294	163
+Ask user for old password	3025964f50581f60b01c1994c84dbba8d040629c219fafe327a14118aa0c34c9	None	164
+Enter old password in text field with old password	f1a1f67918c134e5633d33beb16e4ca016529199ef351c148cab032893f9636f	739	165
+Ask user for new password	a698f6b6750823a301ef035b86d3c1ea059cb0a8722a93571bfd161d85643aba	None	166
+Enter old password in text field with new password	5632a21fc468c546f5b1bca022fa99e4219ce4ed4c9a675349352f2c8fc873de	751	167
+ Click Change Password	3d59368c70e9119b6938fbae4acc613b9251f19904e560edc356e9f76a7fe6eb	769	168
+Click Done	245600ba36f37b64601df73e82fc81a1b6ad1906a44370e8651be43c58fbf3a3	278	169
+
+Go to pinterest.com	7eb89d8aa3b60fff9517e6b6ca8a201b8f075b9ed543bf1c87a85ae07a0985da	0	170
+r_Go to pinterest.com/login	insert hash	None	170
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	171
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	421	172
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	173
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	425	174
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	431	175
+v_first image (top left, puppy)
+Click the ellipses in the bottom-right corner of the Pin	606b2cd60cc48572c18fb7a850f075e195e0963a31210fec3c2c1861545374f0	284	176
+Click Hide Pin	eac25a628127bb41755c733637bbcbb277b625af687c1ee3c509d847468819d5	607	177
+Ask user for reason for hiding pin	1d542386fdd23e2a8bea13fc5d3cbc7c71bf02b5bcd7b9cac7be4d0a157f7871	None	178
+v_choose Not relevant to me
+Select user-selected reason for hiding the Pin	7412a922618849180f4fc4d60700ed8813804733d53cb3c6fec6340fae195766	579	179
+
+Go to pinterest.com	7eb89d8aa3b60fff9517e6b6ca8a201b8f075b9ed543bf1c87a85ae07a0985da	None	180
+r_Go to pinterest.com/login	insert hash	None	180
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	181
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	422	182
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	183
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	426	184
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	432	185
+Ask user name of profile	1fc00f73402885a059889aaf0c106e66c30665aefa96a59e756441e17527ad05	0	186
+v_maryann rizzo
+Enter user-selected name of profile in search bar textfield	96184ec929c7717924e2bad4028c9cdbcb330b6d9e5526c85845519caca660f4	143	187
+Click on first account	fb3a61c71e44f609a6c6e9861a8068f7810b849536b3059a7cddd59b3455637e	136	188
+Click Block	752b5419598b3355cab2f3a6cc59f87773d447f26299c058c12f4ab99ebf8349	267	189
+Click OK	e845e31978677935a2519cfb0190cce9eb14473cd62f15de8fa476bed3ac9c06	913	190
+
+Go to pinterest.com	7eb89d8aa3b60fff9517e6b6ca8a201b8f075b9ed543bf1c87a85ae07a0985da	None	191
+r_Go to pinterest.com/login	insert hash	None	191
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	192
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	422	193
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	194
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	426	195
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	432	196
+click the directional chevron down icon in the top-right corner	966cf95bc32c07752a7a70c2fc58700473c544d60e05cf1dfa7e5c6bd301a074	178	197
+Click Settings	a0293047027463bedf6843bae2988b3d509834d0a59c6872e319656a0bbaf7d7	225	198
+Click Notifications from the left-side navigation	01564079b9cda3a5f96cd98adb6a245e4f793fad1424d3231363ad182820aadf	243	199
+Click Edit next to By email	45861a5971fcfc65155ba9eeb755585aeee0631889d3c3a4bdcce18186b500cf	310	200
+Click Turn off all	85b7272bb102fc74541c5c932135846daf57385dec08dc3e60edf9db5b69758c	307	201
+Click Done at the top of the page	7d85d1b6a4ec83ae4d139001f7a06d7644ee1b8586efcf6204329d010047f7fc	278	202
+
+Go to pinterest.com	7eb89d8aa3b60fff9517e6b6ca8a201b8f075b9ed543bf1c87a85ae07a0985da	None	203
+r_Go to pinterest.com/login	insert hash	None	203
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	204
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	422	205
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	206
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	426	207
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	432	208
+click the directional chevron down icon in the top-right corner	966cf95bc32c07752a7a70c2fc58700473c544d60e05cf1dfa7e5c6bd301a074	180	209
+Click Settings	a0293047027463bedf6843bae2988b3d509834d0a59c6872e319656a0bbaf7d7	221	210
+Click Account settings	807d6b941a4aaad4249386c7f8b390d9e57346e75e875df450a7026069596aea	224	211
+read to user: email address found under basic information	22d06d702919579689e1ab6843a2eb39d39ec46b2554b0a01f0c248960df072c	286	212
+
+Go to pinterest.com	7eb89d8aa3b60fff9517e6b6ca8a201b8f075b9ed543bf1c87a85ae07a0985da	None	213
+r_Go to pinterest.com/login	insert hash	None	213
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	214
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	422	215
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	216
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	426	217
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	432	218
+Click the ellipses at the top of Pinterest	99265e68468bb401081f65b11491e9b7f2b8cc2bef4353ea59c9ef137de2ee6d	None	219
+r_click the directional chevron down icon in the top-right corner	insert hash here	180	219
+Click Settings	366f2edfa2e886dfe76e60f9040157c819c38ab51d5041ca132729c03a9f60c1	220	219
+Click Privacy and data	a032cf88b0df9e76b943a53031f64deaddf21cdf994e0a07660344ee53c0e75d	245	221
+Click the check box next to Hide your profile from search engines	d2824858f6dfee4257aab0d1633552bc8f201f04c4ee739331358a3f71e48e7a	329	222
+Click I understand	164ddf49261728469f86880d6796c3f6e1b4b0ecd2b50637758a0a719d93ce99	458	223
+Click Done	245600ba36f37b64601df73e82fc81a1b6ad1906a44370e8651be43c58fbf3a3	281	224
+
+Go to pinterest.com	7eb89d8aa3b60fff9517e6b6ca8a201b8f075b9ed543bf1c87a85ae07a0985da	0	225
+r_Go to pinterest.com/login	insert hash	None	225
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	226
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	422	227
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	228
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	426	229
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	432	230
+Click Ads in the top left corner	479d5dbccb43fb21ed63b3a9cff9da47237fcd70650b0b6f7e18ca571af7fa72	136	231
+select Overview	e197e8a79b036a5de624c353584aaaa504fa3f9f18a1b9d586d2136fa42aa5d3	150	232
+v_smalltinyhippopotamus
+Click Arrow button next to your name	02ae0095458392cb58e75a0d4c85da820770d22c7fac234746beca5574126eef	133	233
+Click Create new ad account 	8e8a3f9383a875f50486c0462d4aec4ccb9f3672e9ed536ed76360927059e0e7	179	234
+Ask user for a name	1e1cc282e14b08db03b94fdca6c8f531216b3c1f8297c31cf065273cf54b3154	None	235
+Enter the user-selected name in text field with name	77283e5e68a4f11063a0a9d34fdf98acee4dc71035cc1954fd0f3812425d727b	396	236
+Click Save	f46ac84bb9287a52b34b70f578b62d67b2860757a424d63b43235c7d52a44236	418	237
+r_Click Set Up Billing	insert hash here	418	237
+
+Log into http://pinterest.com/business/create/	9141c4f31d04ef2170268fe50ec20ade4689256a2e94cdf9fd2a6b62cef89084	None	238
+r_Go to pinterest.com/login	insert hash	None	238
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	239
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	422	240
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	241
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	426	242
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	432	243
+Click Ads at the top of the screen	51fcb8c6bcb42ddcd4b2c5a5f6c6d411c3ee00a90dc68b1362e621f03fe8386a	138	244
+click Create ad	651703c6f76dd420de8920921a83dd5cb944555950ecf63172b43dec2d3f8a90	150	245
+Ask user for goal	d91c80e2a09383d433c54b0afb25346ab5372da1dc6c76d4db52a7cbc9dd60e2	None	246
+v_Brand Awareness
+Select user-selcted goal	6b854aca172ac589b06e41ad1015e1c8b6e6062f3d67456c3d3a24761c3c730f	291	247
+Click Continue 	a32441c86ddc150829a046c5fa766540b595d1d224dafab19d9c60b7fb873599	368	248
+
+Go to https://www.walmart.com/account/forgotpassword	450615894852a1938bd0c0cf34b1e186b860be3d6305e8675b41ba00d6ce6979	None	338
+Ask user for email address	2acd3a120c269d5774223684bc6af51e328ef5afc01f3f4e3371037fa8e6ce71	None	339
+Enter user-selected email address in text field with email address	3d18f2393084b0ef4b0f6d57e59682b59230c8fa1d94fafafa5491b1a0fa51c3	197	340
+Select Request Verification Code.	f639f0dfcab250a0007740acd7c16672c00657d48c13a7e487530f6f93dfb521	205	341
+Read to user: Check your email for the code. Be sure to check your junk or spam folder.	2d6ac9934a26c8837bd00a17f527b93cbad018a0d107b01100e045b28d69f8e3	None	342
+Ask user for code	0ab0790f09d82fbaba0f1ef86249fd6e61a16467da08f489a08e4ffda9d5e86f	None	343
+Enter user-selected code in text field with code	0f10bf7107a4796e0db9ba2c15c02ba1d35689a7655cde474c5d9338b056c9ad	417	344
+Select Submit.	89d46af03d3fff11bea68d511546f23c4410dd99b772b34325b23b11a6cd87a3	431	345
