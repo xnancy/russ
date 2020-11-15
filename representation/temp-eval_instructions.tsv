@@ -565,3 +565,35 @@ Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	24
 Click click here to edit	01c2421a2d401db4dd727ace8b061f898a36a6d6ff0ce8c75932d08c1d33b645	307	618
 CLick My Logins	fcdd6cc1ea5c33a9ac0125a7643d0e99aa64c312170571693f52f862f1dbe17f	329	619
 Click remove	61daeb3c3dd615688df784d7bbc456d0daec2bdee49b87db470dc21c0bf088d1	354	620
+
+Go to http://crytivo.com/	47d5e0d1802a7efafc4d015d9b44b5b8e60a70f425bcde61fe96fb89482d5944	None	 621
+Click Sign In in the upper right corner	4bbaef43887ceceb2eb03888d6b61d6265249d47c5a04bcaa6412e974bc63f41	107	  622
+Click Forgot Password	0d96689b25b25735eeda468f0c2ce77c5ab381a6445bc1e26497f99bdade3d1c	79	623
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	624
+Enter user-selected email in text field with Enter your email	a30cfa8158c9699dcb0817d81df5af521ae6efc4f2321605bfe828aae1dc8252	1666	625
+Click RESET PASSWORD	97072ca98be5e2b8772d1d4df8ce818f93ff15779c997b720663490ffe95479e	1677	626
+Read to user: check your email for a reset password link	8463a0ccd4f76fc0524dfff4aeacfa1def04577744ed29e427a736d5e1777c19	None	627
+
+Go to https://my.tradalaxy.com/login	a825f68444ccd967d6934a35f325e7f60536177a3599efa0735447ff90160a22	None	628
+Click Forgot Password in the 'Password to Tradalaxy' field	15e31dd01a8ce38bfcae5ee1dbdf707248b7ec2ace257463195c7383ee2ab61c	119	629
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	630
+Enter user-selected email in text field with Email	a2c71c96950bfda769865fff83f948f04d39fe2825f37aa86274774498d72b0a	164	631
+Click RESET PASSWORD	97072ca98be5e2b8772d1d4df8ce818f93ff15779c997b720663490ffe95479e	167	632
+
+
+Go to https://www.ziprecruiter.com/	60d10ea46deb3fa805dfe0fa07ad4046da7ae8fa8e0211d40af1105bc3c29411	None	633
+Click Sign in in the upper right corner of the screen	6bdb1b22b1be8fca1a6de6b45d51bc681800232adba25606dababb70929242cb	147	634
+Click I'm a job Seeker	30af29017050e9216f70b31fd335bcf0e91d38fe05cd84ea46fa22cf2f4d68b4	141	635
+Click Forgot password at the bottom	6b699a73224c2fb9ec7780539c32804807215af6dc7be3c519cd884bf15f9e9e	175	636
+Ask user for email address	2acd3a120c269d5774223684bc6af51e328ef5afc01f3f4e3371037fa8e6ce71	None	637
+i_enter user email address in text field with your email address	insert hash here	132	637
+Click Reset Password	feaf933359d99b8234ca4bee25fafe23b9d10fa7bdbdbef81c7c32111425b611	138	638
+
+Go to https://www.ziprecruiter.com/	60d10ea46deb3fa805dfe0fa07ad4046da7ae8fa8e0211d40af1105bc3c29411	None	639
+Click Sign in in the upper right corner of the screen	6bdb1b22b1be8fca1a6de6b45d51bc681800232adba25606dababb70929242cb	147	640
+Click I'm a job Seeker	30af29017050e9216f70b31fd335bcf0e91d38fe05cd84ea46fa22cf2f4d68b4	141	641
+Ask user for Email Address	633b15793670ee23a8ac687c82a9544801dec3dca5f13f87dcf42c95c148084b	None	642
+Enter user-selected Email in text field with Email Address	af30baf6f339c996fc63c1e89d12d6e450976fdc14c26a627a9ac386b37b77a8	151	643
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	644
+Enter user-selected Password in text field with Password	4d8fee26e2eba84d758ae7b990c4b5ee00f5a7daad7cb16799a8dad1ca5e28fd	155	645
+Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	163	646
