@@ -33,7 +33,7 @@ class Type(Enum):
 type_dict = {
     'button': ['button' ,  'selector'] , 
     'link': ['url' ,  'link'] ,  
-    'input': ['textbox' ,  'text field', 'text field', 'textfield', 'searchbox' ,  'input'] , 
+    'input': ['textbox' , 'text box', 'text field', 'text field', 'textfield', 'searchbox' ,  'input'] , 
     'checkbox': ['checkbox'] ,  
     'dropdown': ['dropdown' ,  'down arrow'] ,  
     'image': ['image' ,  'picture'] ,  
