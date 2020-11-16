@@ -5,6 +5,24 @@ Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2d
 Enter user-selected Password in text field with Password	4d8fee26e2eba84d758ae7b990c4b5ee00f5a7daad7cb16799a8dad1ca5e28fd	41	5
 Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	47	6
 
+
+Go to https://squareup.com/dashboard/business/bank-accounts-overview	87e9f4059aba34c28156587421bee6ab85ec5de50708edf1f100ef864b0faf7a	159	7
+Ask user for Email Address	633b15793670ee23a8ac687c82a9544801dec3dca5f13f87dcf42c95c148084b	None	8
+Enter user-selected Email Address in text field with Email Address	aa246c78fbf6a536415d92fe0d83a06f88f5d63e60d0cfb8f8f7eff3b827e036	36	9
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	10
+Enter user-selected Password in text field with Password	4d8fee26e2eba84d758ae7b990c4b5ee00f5a7daad7cb16799a8dad1ca5e28fd	41	11
+Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	47	12
+Click Bank Accounts	6e42d6c9673a476cf9e2ad46e9965524baee2e239d23b25e625a463006a3542a	944	13
+Click Add Bank Account	97c38623e7e969c1df5df64b1cec50e9889896054e6f8178ca58db7ebee80107	996	14
+Ask user for account holder's name	86ce1b3a5d692c2eb047ec43f985015d3ce3730f4971fc6cf23b0288b1810ecb	None	15
+Enter user-selected account holder's name in text field with Account Holder's Name	772a934d523921ff87358e5a03e5e841ef6850125c8add04955f874e78f162a8	1047	16
+Ask user for Routing Number	8ab7539600566fa415e1ec4a9be2af35507bfbd78061ae58564ccbe0482a8791	None	17
+Enter user-selected Routing number in text field with Routing Number	b87c4ad7fca50585e971126e95d19db0c7fe1695e2e446adaff0854697926292	1052	18
+Ask user for Account Number	d430a91eb55bdf2e250302e95e1d5b4c3afc6197157900878e11523e4ce9ec71	None	19
+Enter user-selected Account number in text field with Account number	e8dee6f2b971017a0fee4d4bc28aa8c842142cfe63ea260e6215b9976e213947	1057	20
+Enter user-selected Account number in text field with Confirm Account number	e8dee6f2b971017a0fee4d4bc28aa8c842142cfe63ea260e6215b9976e213947	1062	21
+Click Verify	6b1e9ad02c14598a04e788245bbf86f79cd4638764a856953209b298b6992300	1013	22
+
 Go to https://squareup.com/signup	80ac0f428ae8a57556db2fec089811a9795c0807a940e87d7a0d87b7053c5603	123	23
 Ask user for Email Address	633b15793670ee23a8ac687c82a9544801dec3dca5f13f87dcf42c95c148084b	None	24
 Enter user-selected Email Address in text field under Enter your email	8dca3b55c49494fef188e76cbbba2d2976814ad37787a82141e768c6593974bb	113	25
@@ -597,3 +615,89 @@ Enter user-selected Email in text field with Email Address	af30baf6f339c996fc63c
 Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	644
 Enter user-selected Password in text field with Password	4d8fee26e2eba84d758ae7b990c4b5ee00f5a7daad7cb16799a8dad1ca5e28fd	155	645
 Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	163	646
+
+Go to Nike.com.	dee21b58b9e2799d6c93a75f28011a0e34b2c405bdec057ffb8acfa0e75caf27	None	647
+click Sign in in the upper right corner.	1f1b36c14bda50b990f552df3431938fcc1126824c0154c89c41e2ed686efbf4	365 	648
+Click Forgot Password?	1d9446f18506bebf30898e0dcb45a0fb3d4723e7d1a99969a63832c81c695e84	151	649
+Ask user for email address	2acd3a120c269d5774223684bc6af51e328ef5afc01f3f4e3371037fa8e6ce71	None	650
+i_enter user email address in text field with Email Address	insert hash	137	650
+Click RESET	3be7dadf66523da6341acdcebac5f21efdbfa073e1ae6493ff412c170566be7a	143	651
+Read to user: Tell user to check email	49c1d80e540157d2b4f38ded4fa49c7a1343dc0a02d2b299b086d7a39340cd8a	None	652
+
+Go to Nike.com	2772829418fd555f23b2c88f5c6cd50013d9165f2a5b4fb98fc31eec8dd05824	None	653
+click Sign in in the upper right corner.	1f1b36c14bda50b990f552df3431938fcc1126824c0154c89c41e2ed686efbf4	367	654
+Ask user for Email Address	633b15793670ee23a8ac687c82a9544801dec3dca5f13f87dcf42c95c148084b	None	655
+Enter user-selected Email in text field with Email Address	af30baf6f339c996fc63c1e89d12d6e450976fdc14c26a627a9ac386b37b77a8	130	656
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	657
+Enter user-selected Password in text field with Password	4d8fee26e2eba84d758ae7b990c4b5ee00f5a7daad7cb16799a8dad1ca5e28fd	139	658
+Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	156	659
+
+Go to https://www.levi.com/US/en_US/my-account/update-profile	4db0e5ced8d13be209adfdf2622b0798d5d0be31a240a2f00b24aff307445544	None	660
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	661
+Enter user-selected email in text field below Email* text	aff2dfb31a5a1c4ae092c51ea5e268211d7828a1b52c3f3ac57fcc95c0b5149c	120	662
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	663
+Enter user-selected password in text field below Password* text	578e65e97c7e83f2dc041d87d756542f27faaf1fb2b367568b7339fef295fd42	126	664
+Click Log In	a1319cbe365b610c2766916c17209eecb55c76734029aac6dedbec831c90878b	141	665
+Ask user for First Name	017cc65ae4ee1d51e581114e8b4252707883ebe0d1fed0b94db15730d83f0009	None	666
+Enter user-selcted first name in text field below First Name*	f3d2b2570ba6dea72390b9440f6e723b6a9d73552032cf8902ed0aaa60db46eb	195	667
+Ask user for Last Name	872990a6e9ce96d995aace892ad5873e36ceefdea8a2cb1695327c983990d807	None	668
+Enter user-selcted last name in  text field below Last Name*	3b218b499305d86d670be07da82a3e4c3b5b3a26b8d83163bf83e38d78bde1d3	200	669
+Click the Update button	8ab62134837a304001321be6cb2b095eaa42d0d971ea4b3683573e6b77e18a37	368	670
+
+Go to https://connect.secure.wellsfargo.com/auth/login/present?origin=cob&LOB=CONS	3e60ee80c1fdf4b7ff92f82a45793a553f90c52b49373b6a7b40081c68407ac7	None	671
+Click Forgot Password/Username?	f87648625af2aa905fae3726729b7830fbd15936053fc6f82ec29311849cc7a2	116	672
+Click Create New Password	21d5617e8b8762fef9f0c55a9c00eac5e55322246c228540446e75bece3188b8	431	673
+Ask user name for username	02606cbaac97cddb38ccb9c6b45c085a3669bbf042aab6391b3c398052d2a456	None	674
+Enter user selected username in text field under username text	e715d20490ae10fc790015aa9b7b3de59f7be1dcee22215cb11b5516fe67e0f9	149	675
+Click Continue	feeeca4c2b7e2168ffcb9eea0a6b1b29eea92f1ab92206b13a6ce46897552e96	191	676
+
+Go to https://connect.secure.wellsfargo.com/auth/login/present?origin=cob&LOB=CONS	3e60ee80c1fdf4b7ff92f82a45793a553f90c52b49373b6a7b40081c68407ac7	None	677
+Ask user for username	a8dce033b307a01782571893d3cd7cd21b0f009835f969cdd1b3928f8722c87a	None	678
+Enter user-selected username in text field with username	8ac2ed3f6af2ec67203a066c70ca7ce5da4f3a4a154d22efef6338e6c53fe860	94	679
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	680
+Enter user-selected password in text field with Password	57797a439112e9d02a78110f5fed4f078c58f1b6fea1ef13c21ab024acc61f83	98	681
+Click Sign On	6ca8d4748acb22b711bea09ae23328526440cc9ab576add0b03e27c56436c353	119	682
+
+Go to https://signup.ebay.com/pa/crte	ebba94954c921687cca605a703b05a7a15869393208bf66bfae3292adfe1107b	None	683
+Ask user for First name	f84d75deef3c906bbaa93fca70d44001c83a7e9f6074775361769a2d755d8afc	None	684
+Enter user-selected First Name in text field with First Name	1f65a05a1efe35f1282f6af92cb24cd11753c7ef77b47956aef233dfd185faf7	78	685
+Ask user for Last Name	872990a6e9ce96d995aace892ad5873e36ceefdea8a2cb1695327c983990d807	None	686
+Enter user-selected Last Name in text field with Last Name	4e910faf871be34af8d9250f4a6d522657ba1129d2f2d276e8f9568e473a42c1	85	687
+Ask user for Email	a24128f56295369273931797a908fbb3fc1a332ed5dabe105829d71105f8c3e8	None	688
+Enter user-selected Email in text field with Email	f29a442279ba31e1f5c0b82cffdb53053e854aa2de74a0e57293532f9fcc0f99	93	689
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	690
+Enter user-selected Password in text field with Password	4d8fee26e2eba84d758ae7b990c4b5ee00f5a7daad7cb16799a8dad1ca5e28fd	104	691
+Click Create Account	7eb2cc7defae68fd0e69f9a956029410d791312f1028711cf3a48370fac5f6db	130	692
+
+
+Go to https://signin.ebay.com/	7604ce9fe501dd4836d7f56d0ac5afa4c0d2eca8533332f6ac8668b32b30335e	None	693
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	694
+Enter user-selected Email in text field with Email or username	832823fc1db34d132f6231efe69490701c06d1602426da7bf4918b87f54f5b2a	74	695
+Click continue	e0b7a80bef64646c91ddf8451dedda97b68b841447a926d9ce8faca23e4871e6	76	696
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	697
+Enter user-selected Password in text field under password text	eb82cba0f6885313e501c5ea3878d31713b5332d1456c79cc1f7968fb2f1d036	81	698
+Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	83	699
+
+Go to https://login.yahoo.com/account/security?.lang=en-US&.intl=us&.src=yhelp	1ca92b3847cc77ad5294659381bd4b1c72fa5b604781aab7c46c89c5b4d0700d	None	700
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	701
+Enter user-selected email in text field under Username, email, or mobile	cc01dae778fdb1e6e42a3eac3717023f3843204756c5b44f09a1928d1d829b3d	297	702
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	307	703
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	704
+Enter user-selected Password in text field with password	c3045bb3ced6834fe5b61fc86db07e562c771d245ac3b67f692fa8b1e75e8347	61	705
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	65	706
+
+Go to mail.google.com	4ec76185a34ceacd22101f9f44b5fc366cb04631064f7b3955fed5d5b339e44e	None	718
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	719
+Enter user-selected Email in text box with Email or phone	cffece638a6d0f24bf91b65ef1a4a4d1052a45a79792c3301778f268a1f4d2cd	75	720
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	116	721
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	722
+Enter user-selected password in text box with password	e9813cf1422157d94012f6b7df4e2ed0e0388989427526925b5c4b81bd355926	103	723
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	151	724
+Ask the user for the search keywords	8895820e2e6ffbff46928adebc98f0f6f4abdf96177e591cb8c6d170d60854f5	None	725
+Enter the user-selected search keywords in the search bar with the text Search mail	b238e0dae46f03021bdf95096fcee31b82b17d3c0e7ca8854b7ea789abbce4d8	177	726
+v_keywords to search: amazon
+Click Enter	84f9f21879be3709f24cb0c7ab1ca9f6239e9b0d2e2a9c85fbfba1c0c9ff1934	2171	727
+Click the first search result	3dc203137aea06c4907c1f79313d7ea708058d3d5ef4000fbb5b1afc9314710e	2070	728
+
+
+
