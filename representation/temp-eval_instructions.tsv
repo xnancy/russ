@@ -749,3 +749,26 @@ Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	7
 Ask user for the order you want to track	d44aa4e5ec4802c938a1ef90e2c2972cf66cb9a93fe7759dbed2a46156e9909b	None	764
 v_order to track: Trident spearmint sugar free gum
 Click Track Package by the user-selected order you want to track	bbfb8d84b9066d641789484d9538f0c0743b971bae79df2844428d33f392aca2	501	765
+
+Go to https://login.yahoo.com/account/security?.lang=en-US&.intl=us&.src=yhelp	1ca92b3847cc77ad5294659381bd4b1c72fa5b604781aab7c46c89c5b4d0700d	None	707
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	708
+Enter user-selected email in text field under Username, email, or mobile	cc01dae778fdb1e6e42a3eac3717023f3843204756c5b44f09a1928d1d829b3d	297	709
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	307	710
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	711
+Enter user-selected Password in text field with password	c3045bb3ced6834fe5b61fc86db07e562c771d245ac3b67f692fa8b1e75e8347	61	712
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	65	713
+Click Add recovery phone number	7ecabb252e2f7e638c56671e768b6e6a25858d4ed83da7fdb344561e28bb06cd	77	714
+Ask user for recovery phone number	7870ec9ca2c4248d1f11affa2a56ec0d6035a3edd8513b2395268f803a4fbc29	None	715
+Enter user-selected recovery phone number in text field with recovery phone number	04baec8c32d0b2c5f3f09617ba29342c62600bcf55b18125a53b703387fcdd55	311	716
+Click Add email or mobile no.	a880856211e06afa342fccdaee2567dbd60e5eb4afe37b488545ceb441870030	318	717
+
+
+Go to Piazza.com	bc856ad88eba9ce001d8bccd9441b90a26969c6fd80ab75c913aa1861e5ca333	None	766
+Click the blue Professors and TAs Get Started button	af25cf91065faf6358a42662640c8161860784adef03bc5e7165c1239e8983d6	164	767
+Ask user for school	8081879547563082526ae7b83ad517d597cf4cfd2ce8b715ca15b88f9fb172cc	None	768
+Enter user-selected school in your school text field	f6becb9fc8b8f205ad1a04df7839d51b267c7a5a68511af3ecb4759078a4b43f	39	769
+Ask user for class name	2c47d4a2ed36c47f0ef9146fff41ccecf7f865d9a8209bd0b533b6f6a35c431f	None	770
+Enter user-selected class name in class name text field	a1afec696a850a4d9ceac2a40303f76c8a65700c3ac4d8460785bc9ea46778da	89	771
+Ask user for class number	66a56cf43f0149d4c236dd19816af02cddf63963c10744ebf0b75263b7fcf78f	None	772
+Enter user-selected class number in text field with class number	9d662d13b13aee5fa3b66f1eade49568ee4123ac9f46794fe4000a1f4fbcab18	138 	773
+Click Create Class	565f1c0652ff33d4d498216f139bc0d3bd386b807cbd6167a6b1a07c913e1ec8	152 	774
