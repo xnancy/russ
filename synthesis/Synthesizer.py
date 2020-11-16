@@ -198,7 +198,7 @@ class Synthesizer:
         self.file.write(command + "\n")
     
     def ask(self ,  text_var): 
-        command = "let param:" + re.sub('\'', '', re.sub(' +', '_', text_var.strip())).lower().strip() + " = ( @webagent.ask param:text =  \"  " + text_var +  "  \" ) "
+        command = "let param: \" " + re.sub('\'', '', re.sub(' +', ' ', text_var.strip())).lower().strip() + " \" = ( @webagent.ask param:text =  \"  " + text_var +  "  \" ) "
         options = []
         options.append("Ask " + random.choice([" the ", " "]) + random.choice(["user for " ,  "customer for " ,  "caller for "]) + random.choice([' his ', ' her ', ' their ', ' ', ' ']) + text_var + random.choice(["", " ."]))
         options.append("Get " + random.choice([" the ", " "]) + random.choice(["user's " ,  "customer's " ,  "caller's "]) + text_var + random.choice(["", " ."]))
