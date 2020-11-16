@@ -699,5 +699,53 @@ v_keywords to search: amazon
 Click Enter	84f9f21879be3709f24cb0c7ab1ca9f6239e9b0d2e2a9c85fbfba1c0c9ff1934	2171	727
 Click the first search result	3dc203137aea06c4907c1f79313d7ea708058d3d5ef4000fbb5b1afc9314710e	2070	728
 
+Go to https://www.amazon.com/wishlist	75159485397715c342332f4f88c7d1763558bc344dc43328d103e77674456ae2	None	729
+i_Click sign in	insert hash	333	729
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	730
+Enter user-selected email in text field under email address or username	0edc043242d6ed475e62e7a0c454b169ff5c9e579cb994d03c6445cd3e39c017	55	731
+i_Click continue	insert hash	66	731
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	732
+Enter user-selected password in text field under password	6484483d59aa34c1cbc8680044f27f4840479fe2a9e7117e67b6679b8a860ee4	64	733
+Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	76	734
+Ask user for list you want to delete	f0c587e8e0d2bbf88b1b7f5277f3febfff72905d0ec68a7b353f5044582fb57b	None	735
+v_name of list to delete: my list
+Click user selected list you want to delete	88af02e3809f5f1d8b73290bb97e241dcc854af4d2d340aebb8c4ae68c734623	451	736
+Click more in the top right corner	8dd7422de1a982250b5a8ce291cb41942e761c4a0f17181bd83f8426abb057af	471	737
+click Manage Lists.	7d9eec5fd42b347580fa865381d1eb756bec536dd8b3db8d1238ccaa725ef1d9	2301	738
+Click Delete List	0aae26e203f2fa197a197ef0a19514c37aa1e88f446254031805fa114e82c533	2769	739
+Click yes	b923a2fd199975c78b9d3283c6b61fefd940a43d8ec5d93bc17d31dd9c57b284	2807	740
 
+Go to https://www.amazon.com/gp/css/your-orders-access	b6b632606e4a7ab7d2c2f1acf979d0042bebd8af4c05d1954137f3b9c6b450e3	None	741
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	742
+Enter user-selected email in text field under email address or username	0edc043242d6ed475e62e7a0c454b169ff5c9e579cb994d03c6445cd3e39c017	57	743
+i_Click Continue	insert hash	67	743
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	744
+Enter user-selected password in text field under password	6484483d59aa34c1cbc8680044f27f4840479fe2a9e7117e67b6679b8a860ee4	64	745
+Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	76	746
+Ask user for the order you want to cancel	84cb68f083fb20272b2ade500d74e0b65e2610e7d9314da9b5be0884b758bca1	None	747
+v_order to cancel: Trident spearmint sugar free gum
+Click cancel items next to the user-selected item	d8a8c96685b4fbfc44bb2036fa586c7ec14d34b8db34b6fbc111ef3a23361246	548	748
+Click cancel selected items in this order	5c2e193f57f975f87e461e21b0dbac5fafde863f3984d5761ebb01f507e752a3	519	749
 
+Go to https://www.amazon.com/gp/yourstore/pym/cc/	7d8b212d0dcabba03fc136946dbeab5ba744ec934839dbb7b43191e687f46204	None	750
+i_click Sign in	insert hash	431	750
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	751
+Enter user-selected email in text field under email address or username	0edc043242d6ed475e62e7a0c454b169ff5c9e579cb994d03c6445cd3e39c017	55	752
+i_Click Continue	insert hash	65	752
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	753
+Enter user-selected password in text field under password	6484483d59aa34c1cbc8680044f27f4840479fe2a9e7117e67b6679b8a860ee4	64	754
+Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	76	755
+Ask user for item you'd like to remove	e5dd3c258b62d29c6585036848d3d90ed40819e89eabf432f3ac13581e53560f	None	756
+v_item to remove: trident cinnamon sugar free gum
+Select Remove next to user-selected item to remove	4cd7f35920217dbcae2fca2c38a820f544f90279deb281bb72c5f284f6267743	532	757
+
+Go to https://www.amazon.com/gp/css/your-orders-access	b6b632606e4a7ab7d2c2f1acf979d0042bebd8af4c05d1954137f3b9c6b450e3	None	758
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	759
+Enter user-selected email in text field under email address or username	0edc043242d6ed475e62e7a0c454b169ff5c9e579cb994d03c6445cd3e39c017	57	760
+i_Click Continue	insert hash	68	760
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	761
+Enter user-selected password in text field under password	6484483d59aa34c1cbc8680044f27f4840479fe2a9e7117e67b6679b8a860ee4	64	762
+Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	76	763
+Ask user for the order you want to track	d44aa4e5ec4802c938a1ef90e2c2972cf66cb9a93fe7759dbed2a46156e9909b	None	764
+v_order to track: Trident spearmint sugar free gum
+Click Track Package by the user-selected order you want to track	bbfb8d84b9066d641789484d9538f0c0743b971bae79df2844428d33f392aca2	501	765
