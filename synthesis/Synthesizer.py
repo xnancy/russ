@@ -11,10 +11,10 @@ class Relative(Enum):
     left = 'left'
 
 class Location(Enum):
-    top_left = 'top_left'
-    top_right = 'top_right'
-    bottom_left = 'bottom_left'
-    bottom_right = 'bottom_right'
+    top_left = 'top left'
+    top_right = 'top right'
+    bottom_left = 'bottom left'
+    bottom_right = 'bottom right'
     top = 'top'
     bottom = 'bottom'
     left = 'left'
@@ -43,10 +43,10 @@ type_dict = {
 }
 
 location_dict = { 
-    'top_left': ['top-left', 'topleft', 'upper left', 'top left', 'upper-left', 'upperleft', 'left top'], 
-    'top_right': ['top-right', 'topright', 'upper right', 'top right', 'upper-right', 'upperright', 'right top'], 
-    'bottom_left': ['bottom-left', 'bottomleft', 'lower left', 'bottom left', 'lower-left', 'lowerleft', 'left bottom'], 
-    'bottom_right': ['bottom-right', 'bottomright', 'lower right', 'bottom right', 'lower-right', 'lowerright', 'right bottom'], 
+    'top left': ['top-left', 'topleft', 'upper left', 'top left', 'upper-left', 'upperleft', 'left top'], 
+    'top right': ['top-right', 'topright', 'upper right', 'top right', 'upper-right', 'upperright', 'right top'], 
+    'bottom left': ['bottom-left', 'bottomleft', 'lower left', 'bottom left', 'lower-left', 'lowerleft', 'left bottom'], 
+    'bottom right': ['bottom-right', 'bottomright', 'lower right', 'bottom right', 'lower-right', 'lowerright', 'right bottom'], 
     'top': ['top', 'upper'], 
     'bottom': ['bottom', 'lower'],
     'left': ['left'], 
@@ -79,7 +79,7 @@ class Synthesizer:
             else: 
                 base += " param:description = param: \" " + descr + " \""
         if location:
-            base += " param:location = enum:" + location.value 
+            base += " param:location = enum: \" " + location.value + " \""
         if type_html:
             base += " param:type = enum:" + type_html.value 
         return base 
@@ -119,7 +119,7 @@ class Synthesizer:
         return options
 
     def secondary_action(self ,  actions ,  action_command ,  relative ,  descr ,  location = '' ,  type_html = '' ,  descr_side = '' ,  location_side = '' ,  type_html_side = '', user_descr = False, user_descr_side = False):
-        command = "now => ( " + self.element_ref(descr_side ,  location_side ,  type_html_side, user_descr_side) + " ) join ( " + self.element_ref(descr ,  location ,  type_html, user_descr) + " ) on param:"+ relative.value + " = param:id => " + action_command + " on param:element = param:id"
+        command = "now => ( " + self.element_ref(descr_side ,  location_side ,  type_html_side, user_descr_side) + " ) join ( " + self.element_ref(descr ,  location ,  type_html, user_descr) + " ) on param : \" "+ relative.value + " \" = param:id => " + action_command + " on param:element = param:id"
         
         options = [] 
         el_options_side = self.get_element_descriptors(descr_side ,  location_side ,  type_html_side, user_descr_side)
@@ -233,7 +233,7 @@ class Synthesizer:
         self.file.write(command + "\n")
 
     def enter_secondary(self ,  text_var ,  relative ,  descr ,  location = '' ,  type_html = '' ,  descr_side = '' ,  location_side = '' ,  type_html_side = '', user_descr_side = False):
-        command = "now => ( " + self.element_ref(descr_side ,  location_side ,  type_html_side, user_descr_side) + " ) join ( " + self.element_ref(descr ,  location ,  type_html) + " ) on param:" + relative.value + " = param:id  => @webagent.enter"  + " param:text =   \" " + text_var + "  \"  on param:element = param:id"
+        command = "now => ( " + self.element_ref(descr_side ,  location_side ,  type_html_side, user_descr_side) + " ) join ( " + self.element_ref(descr ,  location ,  type_html) + " ) on param : \" " + relative.value + " \" = param:id  => @webagent.enter"  + " param:text =   \" " + text_var + "  \"  on param:element = param:id"
         options = [] 
         el_options_side = self.get_element_descriptors(descr_side ,  location_side ,  type_html_side, user_descr_side)
         el_options = self.get_element_descriptors(descr ,  location ,  type_html)
