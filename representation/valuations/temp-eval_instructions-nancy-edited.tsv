@@ -1,0 +1,746 @@
+Go to https://squareup.com/dashboard/business/bank-accounts-overview	87e9f4059aba34c28156587421bee6ab85ec5de50708edf1f100ef864b0faf7a	159	1		
+Ask user for Email Address	633b15793670ee23a8ac687c82a9544801dec3dca5f13f87dcf42c95c148084b	None	2		
+Enter user-selected Email Address in text field with Email Address	aa246c78fbf6a536415d92fe0d83a06f88f5d63e60d0cfb8f8f7eff3b827e036	36	3		
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	4		
+Enter user-selected Password in text field with Password	4d8fee26e2eba84d758ae7b990c4b5ee00f5a7daad7cb16799a8dad1ca5e28fd	41	5		
+Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	48	6		
+					
+Go to https://squareup.com/signup	80ac0f428ae8a57556db2fec089811a9795c0807a940e87d7a0d87b7053c5603	123	23		
+Ask user for Email Address	633b15793670ee23a8ac687c82a9544801dec3dca5f13f87dcf42c95c148084b	None	24		
+Enter user-selected Email Address in text field under Enter your email	8dca3b55c49494fef188e76cbbba2d2976814ad37787a82141e768c6593974bb	113	25		
+Enter user-selected Email Address in text field under Confirm your email	376d3ef2363a28cdae3d406edeaa27bbf3c9b80a16a92585fa4a0b402a5812d9	119	26		
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	27		
+Enter user-selected Password in text field with Create a password	1f54b60b1edaaa5e3f020c4f7cb3b1018db3ee19f4454885a4a40e2604fd4ef6	127	28		
+Ask user for country	8db4c4893b738260dddb10ce207ddc355649f83cf381650c71b9f40a0aa17e38	None	29		
+Select user selected country in drop down under Country text	99ca6bda9864cd300bbbf1b9d84bc9ce65d832a36df84f73525d594f770d87df	136	30		
+"Click checkbox to the left of I agree to Square's Terms, Privacy Policy, and E-sign Consent"	05072fc87b938fee1c814d3a1338a2bec168ca54631aa192e28d96ebc8d30c95	314	31		
+Click Continue	feeeca4c2b7e2168ffcb9eea0a6b1b29eea92f1ab92206b13a6ce46897552e96	327	32		
+					
+Go to http://yelp.com/user_details_reviews_self	1b11276995ac0f51873a61fafc0d675e60f88b8317e15f9e478b69cd7212e214	205	41		
+Ask User for email	60dd63c22b10e3e07062cf983a50ef7d0a58b56a703d9c84b4cac7b123232c07	None	42		
+Enter user-selected email in the text field with Email	8ce60d82bafd3301056017e4ad2b70f0925db726e6c694ad78b68948bdc0b426	4004	43		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	44		
+Enter user-selected password in the text field with Password	75f01fcaf769e041abb05244585614acc5f009c9159072a9203006fda945becb	4006	45		
+Click Log In	a1319cbe365b610c2766916c17209eecb55c76734029aac6dedbec831c90878b	4012	46		
+Ask user for the Review to remove	e11e3b88f8bc4384a56aeea0d370ec520932cab6d8520963f178c9bf45a64a9d	None	47		
+Click Remove Review below user-selected Review to remove	ed45004cfe6256cc2b7aabd3d902c9c7bb20143fc7bff7e1fe332a2759cdf33a	3844	48	w	
+Click Confirm	0d70e3c336ae29818d47352071c4e9ca61a5d5cad920b76b3364a8993ee4bd14	4327	49	w	
+					
+Go to https://yelp.com/profile	1ea16d8a26a81c42b7bfc4a0498bbfbfec6001898f21c1e6f1b62e49c98ee78c	204	50		
+Ask User for email	60dd63c22b10e3e07062cf983a50ef7d0a58b56a703d9c84b4cac7b123232c07	None	51		
+Enter user-selected email in the text field with Email	8ce60d82bafd3301056017e4ad2b70f0925db726e6c694ad78b68948bdc0b426	4007	52		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	53		
+Enter user-selected password in the text field with Password	75f01fcaf769e041abb05244585614acc5f009c9159072a9203006fda945becb	4009	53		
+Click Email / Notifications	f17b1d23ba07f60be065952288be66a225c8a9f8423ffc28656d25f8c380c081	3517	55		
+Ask user for notifications they'd like to receive	e2b8af1a6ad3b194c85575c4976bcbee6dd7fc4baaddd7d14e188c0725ddf69e	None	56		
+Click the checkboxes next to the user-selected notifications you'd like to receive	a8764dbd18014c0eb362062fbaf26d63d248114fc14c4b054fb8856b0b80b6ce	3292	57	w	
+Click Save Notification Settings	4713e09b096c198d734013edc52bf76e2eb6c52c159abd0447f48188beb3d19c	3430	58		
+					
+Go to http://yelp.com/signup	f70098761b5c87339e9394a6270a9b5f4c0dc87bc1d8b797afe02294d0a46ace	214	59		
+Ask user for name	28f326e852c52a5ed9c83ab6b77166596b5789ad23e8ad4844208accfd254fbb	None	60		
+Enter name in text field with name text	f6d5cd0ce68ecd9eecf720693aa53bb3f6e925841a6fc3497491a3897575fa5d	3399	61		
+Ask user for Email Address	633b15793670ee23a8ac687c82a9544801dec3dca5f13f87dcf42c95c148084b	None	62		
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	3405	63		
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	64		
+Enter user-selected Password in text field with Password text	a62da108a9d9b542a280c19974b717a716c9bd3280d8ca0f38c25000ce3b3b14	3407	65		
+Click Sign Up	44d76618bb1246c78369d3a86a39b9575d8cb6c47757e66bc6fae867b0da70c1	3633	66		
+					
+Go to http://yelp.com/user_details_reviews_self	1b11276995ac0f51873a61fafc0d675e60f88b8317e15f9e478b69cd7212e214	207	67		
+Ask User for email	60dd63c22b10e3e07062cf983a50ef7d0a58b56a703d9c84b4cac7b123232c07	None	68		
+Enter user-selected email in the text field with Email	8ce60d82bafd3301056017e4ad2b70f0925db726e6c694ad78b68948bdc0b426	4004	69		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	70		
+Enter user-selected password in the text field with Password	75f01fcaf769e041abb05244585614acc5f009c9159072a9203006fda945becb	4006	71		
+Ask user for review you would like to edit	632015e6f562cfec8bb711c0259150ea286a567c147fdca3acabc0046d1f4c61	None	72		
+Click Edit review for user-selected review you would like to edit	4bd7e250dfa6ad24888eda2008c9f8074dec0c7bebdb10ebd053d9ed72b0b66b	3844	73		
+Ask user for text to replace	d1ef427185c4fc14704e0193c4921727fd5123f176ecf19797adb756d2f46aff	None	74		
+Enter user-input text to replace	5554bd3c2225a7aa889464fa32d7afd14202f19b7c4d706a2676d360e9943ff9	167	75	w	
+Click Post	3a8bfb1b3fc02a9a2f5460fea7992061cb1f236b39165ea74c8d205d70159a27	190	76		
+					
+Go to instagram.com.	3d2cba25a8b135c6592347fd1d9b962bb7a9659a886f5239585b2110f3c46427	208	94		
+Click Sign Up	44d76618bb1246c78369d3a86a39b9575d8cb6c47757e66bc6fae867b0da70c1	168	95		
+Ask user for Email Address	633b15793670ee23a8ac687c82a9544801dec3dca5f13f87dcf42c95c148084b	None	96		
+Enter user-selected Email Address in text field with Email Address	aa246c78fbf6a536415d92fe0d83a06f88f5d63e60d0cfb8f8f7eff3b827e036	136	97		
+Ask user for username	a8dce033b307a01782571893d3cd7cd21b0f009835f969cdd1b3928f8722c87a	None	98		
+Enter user-selected username in text field with username	8ac2ed3f6af2ec67203a066c70ca7ce5da4f3a4a154d22efef6338e6c53fe860	148	99		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	100		
+Enter password in text field with password	a831155ad4856982ec5a42d28155493f52ae82b975b7103c243e3c627a1df0ac	154	101		
+					
+Go to pinterest.com/login	2b73b9e7d05c75faab7cf19cf6b9f316a64ca52bc123f69f128d28ddb66b4da0	209	102		
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	103		
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	422	104		
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	105		
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	426	106		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	433	107		
+					
+Go to pinterest.com/login	7eb89d8aa3b60fff9517e6b6ca8a201b8f075b9ed543bf1c87a85ae07a0985da	209	108		
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	109		
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	421	110		
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	111		
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	425	112		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	432	113		
+Click the directional chevron down icon at the top-right of the screen to open your menu	ad1b89f511969ef1ec221df7abb8f1257a01c27230cb9f4e529e5ece9e97cda3	184	114	w	
+Click Log out	7254974cc2afccef7824cee54a4ab3a441d9c80d6e9f3d7290af204987b6da80	257	115		
+					
+Go to pinterest.com/login	2b73b9e7d05c75faab7cf19cf6b9f316a64ca52bc123f69f128d28ddb66b4da0	None	116		
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	117		
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	421	118		
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	119		
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	425	120		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	432	121		
+Click the directional chevron down icon at the top-right of the screen to open your menu	ad1b89f511969ef1ec221df7abb8f1257a01c27230cb9f4e529e5ece9e97cda3	176	122	w	
+Select Add Another Account	80e90dcb9e43c6928f4b02751aac596706751ec50e796c65def35b37334974fb	200	123		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	124		
+Enter user-selected email in the text field with email	be45cfaa16877ce1b3e020137565b7a8423f5ffd129226407836cb31a8c815df	209	125		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	126		
+Enter user-selected password in text field with password	1552671baaba65424ffb308a5eec961c6bb4e8d27ad3921d3391ce1b9520906c	213	127		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	220	128		
+					
+Go to pinterest.com	7eb89d8aa3b60fff9517e6b6ca8a201b8f075b9ed543bf1c87a85ae07a0985da	398	129		
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	130		
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	422	131		
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	132		
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	426	133		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	433	134		
+Click the directional chevron down icon at the top-right of the screen to open your menu	ad1b89f511969ef1ec221df7abb8f1257a01c27230cb9f4e529e5ece9e97cda3	181	135	w	
+Click Settings	a0293047027463bedf6843bae2988b3d509834d0a59c6872e319656a0bbaf7d7	221	136		
+Click Account settings on the left side of the screen	579a9c2653abf5499d4698907fcc28e56916c8076625e31a0d1b3c672370e65b	225	137		
+Ask user for new email address	8eb677754d93e5c3e0b3849f63a25c375750d51a22524ddef17f1803f1709382	None	138		
+Enter user-selected new email address in text field with Email Address	bfca4e9e27feb38b1ec5bb22d63fb8163f6041fe21242a88ea6d7c4d55a3803d	295	139		
+Click Done	245600ba36f37b64601df73e82fc81a1b6ad1906a44370e8651be43c58fbf3a3	287	140		
+					
+Go to pinterest.com/login	2b73b9e7d05c75faab7cf19cf6b9f316a64ca52bc123f69f128d28ddb66b4da0	187	141		
+Ask user for email they want to reactivate	76870abac7fd309e0fae86fbfd875a55c530ba942ba0f1d9d9752f44b2f6008a	None	142		
+Enter user-selected email in text field with Email address	1962058289a98a61f9fa7cafc8a656865bd73ffeac941155eb7fa6db9f478f8c	422	143		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	144		
+Enter user-selected password in text field with Password	57797a439112e9d02a78110f5fed4f078c58f1b6fea1ef13c21ab024acc61f83	426	145		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	433	146		
+					
+Go to http://pinterest.com/password/reset	71662a594ab6deffb0dd52809d896ee6d36b66496a06ed288a18574c09909994	22	147		
+"Ask user for name or, username"	bf1f4db1e1fbab9bbe0dc27ab8254be539752c3d450fda0c00a79a40ac19f2f8	None	148		
+"Enter your name, or username in text field"	ad66b29cc55c2a75ac44b1a7e3823a680ebfcaa96581122fd3fbab35b128026f	118	149		
+Click Search	00dd2e59ebe98299de497a6dd854ee543667deec189a67f13c9bd61b08e47564	121	150		
+Click This is me	406318225a82da58dc56478d0db4b9c992153843af517abe509cfa84561be3a2	126	151	w	
+Read to User: Check the email address connected to your account for a password reset email	6a6689e1474ebbc779d5a198e9af0630b1192602fe0c7550654dfdc7d1e02bc6	None	152		
+					
+Go to http://pinterest.com/password/reset	71662a594ab6deffb0dd52809d896ee6d36b66496a06ed288a18574c09909994	22	147		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	148		
+Enter your email in text field	719de44ae7b5d55e638d7bf92af1495609633cca7fe803b2bfa00efc754bcd70	118	149		
+Click Search	00dd2e59ebe98299de497a6dd854ee543667deec189a67f13c9bd61b08e47564	121	150		
+Click Send a password reset email	27731c060b39b310c0bfb500321ef07ba526c743266d82e42805019747eeeb38	126	151		
+Read to User: Check the email address connected to your account for a password reset email	6a6689e1474ebbc779d5a198e9af0630b1192602fe0c7550654dfdc7d1e02bc6	None	152		
+					
+Go to https://www.walmart.com/	83d1b13a6acfbeaec4057a7eff356be7035c6feb85cddf24f17f9fc0b1f3a3c8	95	315		
+Click Account	83031f14639721bdd01b5b90b10824d4b45eb1e1a6331ab5229906ecb037538b	5452	316		
+Select Track Orders	3ae06c34e3dcefd18a015813ca22d76b32c4c034a312c69e93b460d47382c683	134	317		
+ADD READ					
+					
+Go to pinterest.com/login	2b73b9e7d05c75faab7cf19cf6b9f316a64ca52bc123f69f128d28ddb66b4da0	None	154		
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	155		
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	422	156		
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	157		
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	426	158		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	433	159		
+Click the directional chevron down icon at the top-right of the screen to open your menu	ad1b89f511969ef1ec221df7abb8f1257a01c27230cb9f4e529e5ece9e97cda3	187	160	w	
+Click Settings	a0293047027463bedf6843bae2988b3d509834d0a59c6872e319656a0bbaf7d7	220	161		
+Click Account settings from the left-side navigation	2d8761be8a3be6ae0e4d16d91bb581989e369a4a03bce1706d4d4425f6c3bf0c	232	162		
+ Click Change your password	8d57bbe6ea080bf47294a83a8f1f0f0c81a482437e365c9da105f602ee7d28b0	294	163		
+Ask user for old password	3025964f50581f60b01c1994c84dbba8d040629c219fafe327a14118aa0c34c9	None	164		
+Enter old password in text field with old password	f1a1f67918c134e5633d33beb16e4ca016529199ef351c148cab032893f9636f	739	165		
+Ask user for new password	a698f6b6750823a301ef035b86d3c1ea059cb0a8722a93571bfd161d85643aba	None	166		
+Enter old password in text field with new password	5632a21fc468c546f5b1bca022fa99e4219ce4ed4c9a675349352f2c8fc873de	751	167		
+ Click Change Password	3d59368c70e9119b6938fbae4acc613b9251f19904e560edc356e9f76a7fe6eb	769	168		
+Click Done	245600ba36f37b64601df73e82fc81a1b6ad1906a44370e8651be43c58fbf3a3	278	169		
+					
+Go to pinterest.com/login	2b73b9e7d05c75faab7cf19cf6b9f316a64ca52bc123f69f128d28ddb66b4da0	None	170		
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	171		
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	421	172		
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	173		
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	425	174		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	432	175		
+v_Pin to choose: puppy in the top left					
+Click the ellipses in the bottom-right corner of the Pin	606b2cd60cc48572c18fb7a850f075e195e0963a31210fec3c2c1861545374f0	284	176	w	
+Click Hide Pin	eac25a628127bb41755c733637bbcbb277b625af687c1ee3c509d847468819d5	607	177		
+Ask user for reason for hiding pin	1d542386fdd23e2a8bea13fc5d3cbc7c71bf02b5bcd7b9cac7be4d0a157f7871	None	178		
+v_reason for hiding pin: Not relevant to me					
+Select user-selected reason for hiding the Pin	7412a922618849180f4fc4d60700ed8813804733d53cb3c6fec6340fae195766	579	179		
+					
+Go to pinterest.com/login	2b73b9e7d05c75faab7cf19cf6b9f316a64ca52bc123f69f128d28ddb66b4da0	None	180		
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	181		
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	422	182		
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	183		
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	426	184		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	433	185		
+Ask user name of profile	1fc00f73402885a059889aaf0c106e66c30665aefa96a59e756441e17527ad05	0	186		
+v_user selected name of profile: Maryann Rizzo					
+Enter user-selected name of profile in search bar textfield	96184ec929c7717924e2bad4028c9cdbcb330b6d9e5526c85845519caca660f4	143	187		
+Click on first account	fb3a61c71e44f609a6c6e9861a8068f7810b849536b3059a7cddd59b3455637e	136	188	w	
+Click Block	752b5419598b3355cab2f3a6cc59f87773d447f26299c058c12f4ab99ebf8349	913	189		
+Click OK	e845e31978677935a2519cfb0190cce9eb14473cd62f15de8fa476bed3ac9c06	913	190	w	
+					
+Go to pinterest.com/login	2b73b9e7d05c75faab7cf19cf6b9f316a64ca52bc123f69f128d28ddb66b4da0	None	191		
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	192		
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	422	193		
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	194		
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	426	195		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	433	196		
+click the directional chevron down icon in the top-right corner	966cf95bc32c07752a7a70c2fc58700473c544d60e05cf1dfa7e5c6bd301a074	178	197	w	
+Click Settings	a0293047027463bedf6843bae2988b3d509834d0a59c6872e319656a0bbaf7d7	225	198		
+Click Notifications from the left-side navigation	01564079b9cda3a5f96cd98adb6a245e4f793fad1424d3231363ad182820aadf	243	199		
+Click Edit next to By email	45861a5971fcfc65155ba9eeb755585aeee0631889d3c3a4bdcce18186b500cf	310	200	w	
+Click Turn off all	85b7272bb102fc74541c5c932135846daf57385dec08dc3e60edf9db5b69758c	307	201		
+Click Done at the top of the page	7d85d1b6a4ec83ae4d139001f7a06d7644ee1b8586efcf6204329d010047f7fc	278	202		
+					
+Go to pinterest.com/login	2b73b9e7d05c75faab7cf19cf6b9f316a64ca52bc123f69f128d28ddb66b4da0	None	203		
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	204		
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	422	205		
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	206		
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	426	207		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	433	208	w	a
+click the directional chevron down icon in the top-right corner	966cf95bc32c07752a7a70c2fc58700473c544d60e05cf1dfa7e5c6bd301a074	180	209	w	
+Click Settings	a0293047027463bedf6843bae2988b3d509834d0a59c6872e319656a0bbaf7d7	221	210		
+Click Account settings	807d6b941a4aaad4249386c7f8b390d9e57346e75e875df450a7026069596aea	224	211		
+read to user: email address found under basic information	22d06d702919579689e1ab6843a2eb39d39ec46b2554b0a01f0c248960df072c	286	212		
+					
+Go to pinterest.com/login	2b73b9e7d05c75faab7cf19cf6b9f316a64ca52bc123f69f128d28ddb66b4da0	None	213		
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	214		
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	422	215		
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	216		
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	426	217		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	433	218	w	a
+click the directional chevron down icon in the top-right corner	966cf95bc32c07752a7a70c2fc58700473c544d60e05cf1dfa7e5c6bd301a074	180	219	w	
+Click Settings	366f2edfa2e886dfe76e60f9040157c819c38ab51d5041ca132729c03a9f60c1	220	219		
+Click Privacy and data	a032cf88b0df9e76b943a53031f64deaddf21cdf994e0a07660344ee53c0e75d	245	221		
+Click the check box next to Hide your profile from search engines	d2824858f6dfee4257aab0d1633552bc8f201f04c4ee739331358a3f71e48e7a	329	222		
+Click I understand	164ddf49261728469f86880d6796c3f6e1b4b0ecd2b50637758a0a719d93ce99	458	223		
+Click Done	245600ba36f37b64601df73e82fc81a1b6ad1906a44370e8651be43c58fbf3a3	281	224		
+					
+Go to pinterest.com/login	2b73b9e7d05c75faab7cf19cf6b9f316a64ca52bc123f69f128d28ddb66b4da0	None	225		
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	226		
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	422	227		
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	228		
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	426	229		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	433	230	w	a
+Click Ads in the top left corner	479d5dbccb43fb21ed63b3a9cff9da47237fcd70650b0b6f7e18ca571af7fa72	136	231	w	
+select Overview	e197e8a79b036a5de624c353584aaaa504fa3f9f18a1b9d586d2136fa42aa5d3	150	232		
+v_name: small tiny hippopotamus					
+Click Arrow button next to your name	02ae0095458392cb58e75a0d4c85da820770d22c7fac234746beca5574126eef	133	233	w	
+Click Create new ad account 	8e8a3f9383a875f50486c0462d4aec4ccb9f3672e9ed536ed76360927059e0e7	179	234		
+Ask user for a name	1e1cc282e14b08db03b94fdca6c8f531216b3c1f8297c31cf065273cf54b3154	None	235		
+Enter the user-selected name in text field with name	77283e5e68a4f11063a0a9d34fdf98acee4dc71035cc1954fd0f3812425d727b	396	236		
+Click Set Up Billing	12345	418	237		
+					
+Go to pinterest.com/login	2b73b9e7d05c75faab7cf19cf6b9f316a64ca52bc123f69f128d28ddb66b4da0	None	238		
+Ask user for email Address	abb56a18b84903932bae26ae5a0c744f2cfee3b49b39c4dad6f63128d2ccfb30	None	239		
+Enter user-selected Email Address in text field with Email Address text	7d14697310f61179cdb4fa7954664af2d33635065d9333ec5a8e663450914cef	422	240		
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	241		
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	426	242		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	433	243	w	a
+Click Ads at the top of the screen	51fcb8c6bcb42ddcd4b2c5a5f6c6d411c3ee00a90dc68b1362e621f03fe8386a	138	244	w	
+click Create ad	651703c6f76dd420de8920921a83dd5cb944555950ecf63172b43dec2d3f8a90	150	245		
+Ask user for goal	d91c80e2a09383d433c54b0afb25346ab5372da1dc6c76d4db52a7cbc9dd60e2	None	246		
+v_user selected goal: Brand Awareness					
+Select user-selcted goal	6b854aca172ac589b06e41ad1015e1c8b6e6062f3d67456c3d3a24761c3c730f	291	247		
+Click Continue 	a32441c86ddc150829a046c5fa766540b595d1d224dafab19d9c60b7fb873599	368	248	w	
+					
+Go to https://www.walmart.com/account/forgotpassword	450615894852a1938bd0c0cf34b1e186b860be3d6305e8675b41ba00d6ce6979	None	338		
+Ask user for email address	2acd3a120c269d5774223684bc6af51e328ef5afc01f3f4e3371037fa8e6ce71	None	339		
+Enter user-selected email address in text field with email address	3d18f2393084b0ef4b0f6d57e59682b59230c8fa1d94fafafa5491b1a0fa51c3	197	340		
+Select Request Verification Code.	f639f0dfcab250a0007740acd7c16672c00657d48c13a7e487530f6f93dfb521	205	341		
+Read to user: Check your email for the code. Be sure to check your junk or spam folder.	2d6ac9934a26c8837bd00a17f527b93cbad018a0d107b01100e045b28d69f8e3	None	342		
+Ask user for code	0ab0790f09d82fbaba0f1ef86249fd6e61a16467da08f489a08e4ffda9d5e86f	None	343		
+Enter user-selected code in text field with code	0f10bf7107a4796e0db9ba2c15c02ba1d35689a7655cde474c5d9338b056c9ad	417	344	w	197
+Select Submit.	89d46af03d3fff11bea68d511546f23c4410dd99b772b34325b23b11a6cd87a3	431	345	w 	205
+					
+go to https://www.walmart.com/	83d1b13a6acfbeaec4057a7eff356be7035c6feb85cddf24f17f9fc0b1f3a3c8	None	346		
+Select the Account button in the upper-right corner of Walmart.com	84661d00dadeafa8d87289daa1495c570609891f19ae68ce8c3064782347e9cd	5703	347	w	5648
+Click Create an Account	70764073268a11b6dd050ca283ee16fcc7327d06b0d6d677a0e95cb69a570d16	5748	348		
+Ask user for name	28f326e852c52a5ed9c83ab6b77166596b5789ad23e8ad4844208accfd254fbb	None	349		
+Enter name in text field with name	cc3eebb91f8dca51c77e397f7f45f89df4d9b24b3d83d145915dac41e37077d6	133	350	w	140
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	351		
+enter email in text field with email	4723c33e9cdf6a2f7d97077ab4dde23336c2d8cc502aa99b4f08f6352a4ee590	147	352		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	353		
+enter password in text field with password	a07ec28e9e64f8f58629749c5bb849017bd00920d9fdef45978eeb7994b40174	154	354	w	147
+Select Create Account	79ce0e6527c9e8f82c728e8e68c4c215f0d3e735b5a44d373b9b05f60eb4f18b	186	355		
+					
+Go to https://www.walmart.com/account/login?returnUrl=%2Faccount%3Fr%3Dyes	1234	None	356		
+Ask user for email address	2acd3a120c269d5774223684bc6af51e328ef5afc01f3f4e3371037fa8e6ce71	None	357		
+enter user-selected email address in text field with email address (required)	c9e3a86455ba42079ee6ee53b43e669dfca9c5c22149e87eb24899ad4a951e59	94	358		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	359		
+Enter user-selected password in text field with password text	a9a3d642ee6da27c79818934292aa1e242d7cce1ae614d121ef07e784104cab4	101	360		
+Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	125	361		
+Click Payment Methods from the bar on the left side of the screen.	9337eb170f047c70481daa3456877df5c68f7927def2997bf6fcb25643ff70db	5783	362		
+v_Payment method to change : Mastercard 					
+click edit left of the payment method you want to change	af228d33d8ee0312530d6b4c215c952bd54103c8987298617908d31886b975ac	115	363	w	102
+					
+Go to https://www.target.com/guest/gift-card-balance?lnk=acct_nav_check_balance	f7334a14046077e640e1bd973fed22e7e0df14a80dfe57da448cc2e6cfd06c3a	None	364		
+Ask user for Gift card number	06030bb481ad9e7638432d3412612111c1ae455ff2a21ff1567399ede49ba3e7	None	365		
+Enter Gift card number in text field with Gift card number	00c2be3e609caefcc7e2573d957155aee8fd41008baa4fd31c54f8c1dc9d403e	318	366		
+ask user for gift card access number	4bfbd79c3f00a072964ea4ac0cfea94ecb666a1021393588ecc602537888f842	None	367		
+enter gift card access number in text field with gift card access number	cb0738be4b666143e332cee81319f58bb2ce97c5b3b8da01616a7b22a316df99	323	368	w	318
+Click Check Balance	191bde798d5d13c1737f87c7488cc76219cb463895eb572bf58efaa8523c6143	334	369		
+ADD READ					
+					
+Go to https://accounts.myuhc.com/rt/register/myuhc/en	b97ef54ea88ff4e7bbbe1be51caea8387a921e701442671e93bf4e8dea86f59c	None	370		
+ask user for First Name	4f8b01aa8c878f24abe347090e0fb671d43c26792f4507ed696be1d1cf29aa88	None	371		
+enter user-selected First Name in text field under First Name text	80bb41fd6ee605ab47764f14c1b7ac704a4308c20809bb1701f2def3014b07a8	68	372		
+ask user for Last Name	fd10a8052fe969b488ee9488e319112c1e028e4a1f09c5a5d5cfc98218c2d935	None	373		
+enter user-selected Last Name in text field under Last Name text	0cca2c124819ccf8ac78cc03f6bdc5a47c4fca84667695bc3bff5271bb457a05	74	374		
+Ask user for Birth Month	68f4c231858b8c5d43eb52c74fc5e52cf84aa2ff5ed6b23eb3df910aabbd44d4	None	375		
+Select user-selected Birth Month in Month drop down	ca8f7f57b845d2079502eb9d3e9004f21c7b1419fbec179e400def31663e6127	84	376		
+Ask user for Birth Day	e0a09437c6290f93e3c0500781353d627d1b381b336c11ef7c55a1ae238559a1	None	377		
+Enter user-selected birth day in text field with DD	2c261b654e9337b7368a9a165be6af70c8f005b4dec44e3679d6dc9fe3e05627	103	378		
+Ask user for birth year	aabb767b8e945ab3cb307dfacae962609cd7fd9f95fd28f24573fdb577d49142	None	379		
+Enter user-selected Birth year in text field with YYYY	a98ea4d6cd16706b382957151d16a66a862c8884981041770c9aac7b6a476971	107	380	w	129
+Ask user for Member ID	7d793b625b3e65f993e58c51b5bf7ebc82444ef94af037f08fef936834ed4fdb	None	381		
+Enter user-selected Member ID in text field under Member ID text	a1d1446970a8c014b9c77fea7c9e0b067b6ec64100048c295581f4332b436f30	129	382		
+ask user for Group or policy number	8f6ac6b038a1a7720a030cd9c07400d2f787568ff6ec0b943c576c588de65775	None	383		
+Enter user-selected Group or policy number in text field under Group or policy number text	c1b6cd814def06bb5d323ce66f98d87dd9511a94e89d374f73cf1b1aef34cceb	135	384		
+Click Continue	feeeca4c2b7e2168ffcb9eea0a6b1b29eea92f1ab92206b13a6ce46897552e96	140	385		
+					
+Go to https://mail.google.com/mail/u/0/#settings/general	d1cc77c172ae2d162d1936b1c46d4d3888de336e997f83338d8dc1e47257d35e	None	392		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	393		
+Enter user-selected Email in text box with Email or phone	cffece638a6d0f24bf91b65ef1a4a4d1052a45a79792c3301778f268a1f4d2cd	75	394		
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	116	395		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	396		
+Enter user-selected password in text box with password	e9813cf1422157d94012f6b7df4e2ed0e0388989427526925b5c4b81bd355926	103	397		
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	151	398		
+Click the gear icon in the top right	644e758a58944b09223a01c2664dcb193488d4d201d35c9107137e2df153c151	210	399	w 	no match
+Click See all settings	f3225cb4b74e818d3b8c2d2de29d8f48819a3b0ab3f3c4a85438a1d6ad770a0c	1847	400		
+Click the Inbox tab.	e30c15472e7157f7424845a0c940ebae2c5deed18f73b2eaeeedd6ee28ed29bd	457	401	w 	1383
+Select Default.	698401beccdb61f0dd4df6271b60fb6387c3d6c5fdf8d483c059473dbaeddc67	1752	402	w 	2102
+v_Check box to click: Updates					
+Click the check box	8fb50ce76738b6fa3dcaf0fd6405dab692ceed85b68407d30f87d91c9207eec0	1877	403	w 	1900
+Click Save Changes.	1ace3c2378f69aad63427c9b526f4697373d68bd65808f414b29ae7c22769500	2122	404		
+					
+Go to https://myaccount.google.com/	a261ef07983c7af64319a95dd668095bc8347a4e0bf8341c7d7c5ed55d9c1129	None	405		
+Click Use another account	e305ed54ddc96d8a060d0263fcdb5f2c47fd6b2282aa00e2549d97fd00076d91	43	406	w	474
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	407		
+Enter user-selected Email in text box with Email or phone	cffece638a6d0f24bf91b65ef1a4a4d1052a45a79792c3301778f268a1f4d2cd	75	408		
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	116	409		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	410		
+Enter user-selected password in text box with password	e9813cf1422157d94012f6b7df4e2ed0e0388989427526925b5c4b81bd355926	103	411		
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	151	412		
+Click Security	bd20458148087a4d0c47aecee1126153c64ae9ae7804ba2c6176ea797e00902e	230	413		
+Click Password	b51046f1a44b99af11d57fea8cd17e82602e3318f72b635059d970566fb5448e	940	414		
+Ask user for old password	3025964f50581f60b01c1994c84dbba8d040629c219fafe327a14118aa0c34c9	None	415		
+Enter user-selected old password in text field with Enter your password	80ba99f9d221ba69f531fd13e88a2dffc126ba3669935189c3e31ada4577f9de	104	416		
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	152	417		
+Ask user for new password	a698f6b6750823a301ef035b86d3c1ea059cb0a8722a93571bfd161d85643aba	None	418		
+Enter user-selected new password in text field with new password	13261c3501b6e45ba0624e3f7e34f885c1d6bb5c9140e091702c9b6b0dd26987	239	419		
+Enter user-selected new password in text field with confirm new password	f9ddac3d3b471078017c236caa6288ea53b373b6099a3a803a7c596c1a475115	269	420		
+Click CHANGE PASSWORD	b3b9f128e17cf32915ef0f623b17300f11f122ab151817f1d6e6cd1aaf45ca9d	295	421		
+					
+Go to https://accounts.google.com/SignUp	ecedade51dffd76225fba5158f7cd81c2f1619379a347949cdd8f2ff4f9b8cf2	None	422		
+Ask user for first name	3721ad727991ce3c24cb18b52071520ccb1ab293704699ddd5a9a1cfd0e99c75	None	423		
+Enter user-selected first name in text field with first name	0a0bf8267634b59b95a924008184ae1defac15feb51cec1d54ec899e7f6a8e41	77	424		
+Ask user for last name	62b528d1d30346a04801df19213187aaa5945121860b79a47ca592f01b886768	None	425		
+Enter user-selected last name in text field with last name	bb2778453eb01270a1a73c46edf6be3d026576bcac95f333bc44cf1f35f75b8b	88	426		
+Ask user for username	a8dce033b307a01782571893d3cd7cd21b0f009835f969cdd1b3928f8722c87a	None	427		
+Enter user-selected username in text field with username	8ac2ed3f6af2ec67203a066c70ca7ce5da4f3a4a154d22efef6338e6c53fe860	103	428	w	102
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	429		
+Enter user-selected password in text field with password	1552671baaba65424ffb308a5eec961c6bb4e8d27ad3921d3391ce1b9520906c	129	430	w	102
+Enter user-selected password in text field with confirm	79dd1ffcdc98dc8c4f1eb2f9757a53f462fbe45b08725e0a9f7ea135ecfe17c8	140	431	w	139
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	170	432		
+					
+Go to mail.google.com	4ec76185a34ceacd22101f9f44b5fc366cb04631064f7b3955fed5d5b339e44e	0	433		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	434		
+Enter user-selected Email in text box with Email or phone	cffece638a6d0f24bf91b65ef1a4a4d1052a45a79792c3301778f268a1f4d2cd	75	435		
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	116	436		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	437		
+Enter user-selected password in text box with password	e9813cf1422157d94012f6b7df4e2ed0e0388989427526925b5c4b81bd355926	103	438		
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	151	439		
+Click the gear icon in the top right	644e758a58944b09223a01c2664dcb193488d4d201d35c9107137e2df153c151	179	440	w	no match
+Click See all settings.	28c329197abbff3355d2edf5598bb0f87106660b9e54490c68b2db04c849eb04	1841	441		
+Click + Create New in the Signature section	751fd4bdb2427cd614888385bf874bfaefed7edf8dcac5697cbf3a8e8ed4d04d	1384	442		
+					
+Go to mail.google.com	4ec76185a34ceacd22101f9f44b5fc366cb04631064f7b3955fed5d5b339e44e	None	443		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	444		
+Enter user-selected Email in text box with Email or phone	cffece638a6d0f24bf91b65ef1a4a4d1052a45a79792c3301778f268a1f4d2cd	75	445		
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	116	446		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	447		
+Enter user-selected password in text box with password	e9813cf1422157d94012f6b7df4e2ed0e0388989427526925b5c4b81bd355926	103	448		
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	151	449		
+Click Compose.	7838d9aa1315b1b68f1ef7724203eceaeabe475ed5544ff8be58708ec05e7d2b	316	450		
+Click Turn confidential mode on / off button	615df527a882f139597ae0f07f473547fbf69a9d4c02e631bea96000f37045ad	2348	451	w	181
+Click Save.	7872e76a8c07f325e25c4fc509adc25781f32f79e59fb833cee2bf48382d71d6	2747	452	w	199
+					
+Go to mail.google.com	4ec76185a34ceacd22101f9f44b5fc366cb04631064f7b3955fed5d5b339e44e	None	453		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	454		
+Enter user-selected Email in text box with Email or phone	cffece638a6d0f24bf91b65ef1a4a4d1052a45a79792c3301778f268a1f4d2cd	75	455		
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	116	456		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	457		
+Enter user-selected password in text box with password	e9813cf1422157d94012f6b7df4e2ed0e0388989427526925b5c4b81bd355926	103	458		
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	151	459		
+"On the left, click Sent."	b19e12431dd2c55360e68f37ed5cf2e981d2bb0c8743ecc106143d5b3ac5fc9c	335	460		
+v_Confidential email: The email to sam.masling@gmail.com					
+Open the confidential email.	3f4fe2f3247b280b14a23f9e57c4568e0fbc41890d98c9bbfdf1167aaa4ceb91	1954	461	w	1991
+Click Remove access.	f50115d91697aaa58699412d337e56a0bd62e40354e2053ea0cc3da663a40f8b	2149	462		
+					
+Go to mail.google.com	4ec76185a34ceacd22101f9f44b5fc366cb04631064f7b3955fed5d5b339e44e	None	463		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	464		
+Enter user-selected Email in text box with Email or phone	cffece638a6d0f24bf91b65ef1a4a4d1052a45a79792c3301778f268a1f4d2cd	75	465		
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	116	466		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	467		
+Enter user-selected password in text box with password	e9813cf1422157d94012f6b7df4e2ed0e0388989427526925b5c4b81bd355926	103	468		
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	151	469		
+Click the question icon in the top right	ee139299b9595c099239ca1fe46a16b03411821d0aa90e9395ea71ff5f892d7b	198	470	w	no match
+Click Help	3641e16c97cb554f59fdf98ef49c072d8fe8406b8e58c14f12029e0c28b3a1ff	203	471	w	198
+Click Send feedback.	d5837c242b8394b370f74dec48de2bc8962b0925457611dd0188aea36359a1a4	208	472	w	355
+Ask user for comments	9b797175942422bc02abfd8bb78af27e873d7c1ab4a7d711918e109ade6ce7d3	None	473		
+Enter comments in text field with comments	179cec63ffd7f54a6d6aedcda3c9616d09bf5f1f9b123ae28e7fdf425fdf5829	N/A	474	w	188
+"At the bottom right, click Send."	bdf39be83fec81c26aeec944e35ea0f7777e6a1581ac1b940891be9dcf0be4a1	N/A	475	w	1792
+					
+Go to mail.google.com	4ec76185a34ceacd22101f9f44b5fc366cb04631064f7b3955fed5d5b339e44e	None	476		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	477		
+Enter user-selected Email in text box with Email or phone	cffece638a6d0f24bf91b65ef1a4a4d1052a45a79792c3301778f268a1f4d2cd	75	478		
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	116	479		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	480		
+Enter user-selected password in text box with password	e9813cf1422157d94012f6b7df4e2ed0e0388989427526925b5c4b81bd355926	103	481		
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	151	482		
+Click the gear icon in the top right	644e758a58944b09223a01c2664dcb193488d4d201d35c9107137e2df153c151	210	483	w	no match
+Click see all settings	ae6383c9edaaf94ede18da5b81281c2826bd2ea485249b4efe9914707eb1ee8c	1841	441		
+Click the mail notifications off checkbox	8539f400803132a32e27d13ae5d0a32d810223bcb91ae304efd84e419d071377	1235	485	w	1540
+Click save changes	a04b2dfbf1c0692288be4fae11c9c1a06799e9f2eb497425cefcad56cb102eb6	1741	486		
+					
+Go to http://www.spotify.com/account?_ga=2.170055017.893322237.1604048036-1104676808.1602105716	b1f2eae7794db7ee0c76d95ff94900f37d7f3384a8996ed5080dac86668d5429	None	487		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	488		
+Enter user-selected email in text field under email address or username	0edc043242d6ed475e62e7a0c454b169ff5c9e579cb994d03c6445cd3e39c017	44	489		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	490		
+Enter user-selected password in text field under password	6484483d59aa34c1cbc8680044f27f4840479fe2a9e7117e67b6679b8a860ee4	48	491		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	60	492		
+Click SIGN OUT EVERYWHERE.	17865a2e4dcff49329bfafe404f145cded359ff45bcaff64f442db90c4f2055a	241	493		
+					
+Go to http://www.spotify.com/account?_ga=2.170055017.893322237.1604048036-1104676808.1602105716	b1f2eae7794db7ee0c76d95ff94900f37d7f3384a8996ed5080dac86668d5429	None	494		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	495		
+Enter user-selected email in text field under email address or username	0edc043242d6ed475e62e7a0c454b169ff5c9e579cb994d03c6445cd3e39c017	44	496		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	497		
+Enter user-selected password in text field under password	6484483d59aa34c1cbc8680044f27f4840479fe2a9e7117e67b6679b8a860ee4	48	498		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	60	499		
+Click EDIT PROFILE.	0b7b606b7af04aa112496c5a80966eaee33c39efc6bda3d13c9491049f3ca8d2	218	500		
+ask User for new email address	82431e24ba4b5ee1d76bc41aca46045bd99e818bf4bcb967e84135c95c71880e	None	501		
+Enter user-selected email address in text field under email text	e51a1b2d923944876f157b86705e06fa7c2a0edd94d186da1b0a90d5110118dc	191	502		
+Click SAVE PROFILE.	24027669a8c9f4e82eb1dc9e6842502d29bb1a2d53623e752a9fd92a567ff13b	246	503		
+					
+Go to http://www.spotify.com/account?_ga=2.170055017.893322237.1604048036-1104676808.1602105716	b1f2eae7794db7ee0c76d95ff94900f37d7f3384a8996ed5080dac86668d5429	None	504		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	505		
+Enter user-selected email in text field under email address or username	0edc043242d6ed475e62e7a0c454b169ff5c9e579cb994d03c6445cd3e39c017	44	506		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	507		
+Enter user-selected password in text field under password	6484483d59aa34c1cbc8680044f27f4840479fe2a9e7117e67b6679b8a860ee4	48	508		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	60	509		
+Click Redeem	e3a16384eb8736e5abab518c9cf4a00cc57f9f8948e07f90ecd6f0d8225c81b0	189	510		
+Ask user for premium code	29676b112f8b377151bd4f269e9bc82681ed41cf9450c199a04ca40c3aea786a	None	511		
+Enter the user-selected premium code in text field under enter your premium code text	0d33a1ae8f3c9eac783388326043753f56a2c66f5403fd5e4fb02aef0ee488ca	134	512		
+Ask user for Zip Code	8c8fe590aa4f28fcdfc0e68c339a5f56e6e81dfe9c063723e7d3b79eac0faf35	None	513		
+Enter user-selected zip code under Zip code text	d8775ff498cf93d2b8e59265aeaedef24d4b5145344627f316329119fe46f063	137	514		
+Click Enter Code	08d98dd6817e678c248ed238a0ca294df7341273874c128ff8d89c691659f5f5	148	515		
+					
+Go to http://www.spotify.com/account?_ga=2.170055017.893322237.1604048036-1104676808.1602105716	b1f2eae7794db7ee0c76d95ff94900f37d7f3384a8996ed5080dac86668d5429	None	516		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	517		
+Enter user-selected email in text field under email address or username	0edc043242d6ed475e62e7a0c454b169ff5c9e579cb994d03c6445cd3e39c017	44	518		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	519		
+Enter user-selected password in text field under password	6484483d59aa34c1cbc8680044f27f4840479fe2a9e7117e67b6679b8a860ee4	48	520		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	60	521		
+Click Receipts in the menu on the left.	da248599e1ef12a2e8ae2c849dce7885727c7e57d56f406c7d301bbbfcd5d1aa	173	522		
+v_receipt to view : the first receipt with date 8/13/19					
+Click VIEW	494854898a0baf1a68db47f4b1729607b0d3798a2beb71b5fb1bed20d8b8a002	382	523		
+ADD READ 					
+					
+Go to http://www.spotify.com/account?_ga=2.8245755.893322237.1604048036-1104676808.1602105716	c36a2956b36d0596a00b263328bd5c2961bc40e6c57104557e18d27afa961095	None	524		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	525		
+Enter user-selected email in text field under email address or username	0edc043242d6ed475e62e7a0c454b169ff5c9e579cb994d03c6445cd3e39c017	44	526		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	527		
+Enter user-selected password in text field under password	6484483d59aa34c1cbc8680044f27f4840479fe2a9e7117e67b6679b8a860ee4	48	528		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	60	529		
+Click notification settings	c2c8615e0307d80c81478e1d4b7c83607378836483afdaf2c9f0f7c113107edd	164	530		
+click the Spotify news and offers checkbox	3bdb2ee1453ad55d4e49c4b07f4716a2a087b63495dd0f4f105228c7d8fefd3c	314	531		
+					
+Go to http://www.spotify.com/account?_ga=2.170055017.893322237.1604048036-1104676808.1602105716	b1f2eae7794db7ee0c76d95ff94900f37d7f3384a8996ed5080dac86668d5429	0	532		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	533		
+Enter user-selected email in text field under email address or username	0edc043242d6ed475e62e7a0c454b169ff5c9e579cb994d03c6445cd3e39c017	44	534		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	535		
+Enter user-selected password in text field under password	6484483d59aa34c1cbc8680044f27f4840479fe2a9e7117e67b6679b8a860ee4	48	536		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	60	537		
+Click Recover playlists in the menu on the left. 	41b521791e35f02d85516a8c8b3279f29608194388c9ceb3c4c4858aa9f4754a	175	538		
+v_Playlist to recover: the playlist with date 11/13/20					
+Click RESTORE	76d630221e57b4f63a13860c69e42b14ffad1e369461544304f47f8e22404568	311	539		
+					
+Go to http://www.spotify.com/account?_ga=2.170055017.893322237.1604048036-1104676808.1602105716	b1f2eae7794db7ee0c76d95ff94900f37d7f3384a8996ed5080dac86668d5429	None	540		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	541		
+Enter user-selected email in text field under email address or username	0edc043242d6ed475e62e7a0c454b169ff5c9e579cb994d03c6445cd3e39c017	44	542		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	543		
+Enter user-selected password in text field under password	6484483d59aa34c1cbc8680044f27f4840479fe2a9e7117e67b6679b8a860ee4	48	545		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	60	545		
+Click Edit profile	85376282bbacd05efd9b79f50002d3cc1fcfbb2dcc539bd407d14c5240eaf2c4	155	546		
+Ask user for new email	313d9499d11cc977655e6bf2c66b3aef5500b85acd503b099ec22fa37efc09a3	None	547		
+enter user-selected new email in Text field under email text	a4d0017eefde622a9644050dbfff1db0e963f26705762d5844b9e6600926bef8	193	548		
+Click save profile	48cd41ae98e069f1ca22c492e59095fdc289afb340ab8929b6d630983985b2f3	248	549		
+					
+Go to http://www.spotify.com/account?_ga=2.170055017.893322237.1604048036-1104676808.1602105716	b1f2eae7794db7ee0c76d95ff94900f37d7f3384a8996ed5080dac86668d5429	None	550		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	551		
+Enter user-selected email in text field under email address or username	0edc043242d6ed475e62e7a0c454b169ff5c9e579cb994d03c6445cd3e39c017	44	552		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	553		
+Enter user-selected password in text field under password	6484483d59aa34c1cbc8680044f27f4840479fe2a9e7117e67b6679b8a860ee4	48	554		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	60	555		
+Click CHANGE PLAN	06c0b7f986b85a424e787f9d0a50cff64fbac33e91e93ae164eb8bf2604d7e65	242	556		
+Click CANCEL PREMIUM.	33e1cb66eb81f561cd6c04f276e09e1259a5c56aa428491e2d4a1b00e11d6ab4	243	557		
+Click confirm	9746ffd2cdfb0cbc7f460c9ed740db6bd3d5e4cefdb49c9bb3311b05881c110d	194	558		
+					
+Go to http://www.spotify.com/account?_ga=2.170055017.893322237.1604048036-1104676808.1602105716	b1f2eae7794db7ee0c76d95ff94900f37d7f3384a8996ed5080dac86668d5429	None	559		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	560		
+Enter user-selected email in text field under email address or username	0edc043242d6ed475e62e7a0c454b169ff5c9e579cb994d03c6445cd3e39c017	44	561		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	562		
+Enter user-selected password in text field under password	6484483d59aa34c1cbc8680044f27f4840479fe2a9e7117e67b6679b8a860ee4	48	563		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	60	564		
+Click Apps	88a80544925e1d36767cc4b363cf308049652c1cebd57c5b4d27c6ac45161ac4	186	565		
+Click Remove Access under google maps	69e893da7853a3bcaf63f93030f3e75980c2dd969f3e732dc06afa5328307327	305	566		
+Read to user: Locate the claim code.	842aacfc8b2debb2bdb34f0b05e53c23b0fa8d82a0b5f1b96364bf1b16c1812c	None	567		
+					
+Go to https://www.amazon.com/gp/prime/pipeline/signup	49f67cbec3960c1f39bb14c6446d193b83fd411f3149665bbfd9eebd1554d377	None	568		
+Click Try Prime	ab01c27e1a9ed0b5595f41530d4264a24ab0d68f1847f11ef0f1b19b8f11206a	488	569		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	570		
+Enter user-selected email in text field under email address or username	0edc043242d6ed475e62e7a0c454b169ff5c9e579cb994d03c6445cd3e39c017	56	571		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	572		
+Enter user-selected password in text field under password	6484483d59aa34c1cbc8680044f27f4840479fe2a9e7117e67b6679b8a860ee4	68	573		
+Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	80	574		
+Click Try Prime	ab01c27e1a9ed0b5595f41530d4264a24ab0d68f1847f11ef0f1b19b8f11206a	500	575		
+					
+					
+Go to https://www.amazon.com/cpe/manageoneclick?ref_=cs_change	9d74da7966325480557934b079680dca08af17669683cbb7ea86bbc0b0859897	None	576		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	577		
+Enter user-selected email in text field under email address or username	0edc043242d6ed475e62e7a0c454b169ff5c9e579cb994d03c6445cd3e39c017	58	578		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	579		
+Enter user-selected password in text field under password	6484483d59aa34c1cbc8680044f27f4840479fe2a9e7117e67b6679b8a860ee4	65	580		
+Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	77	581		
+Click Disable 1-click everywhere	03fea4efbb96611cf6f59839c3d91e2f152a1a1612ac44f57f3fcf597f331b23	412	582		
+					
+Go to https://www.amazon.com/gp/css/your-account-access	e333c25095e0036efc2f089f033405c5421b4098252efd4716e98edffe072d0d	None	583		
+Click Gift cards	94e4fa69b5b7e845335af4e470c00787863d55b190b4fd738bea525dc905fe02	429	584		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	585		
+Enter user-selected email in text field under email address or username	0edc043242d6ed475e62e7a0c454b169ff5c9e579cb994d03c6445cd3e39c017	56	586		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	587		
+Enter user-selected password in text field under password	6484483d59aa34c1cbc8680044f27f4840479fe2a9e7117e67b6679b8a860ee4	68	588		
+Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	80	589		
+Click Redeem a gift card	fa860062b29a8988efed52706201a9e3843d4dedb285d8c1687d2f54ecec7dec	415	590		
+Ask user for your claim code	f1c8c371e0641ec9d4aaa3eec473f7eb81b0cac0b2d428667bdf29e854c8de24	None	591		
+Enter user-selected claim code in text field with Claim code	e2c1473b4d768353eebdca965f6ddc0b6f75bac1811486c202632a6f91420c27	374	592		
+Click Apply to Your Balance.	b3d009a2037c55e968bc4e33d25915cb1a376c03d13a16374cd5a2942e744db5	381	593		
+					
+Go to https://www.amazon.com/cpe/manageoneclick?ref_=cs_change	9d74da7966325480557934b079680dca08af17669683cbb7ea86bbc0b0859897	None	594		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	595		
+Enter user-selected email in text field under email address or username	0edc043242d6ed475e62e7a0c454b169ff5c9e579cb994d03c6445cd3e39c017	58	596		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	597		
+Enter user-selected password in text field under password	6484483d59aa34c1cbc8680044f27f4840479fe2a9e7117e67b6679b8a860ee4	65	598		
+Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	77	599		
+Ask user for name to make default	6caa6b4860b5bcc17ffb5ac3149f1c7955d41f9ff5fbf913b88e7b4030dfdcaaac	None	600		
+v_name to make default: dsaf- WASHINGTON					
+Click Make default next to user-selected name	08871f5e60b62d0e8337f3ece73e2f988c6fbf3461cfd29a5bf7909512959b5b	477	601		
+					
+Go to https://stackoverflow.com/users/signup?ssrc=head&returnurl=%2fusers%2fstory%2fcurrent	6eb789c0324d83d449cf97fe1ee12b8588481e906a8533ae86901c56735fffc7	None	602		
+Ask user for display name	ea2decfa743b217bdb16c70c6a0c498c27c22c3688c231e292ec735111490fdd	None	603		
+Enter display name in text field under display name text	0d01522977428abdda5217005dc915d6c5904339a5b72ad00f5c445b5a778262	260	604		
+Ask user for Email	a24128f56295369273931797a908fbb3fc1a332ed5dabe105829d71105f8c3e8	None	605		
+Enter user-selected Email in text field under email text	60f95f5c1ed19902a7457bec2bf0cb221194d57ce924640630e4afeef454e984	267	606		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	607		
+Enter user-selected password in text field under password text	f2876c24ce347fb1a379591578d0fa46b2c67ee7953e0e7d0822eca8dbb40678	275	608		
+Click the check box next to I'm not a robot	380d2e62ef42370ab938c3927f3a4dd21572e3ae912cdb728c2cbaf3518674d5	N/A	609		
+Click Sign up	5b229e05884958c13da578bddcd2b4471b700c43997a847014f9b21ab44cff58	309	610		
+					
+Go to https://stackoverflow.com/users/14640491/sas123?tab=profile	123	None	611		
+Click log in	a1319cbe365b610c2766916c17209eecb55c76734029aac6dedbec831c90878b	94	612		
+Ask user for Email	a24128f56295369273931797a908fbb3fc1a332ed5dabe105829d71105f8c3e8	None	613		
+Enter user-selected Email in text field under email text	60f95f5c1ed19902a7457bec2bf0cb221194d57ce924640630e4afeef454e984	233	614		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	615		
+Enter user-selected password in text field under password text	f2876c24ce347fb1a379591578d0fa46b2c67ee7953e0e7d0822eca8dbb40678	240	616		
+Click Log in	85fdb9812d8f9ce0ff0ef461f1d0ffa2fa595456ad1adfdaae28f0362d768c25	247	617		
+Click click here to edit	01c2421a2d401db4dd727ace8b061f898a36a6d6ff0ce8c75932d08c1d33b645	307	618		
+CLick My Logins	fcdd6cc1ea5c33a9ac0125a7643d0e99aa64c312170571693f52f862f1dbe17f	329	619		
+Click remove	61daeb3c3dd615688df784d7bbc456d0daec2bdee49b87db470dc21c0bf088d1	354	620		
+					
+Go to http://crytivo.com/	47d5e0d1802a7efafc4d015d9b44b5b8e60a70f425bcde61fe96fb89482d5944	None	621		
+Click Sign In in the upper right corner	4bbaef43887ceceb2eb03888d6b61d6265249d47c5a04bcaa6412e974bc63f41	107	622		
+Click Forgot Password	0d96689b25b25735eeda468f0c2ce77c5ab381a6445bc1e26497f99bdade3d1c	79	623		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	624		
+Enter user-selected email in text field with Enter your email	a30cfa8158c9699dcb0817d81df5af521ae6efc4f2321605bfe828aae1dc8252	1666	625		
+Click RESET PASSWORD	97072ca98be5e2b8772d1d4df8ce818f93ff15779c997b720663490ffe95479e	1677	626		
+Read to user: check your email for a reset password link	8463a0ccd4f76fc0524dfff4aeacfa1def04577744ed29e427a736d5e1777c19	None	627		
+					
+Go to https://my.tradalaxy.com/login	a825f68444ccd967d6934a35f325e7f60536177a3599efa0735447ff90160a22	None	628		
+Click Forgot Password in the 'Password to Tradalaxy' field	15e31dd01a8ce38bfcae5ee1dbdf707248b7ec2ace257463195c7383ee2ab61c	119	629		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	630		
+Enter user-selected email in text field with Email	a2c71c96950bfda769865fff83f948f04d39fe2825f37aa86274774498d72b0a	164	631		
+Click RESET PASSWORD	97072ca98be5e2b8772d1d4df8ce818f93ff15779c997b720663490ffe95479e	167	632		
+					
+Go to https://www.ziprecruiter.com/	60d10ea46deb3fa805dfe0fa07ad4046da7ae8fa8e0211d40af1105bc3c29411	None	633		
+Click Sign in in the upper right corner of the screen	6bdb1b22b1be8fca1a6de6b45d51bc681800232adba25606dababb70929242cb	147	634		
+Click I'm a job Seeker	30af29017050e9216f70b31fd335bcf0e91d38fe05cd84ea46fa22cf2f4d68b4	141	635		
+Click Forgot password at the bottom	6b699a73224c2fb9ec7780539c32804807215af6dc7be3c519cd884bf15f9e9e	175	636		
+Ask user for email address	2acd3a120c269d5774223684bc6af51e328ef5afc01f3f4e3371037fa8e6ce71	None	637		
+i_enter user email address in text field with your email address	insert hash here	132	637		
+Click Reset Password	feaf933359d99b8234ca4bee25fafe23b9d10fa7bdbdbef81c7c32111425b611	138	638		
+					
+Go to https://www.ziprecruiter.com/	60d10ea46deb3fa805dfe0fa07ad4046da7ae8fa8e0211d40af1105bc3c29411	None	639		
+Click Sign in in the upper right corner of the screen	6bdb1b22b1be8fca1a6de6b45d51bc681800232adba25606dababb70929242cb	147	640		
+Click I'm a job Seeker	30af29017050e9216f70b31fd335bcf0e91d38fe05cd84ea46fa22cf2f4d68b4	141	641		
+Ask user for Email Address	633b15793670ee23a8ac687c82a9544801dec3dca5f13f87dcf42c95c148084b	None	642		
+Enter user-selected Email in text field with Email Address	af30baf6f339c996fc63c1e89d12d6e450976fdc14c26a627a9ac386b37b77a8	151	643		
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	644		
+Enter user-selected Password in text field with Password	4d8fee26e2eba84d758ae7b990c4b5ee00f5a7daad7cb16799a8dad1ca5e28fd	155	645		
+Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	163	646		
+					
+Go to Nike.com.	dee21b58b9e2799d6c93a75f28011a0e34b2c405bdec057ffb8acfa0e75caf27	None	647		
+click Sign in in the upper right corner.	1f1b36c14bda50b990f552df3431938fcc1126824c0154c89c41e2ed686efbf4	365	648		
+Click Forgot Password?	1d9446f18506bebf30898e0dcb45a0fb3d4723e7d1a99969a63832c81c695e84	151	649		
+Ask user for email address	2acd3a120c269d5774223684bc6af51e328ef5afc01f3f4e3371037fa8e6ce71	None	650		
+i_enter user email address in text field with Email Address	insert hash	137	650		
+Click RESET	3be7dadf66523da6341acdcebac5f21efdbfa073e1ae6493ff412c170566be7a	143	651		
+Read to user: Tell user to check email	49c1d80e540157d2b4f38ded4fa49c7a1343dc0a02d2b299b086d7a39340cd8a	None	652		
+					
+Go to Nike.com	2772829418fd555f23b2c88f5c6cd50013d9165f2a5b4fb98fc31eec8dd05824	None	653		
+click Sign in in the upper right corner.	1f1b36c14bda50b990f552df3431938fcc1126824c0154c89c41e2ed686efbf4	367	654		
+Ask user for Email Address	633b15793670ee23a8ac687c82a9544801dec3dca5f13f87dcf42c95c148084b	None	655		
+Enter user-selected Email in text field with Email Address	af30baf6f339c996fc63c1e89d12d6e450976fdc14c26a627a9ac386b37b77a8	130	656		
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	657		
+Enter user-selected Password in text field with Password	4d8fee26e2eba84d758ae7b990c4b5ee00f5a7daad7cb16799a8dad1ca5e28fd	139	658		
+Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	156	659		
+					
+Go to https://www.levi.com/US/en_US/my-account/update-profile	4db0e5ced8d13be209adfdf2622b0798d5d0be31a240a2f00b24aff307445544	None	660		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	661		
+Enter user-selected email in text field below Email* text	aff2dfb31a5a1c4ae092c51ea5e268211d7828a1b52c3f3ac57fcc95c0b5149c	120	662		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	663		
+Enter user-selected password in text field below Password* text	578e65e97c7e83f2dc041d87d756542f27faaf1fb2b367568b7339fef295fd42	126	664		
+Click Log In	a1319cbe365b610c2766916c17209eecb55c76734029aac6dedbec831c90878b	141	665		
+Ask user for First Name	017cc65ae4ee1d51e581114e8b4252707883ebe0d1fed0b94db15730d83f0009	None	666		
+Enter user-selcted first name in text field below First Name*	f3d2b2570ba6dea72390b9440f6e723b6a9d73552032cf8902ed0aaa60db46eb	195	667		
+Ask user for Last Name	872990a6e9ce96d995aace892ad5873e36ceefdea8a2cb1695327c983990d807	None	668		
+Enter user-selcted last name in  text field below Last Name*	3b218b499305d86d670be07da82a3e4c3b5b3a26b8d83163bf83e38d78bde1d3	200	669		
+Click the Update button	8ab62134837a304001321be6cb2b095eaa42d0d971ea4b3683573e6b77e18a37	368	670		
+					
+Go to https://connect.secure.wellsfargo.com/auth/login/present?origin=cob&LOB=CONS	3e60ee80c1fdf4b7ff92f82a45793a553f90c52b49373b6a7b40081c68407ac7	None	671		
+Click Forgot Password/Username?	f87648625af2aa905fae3726729b7830fbd15936053fc6f82ec29311849cc7a2	116	672		
+Click Create New Password	21d5617e8b8762fef9f0c55a9c00eac5e55322246c228540446e75bece3188b8	431	673		
+Ask user name for username	02606cbaac97cddb38ccb9c6b45c085a3669bbf042aab6391b3c398052d2a456	None	674		
+Enter user selected username in text field under username text	e715d20490ae10fc790015aa9b7b3de59f7be1dcee22215cb11b5516fe67e0f9	149	675		
+Click Continue	feeeca4c2b7e2168ffcb9eea0a6b1b29eea92f1ab92206b13a6ce46897552e96	191	676		
+					
+Go to https://connect.secure.wellsfargo.com/auth/login/present?origin=cob&LOB=CONS	3e60ee80c1fdf4b7ff92f82a45793a553f90c52b49373b6a7b40081c68407ac7	None	677		
+Ask user for username	a8dce033b307a01782571893d3cd7cd21b0f009835f969cdd1b3928f8722c87a	None	678		
+Enter user-selected username in text field with username	8ac2ed3f6af2ec67203a066c70ca7ce5da4f3a4a154d22efef6338e6c53fe860	94	679		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	680		
+Enter user-selected password in text field with Password	57797a439112e9d02a78110f5fed4f078c58f1b6fea1ef13c21ab024acc61f83	98	681		
+Click Sign On	6ca8d4748acb22b711bea09ae23328526440cc9ab576add0b03e27c56436c353	119	682		
+					
+Go to https://signup.ebay.com/pa/crte	ebba94954c921687cca605a703b05a7a15869393208bf66bfae3292adfe1107b	None	683		
+Ask user for First name	f84d75deef3c906bbaa93fca70d44001c83a7e9f6074775361769a2d755d8afc	None	684		
+Enter user-selected First Name in text field with First Name	1f65a05a1efe35f1282f6af92cb24cd11753c7ef77b47956aef233dfd185faf7	78	685		
+Ask user for Last Name	872990a6e9ce96d995aace892ad5873e36ceefdea8a2cb1695327c983990d807	None	686		
+Enter user-selected Last Name in text field with Last Name	4e910faf871be34af8d9250f4a6d522657ba1129d2f2d276e8f9568e473a42c1	85	687		
+Ask user for Email	a24128f56295369273931797a908fbb3fc1a332ed5dabe105829d71105f8c3e8	None	688		
+Enter user-selected Email in text field with Email	f29a442279ba31e1f5c0b82cffdb53053e854aa2de74a0e57293532f9fcc0f99	93	689		
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	690		
+Enter user-selected Password in text field with Password	4d8fee26e2eba84d758ae7b990c4b5ee00f5a7daad7cb16799a8dad1ca5e28fd	104	691		
+Click Create Account	7eb2cc7defae68fd0e69f9a956029410d791312f1028711cf3a48370fac5f6db	130	692		
+					
+					
+Go to https://signin.ebay.com/	7604ce9fe501dd4836d7f56d0ac5afa4c0d2eca8533332f6ac8668b32b30335e	None	693		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	694		
+Enter user-selected Email in text field with Email or username	832823fc1db34d132f6231efe69490701c06d1602426da7bf4918b87f54f5b2a	74	695		
+Click continue	e0b7a80bef64646c91ddf8451dedda97b68b841447a926d9ce8faca23e4871e6	76	696		
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	697		
+Enter user-selected Password in text field under password text	eb82cba0f6885313e501c5ea3878d31713b5332d1456c79cc1f7968fb2f1d036	81	698		
+Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	83	699		
+					
+Go to https://login.yahoo.com/account/security?.lang=en-US&.intl=us&.src=yhelp	1ca92b3847cc77ad5294659381bd4b1c72fa5b604781aab7c46c89c5b4d0700d	None	700		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	701		
+"Enter user-selected email in text field under Username, email, or mobile"	cc01dae778fdb1e6e42a3eac3717023f3843204756c5b44f09a1928d1d829b3d	297	702		
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	307	703		
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	704		
+Enter user-selected Password in text field with password	c3045bb3ced6834fe5b61fc86db07e562c771d245ac3b67f692fa8b1e75e8347	61	705		
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	65	706		
+					
+Go to mail.google.com	4ec76185a34ceacd22101f9f44b5fc366cb04631064f7b3955fed5d5b339e44e	None	718		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	719		
+Enter user-selected Email in text box with Email or phone	cffece638a6d0f24bf91b65ef1a4a4d1052a45a79792c3301778f268a1f4d2cd	75	720		
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	116	721		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	722		
+Enter user-selected password in text box with password	e9813cf1422157d94012f6b7df4e2ed0e0388989427526925b5c4b81bd355926	103	723		
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	151	724		
+Ask the user for the search keywords	8895820e2e6ffbff46928adebc98f0f6f4abdf96177e591cb8c6d170d60854f5	None	725		
+Enter the user-selected search keywords in the search bar with the text Search mail	b238e0dae46f03021bdf95096fcee31b82b17d3c0e7ca8854b7ea789abbce4d8	177	726		
+v_keywords to search: amazon					
+Click Enter	84f9f21879be3709f24cb0c7ab1ca9f6239e9b0d2e2a9c85fbfba1c0c9ff1934	2171	727		
+Click the first search result	3dc203137aea06c4907c1f79313d7ea708058d3d5ef4000fbb5b1afc9314710e	2070	728		
+					
+Go to https://www.amazon.com/wishlist	75159485397715c342332f4f88c7d1763558bc344dc43328d103e77674456ae2	None	729		
+Click sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	333	729		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	730		
+Enter user-selected email in text field under email address or username	0edc043242d6ed475e62e7a0c454b169ff5c9e579cb994d03c6445cd3e39c017	55	731		
+Click continue	feeeca4c2b7e2168ffcb9eea0a6b1b29eea92f1ab92206b13a6ce46897552e96	66	731		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	732		
+Enter user-selected password in text field under password	6484483d59aa34c1cbc8680044f27f4840479fe2a9e7117e67b6679b8a860ee4	64	733		
+Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	76	734		
+Ask user for list you want to delete	f0c587e8e0d2bbf88b1b7f5277f3febfff72905d0ec68a7b353f5044582fb57b	None	735		
+v_name of list to delete: my list					
+Click user selected list you want to delete	88af02e3809f5f1d8b73290bb97e241dcc854af4d2d340aebb8c4ae68c734623	451	736		
+Click more in the top right corner	8dd7422de1a982250b5a8ce291cb41942e761c4a0f17181bd83f8426abb057af	471	737		
+click Manage Lists.	7d9eec5fd42b347580fa865381d1eb756bec536dd8b3db8d1238ccaa725ef1d9	2301	738		
+Click Delete List	0aae26e203f2fa197a197ef0a19514c37aa1e88f446254031805fa114e82c533	2769	739		
+Click yes	b923a2fd199975c78b9d3283c6b61fefd940a43d8ec5d93bc17d31dd9c57b284	2807	740		
+					
+Go to https://www.amazon.com/gp/css/your-orders-access	b6b632606e4a7ab7d2c2f1acf979d0042bebd8af4c05d1954137f3b9c6b450e3	None	741		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	742		
+Enter user-selected email in text field under email address or username	0edc043242d6ed475e62e7a0c454b169ff5c9e579cb994d03c6445cd3e39c017	57	743		
+Click Continue	feeeca4c2b7e2168ffcb9eea0a6b1b29eea92f1ab92206b13a6ce46897552e96	67	743		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	744		
+Enter user-selected password in text field under password	6484483d59aa34c1cbc8680044f27f4840479fe2a9e7117e67b6679b8a860ee4	64	745		
+Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	76	746		
+Ask user for the order you want to cancel	84cb68f083fb20272b2ade500d74e0b65e2610e7d9314da9b5be0884b758bca1	None	747		
+v_order to cancel: Trident spearmint sugar free gum					
+Click cancel items next to the user-selected item	d8a8c96685b4fbfc44bb2036fa586c7ec14d34b8db34b6fbc111ef3a23361246	548	748		
+Click cancel selected items in this order	5c2e193f57f975f87e461e21b0dbac5fafde863f3984d5761ebb01f507e752a3	519	749		
+					
+Go to https://www.amazon.com/gp/yourstore/pym/cc/	7d8b212d0dcabba03fc136946dbeab5ba744ec934839dbb7b43191e687f46204	None	750		
+click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	431	750		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	751		
+Enter user-selected email in text field under email address or username	0edc043242d6ed475e62e7a0c454b169ff5c9e579cb994d03c6445cd3e39c017	55	752		
+Click Continue	a32441c86ddc150829a046c5fa766540b595d1d224dafab19d9c60b7fb873599	65	752		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	753		
+Enter user-selected password in text field under password	6484483d59aa34c1cbc8680044f27f4840479fe2a9e7117e67b6679b8a860ee4	64	754		
+Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	76	755		
+Ask user for item you'd like to remove	e5dd3c258b62d29c6585036848d3d90ed40819e89eabf432f3ac13581e53560f	None	756		
+v_item to remove: trident cinnamon sugar free gum					
+Select Remove next to user-selected item to remove	4cd7f35920217dbcae2fca2c38a820f544f90279deb281bb72c5f284f6267743	532	757		
+					
+Go to https://www.amazon.com/gp/css/your-orders-access	b6b632606e4a7ab7d2c2f1acf979d0042bebd8af4c05d1954137f3b9c6b450e3	None	758		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	759		
+Enter user-selected email in text field under email address or username	0edc043242d6ed475e62e7a0c454b169ff5c9e579cb994d03c6445cd3e39c017	57	760		
+Click Continue	a32441c86ddc150829a046c5fa766540b595d1d224dafab19d9c60b7fb873599	68	760		
+Ask user for password	8f7a48571b5ad8ec3ae0e3ae9076e1ea5945f69923e93c5d7a68f86e86eb2e9d	None	761		
+Enter user-selected password in text field under password	6484483d59aa34c1cbc8680044f27f4840479fe2a9e7117e67b6679b8a860ee4	64	762		
+Click Sign in	e48d0e7941e27f06a1fa410a4b65b929f9312c61beebee4daf349fa841dc7406	76	763		
+Ask user for the order you want to track	d44aa4e5ec4802c938a1ef90e2c2972cf66cb9a93fe7759dbed2a46156e9909b	None	764		
+v_order to track: Trident spearmint sugar free gum					
+Click Track Package by the user-selected order you want to track	bbfb8d84b9066d641789484d9538f0c0743b971bae79df2844428d33f392aca2	501	765		
+ADD READ					
+					
+Go to https://login.yahoo.com/account/security?.lang=en-US&.intl=us&.src=yhelp	1ca92b3847cc77ad5294659381bd4b1c72fa5b604781aab7c46c89c5b4d0700d	None	707		
+Ask user for email	6bd12b6a0d789ce5e325c00e0047deb3c9e09f48c6f42fe48a7f61cf465c0720	None	708		
+"Enter user-selected email in text field under Username, email, or mobile"	cc01dae778fdb1e6e42a3eac3717023f3843204756c5b44f09a1928d1d829b3d	297	709		
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	307	710		
+Ask user for Password	ccf3d4834ceaef7d15ec61ec358529828a259b4131ffcd077f89f6fc2dbf8373	None	711		
+Enter user-selected Password in text field with password	c3045bb3ced6834fe5b61fc86db07e562c771d245ac3b67f692fa8b1e75e8347	61	712		
+Click Next	5f786212967f1ddd6bb5e40505ec2c22a3844ac911e8c4c40b5863f2f41df1a2	65	713		
+Click Add recovery phone number	7ecabb252e2f7e638c56671e768b6e6a25858d4ed83da7fdb344561e28bb06cd	77	714		
+Ask user for recovery phone number	7870ec9ca2c4248d1f11affa2a56ec0d6035a3edd8513b2395268f803a4fbc29	None	715		
+Enter user-selected recovery phone number in text field with recovery phone number	04baec8c32d0b2c5f3f09617ba29342c62600bcf55b18125a53b703387fcdd55	311	716		
+Click Add email or mobile no.	a880856211e06afa342fccdaee2567dbd60e5eb4afe37b488545ceb441870030	318	717		
+					
+					
+Go to Piazza.com	bc856ad88eba9ce001d8bccd9441b90a26969c6fd80ab75c913aa1861e5ca333	None	766		
+Click the blue Professors and TAs Get Started button	af25cf91065faf6358a42662640c8161860784adef03bc5e7165c1239e8983d6	164	767		
+Ask user for school	8081879547563082526ae7b83ad517d597cf4cfd2ce8b715ca15b88f9fb172cc	None	768		
+Enter user-selected school in your school text field	f6becb9fc8b8f205ad1a04df7839d51b267c7a5a68511af3ecb4759078a4b43f	39	769		
+Ask user for class name	2c47d4a2ed36c47f0ef9146fff41ccecf7f865d9a8209bd0b533b6f6a35c431f	None	770		
+Enter user-selected class name in class name text field	a1afec696a850a4d9ceac2a40303f76c8a65700c3ac4d8460785bc9ea46778da	89	771		
+Ask user for class number	66a56cf43f0149d4c236dd19816af02cddf63963c10744ebf0b75263b7fcf78f	None	772		
+Enter user-selected class number in text field with class number	9d662d13b13aee5fa3b66f1eade49568ee4123ac9f46794fe4000a1f4fbcab18	138	773		
+Click Create Class	565f1c0652ff33d4d498216f139bc0d3bd386b807cbd6167a6b1a07c913e1ec8	152	774		
